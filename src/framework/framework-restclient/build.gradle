@@ -1,0 +1,20 @@
+bootJar.enabled=false
+jar.enabled=true
+jar.archiveClassifier=''
+dependencies {
+    implementation project(':framework:framework-logger')
+    implementation project(':framework:framework-const')
+    implementation project(':framework:framework-daomodel')
+    implementation project(':framework:framework-webmodel')
+    implementation project(':framework:framework-model')
+    implementation project(':framework:framework-basic')
+    implementation project(':framework:framework-exception')
+
+    implementation('org.springframework.cloud:spring-cloud-commons')
+    implementation('org.springframework.boot:spring-boot-starter-web')
+
+    implementation(files('../../../java-library/summer-model.jar'))
+    implementation(files('../../../java-library/summer-core.jar'))
+
+    implementation lib_hutool
+}

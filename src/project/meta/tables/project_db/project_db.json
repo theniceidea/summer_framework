@@ -1,0 +1,106 @@
+{
+  "comment": "数据库",
+  "entityImports": [
+    "import cn.hutool.core.util.StrUtil;",
+    "import com.fmk.framework.daoannotations.*;",
+    "import com.fmk.framework.entitiesbasic.Entity;",
+    "import com.fmk.framework.annotations.validation.*;",
+    "import java.sql.Timestamp;",
+    "import java.math.BigDecimal;",
+    "import java.util.Objects;",
+    "import lombok.Builder;"
+  ],
+  "sqlImports": [
+    "import cn.hutool.core.date.DateUtil;",
+    "import com.fmk.framework.exception.Excep;",
+    "import com.comp.entities0.project.project_db.*;",
+    "import com.fmk.framework.daomodel.*;",
+    "import com.fmk.framework.restful.PageResultList;",
+    "import cn.hutool.core.util.StrUtil;",
+    "import java.util.ArrayList;",
+    "import java.util.List;",
+    "import java.math.BigInteger;",
+    "import java.util.Map;",
+    "import java.util.Set;",
+    "import java.util.stream.Collectors;",
+    "",
+    "import java.sql.Timestamp;",
+    "import java.math.BigDecimal;"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "comment": "id",
+      "annotations": [
+        {"SkipUpdate": ""},
+        {"IdColumn": ""},
+        {"UniqueColumn": ""}
+      ]
+    },
+    {
+      "name": "cname",
+      "type": "string",
+      "comment": "中文名"
+    },
+    {
+      "name": "ename",
+      "type": "string",
+      "comment": "英文名不一定是数据库名字"
+    },
+    {
+      "name": "dbname",
+      "type": "string",
+      "comment": "数据库名字"
+    },
+    {
+      "name": "connnect_string",
+      "type": "string",
+      "comment": "连接字符串"
+    },
+    {
+      "name": "db_user",
+      "type": "string",
+      "comment": "用户名"
+    },
+    {
+      "name": "db_pwd",
+      "type": "string",
+      "comment": "密码"
+    },
+    {
+      "name": "dsp_order",
+      "type": "int",
+      "comment": "序号",
+    },
+    {
+      "name": "comment",
+      "type": "string",
+      "comment": "备注"
+    },
+    {
+      "name": "delete_status",
+      "type": "int",
+      "enumItems": "enum_deleteStatus",
+      "comment": "删除状态"
+    },
+    {
+      "name": "create_time",
+      "type": "timestamp",
+      "comment": "创建时间",
+      "annotations": [
+        {"SkipInsert": ""},
+        {"SkipUpdate": ""}
+      ]
+    },
+    {
+      "name": "update_time",
+      "type": "timestamp",
+      "comment": "更新时间",
+      "annotations": [
+        {"SkipInsert": ""},
+        {"SkipUpdate": ""}
+      ]
+    }
+  ]
+}

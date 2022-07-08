@@ -1,0 +1,48 @@
+apply plugin: 'org.springframework.boot'
+dependencies {
+    implementation project(':project:project-model')
+
+    implementation('org.springframework:spring-tx')
+
+    implementation('org.springframework.boot:spring-boot-starter-data-redis')
+    implementation('org.springframework.boot:spring-boot-starter-actuator')
+    implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation('org.springframework.boot:spring-boot-starter-aop')
+    implementation('org.springframework.boot:spring-boot-starter-jdbc')
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+
+    implementation(files('../../../java-library/framework-basic-1.0.0.jar'))
+    implementation(files('../../../java-library/framework-foundation-1.0.0.jar'))
+    implementation(files('../../../java-library/framework-logger-1.0.0.jar'))
+    implementation(files('../../../java-library/framework-web-1.0.0.jar'))
+    implementation(files('../../../java-library/framework-webmodel-1.0.0.jar'))
+    implementation(files('../../../java-library/framework-aop-1.0.0.jar'))
+//    implementation(files('../../../java-library/framework-permission-1.0.0.jar'))
+    implementation(files('../../../java-library/framework-daosimple-1.0.0.jar'))
+    implementation(files('../../../java-library/framework-daomodel-1.0.0.jar'))
+    implementation(files('../../../java-library/framework-exception-1.0.0.jar'))
+    implementation(files('../../../java-library/framework-annotations-1.0.0.jar'))
+    implementation(files('../../../java-library/framework-daoannotations-1.0.0.jar'))
+    implementation(files('../../../java-library/framework-entitiesbasic-1.0.0.jar'))
+    implementation(files('../../../java-library/framework-model-1.0.0.jar'))
+    implementation(files('../../../java-library/framework-const-1.0.0.jar'))
+    implementation(files('../../../java-library/framework-validation-1.0.0.jar'))
+    implementation(files('../../../java-library/framework-restclient-1.0.0.jar'))
+
+//    implementation(files('../../../java-library/apollo-config-1.0.0.jar'))
+    implementation(files('../../../java-library/summer-core.jar'))
+    implementation(files('../../../java-library/summer-model.jar'))
+
+//    implementation("ch.vorburger.mariaDB4j:mariaDB4j-springboot:2.4.0")
+
+//    implementation lib_apollo_client
+//    implementation lib_security_jwt
+    implementation lib_javassist
+    implementation lib_druid
+    implementation lib_mysql
+    implementation lib_javax_validation_api
+    implementation lib_commons_pool2
+    implementation lib_nimbus_jwt
+    implementation lib_jodd
+    implementation lib_guava
+}

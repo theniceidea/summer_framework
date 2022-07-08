@@ -1,0 +1,24 @@
+bootJar.enabled=false
+jar.enabled=true
+jar.archiveClassifier=''
+dependencies {
+    implementation project(':framework:framework-const')
+    implementation project(':framework:framework-entitiesbasic')
+    implementation project(':framework:framework-daoannotations')
+    implementation project(':framework:framework-basic')
+    implementation project(':framework:framework-exception')
+    implementation project(':framework:framework-validation')
+    implementation project(':framework:framework-daomodel')
+    implementation project(':framework:framework-webmodel')
+    implementation project(':framework:framework-model')
+    implementation project(':framework:framework-logger')
+
+    implementation('org.springframework.boot:spring-boot-starter-jdbc')
+    implementation(files('../../../java-library/summer-model.jar'))
+    implementation(files('../../../java-library/summer-core.jar'))
+
+    implementation lib_druid
+    implementation lib_mybatis
+    implementation lib_guava
+    implementation lib_hutool
+}

@@ -1,0 +1,10 @@
+bootJar.enabled=false
+jar.enabled=true
+jar.archiveClassifier=''
+dependencies {
+    implementation project(':framework:framework-basic')
+    implementation project(':framework:framework-annotations')
+    implementation project(':framework:framework-exception')
+    implementation project(':framework:framework-validation')
+    implementation project(':framework:framework-model')
+}

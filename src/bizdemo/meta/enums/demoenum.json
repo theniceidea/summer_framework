@@ -1,0 +1,9 @@
+{
+  "comment": "demo enum",
+  "type": "int",
+  "enumItems": [
+    {"value": 1, "name": "itm1", "comment": "enum1"},
+    {"value": 2, "name": "itm2", "comment": "enum2"},
+    {"value": 3, "name": "itm3", "comment": "enum3"}
+  ]
+}

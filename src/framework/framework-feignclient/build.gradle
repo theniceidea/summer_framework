@@ -1,0 +1,16 @@
+bootJar.enabled=false
+jar.enabled=true
+jar.archiveClassifier=''
+dependencies {
+    compile project(':framework:framework-basic')
+    compile project(':framework:framework-logger')
+    compile project(':framework:framework-exception')
+    compile project(':framework:framework-const')
+    compile project(':framework:framework-daomodel')
+    compile project(':framework:framework-webmodel')
+    compile project(':framework:framework-model')
+
+
+    compile(files('../../../java-library/summer-model.jar'))
+    compile(files('../../../java-library/summer-core.jar'))
+}

@@ -1,0 +1,8 @@
+{
+  "comment": "enable status",
+  "type": "string",
+  "enumItems": [
+    {"value": "sv1", "name": "enabled", "comment": "有效"},
+    {"value": "s\"v2", "name": "unEnabled", "comment": "无效"}
+  ]
+}

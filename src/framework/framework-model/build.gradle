@@ -1,0 +1,8 @@
+bootJar.enabled=false
+jar.enabled=true
+jar.archiveClassifier=''
+dependencies {
+    implementation project(':framework:framework-annotations')
+
+    implementation(files('../../../java-library/summer-model.jar'))
+}

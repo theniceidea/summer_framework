@@ -1,0 +1,528 @@
+package com.testcomp.entities0.bizdemo.summer_dev;
+
+import cn.hutool.core.util.StrUtil;
+import com.fmk.framework.daoannotations.*;
+import com.fmk.framework.entitiesbasic.Entity;
+import com.fmk.framework.annotations.validation.*;
+import java.sql.Timestamp;
+import java.sql.Date;
+import java.math.BigDecimal;
+import java.util.Objects;
+import cn.hutool.core.lang.ObjectId;
+
+/**
+* demo table
+*/
+@Table("demotable2")
+public class Demotable2 extends Entity{
+//    entity.setId();
+//    entity.setTitle();
+//    entity.setType();
+//    entity.setNum();
+//    entity.setNum2();
+//    entity.setNum3();
+//    entity.setDeleteStatus();
+//    entity.setEnableStatus();
+//    entity.setStatus();
+//    entity.setStatus2();
+//    entity.setCreationDate();
+	/**
+	* id
+	*/
+	@SkipUpdate
+	@IdColumn
+	@UniqueColumn
+	@Column("id")
+	private String id;
+	public static final String _id="id";
+	/**
+	* 标题
+	*/
+	@Column("title")
+	private String title;
+	public static final String _title="title";
+	/**
+	* 类型
+	*/
+	@Column("type")
+	private String type;
+	public static final String _type="type";
+	/**
+	* 数量
+	*/
+	@Increment
+	@Column("num")
+	private Integer num;
+	public static final String _num="num";
+	/**
+	* 数量2
+	*/
+	@Increment
+	@Column("num2")
+	private BigDecimal num2;
+	public static final String _num2="num2";
+	/**
+	* 数量3
+	*/
+	@Increment
+	@Column("num3")
+	private Double num3;
+	public static final String _num3="num3";
+	/**
+	* delete status
+	*/
+	@Column("delete_status")
+	private Integer deleteStatus;
+	public static final String _deleteStatus="delete_status";
+	/**
+	* enable status
+	*/
+	@Column("enable_status")
+	private String enableStatus;
+	public static final String _enableStatus="enable_status";
+	/**
+	* status
+	*/
+	@Column("status")
+	private Integer status;
+	public static final String _status="status";
+	/**
+	* status
+	*/
+	@Column("status2")
+	private String status2;
+	public static final String _status2="status2";
+	/**
+	* 创建时间
+	*/
+	@SkipInsert
+	@SkipUpdate
+	@Column("creation_date")
+	private Timestamp creationDate;
+	public static final String _creationDate="creation_date";
+    /**
+    * id
+    */
+    public String getId(){
+        return this.id;
+    }
+    /**
+    * id
+    */
+    public void setId(String value){
+        this.id=value;
+    }
+    /**
+    * id
+    */
+    public boolean id_is(String value){
+        return Objects.equals(this.id, value);
+    }
+    /**
+    * id
+    */
+    public boolean id_isNull(){
+        return null==this.id;
+    }
+    /**
+    * id
+    */
+    public boolean id_isBlank(){
+        return StrUtil.isBlank(this.id);
+    }
+
+    /**
+    * 标题
+    */
+    public String getTitle(){
+        return this.title;
+    }
+    /**
+    * 标题
+    */
+    public void setTitle(String value){
+        this.title=value;
+    }
+    /**
+    * 标题
+    */
+    public boolean title_is(String value){
+        return Objects.equals(this.title, value);
+    }
+    /**
+    * 标题
+    */
+    public boolean title_isNull(){
+        return null==this.title;
+    }
+    /**
+    * 标题
+    */
+    public boolean title_isBlank(){
+        return StrUtil.isBlank(this.title);
+    }
+
+    /**
+    * 类型
+    */
+    public String getType(){
+        return this.type;
+    }
+    /**
+    * 类型
+    */
+    public void setType(String value){
+        this.type=value;
+    }
+    /**
+    * 类型
+    */
+    public boolean type_is(String value){
+        return Objects.equals(this.type, value);
+    }
+    /**
+    * 类型
+    */
+    public boolean type_isNull(){
+        return null==this.type;
+    }
+    /**
+    * 类型
+    */
+    public boolean type_isBlank(){
+        return StrUtil.isBlank(this.type);
+    }
+
+    /**
+    * 数量
+    */
+    public Integer getNum(){
+        return this.num;
+    }
+    /**
+    * 数量
+    */
+    public void setNum(Integer value){
+        this.num=value;
+    }
+    /**
+    * 数量
+    */
+    public boolean num_is(Integer value){
+        return Objects.equals(this.num, value);
+    }
+    /**
+    * 数量
+    */
+    public boolean num_isNull(){
+        return null==this.num;
+    }
+
+    /**
+    * 数量2
+    */
+    public BigDecimal getNum2(){
+        return this.num2;
+    }
+    /**
+    * 数量2
+    */
+    public void setNum2(BigDecimal value){
+        this.num2=value;
+    }
+    /**
+    * 数量2
+    */
+    public boolean num2_is(BigDecimal value){
+        return Objects.equals(this.num2, value);
+    }
+    /**
+    * 数量2
+    */
+    public boolean num2_isNull(){
+        return null==this.num2;
+    }
+
+    /**
+    * 数量3
+    */
+    public Double getNum3(){
+        return this.num3;
+    }
+    /**
+    * 数量3
+    */
+    public void setNum3(Double value){
+        this.num3=value;
+    }
+    /**
+    * 数量3
+    */
+    public boolean num3_is(Double value){
+        return Objects.equals(this.num3, value);
+    }
+    /**
+    * 数量3
+    */
+    public boolean num3_isNull(){
+        return null==this.num3;
+    }
+
+    /**
+    * delete status
+    */
+    public Integer getDeleteStatus(){
+        return this.deleteStatus;
+    }
+    /**
+    * delete status
+    */
+    public void setDeleteStatus(Integer value){
+        this.deleteStatus=value;
+    }
+    /**
+    * delete status
+    */
+    public boolean deleteStatus_is(Integer value){
+        return Objects.equals(this.deleteStatus, value);
+    }
+    /**
+    * delete status 删除
+    */
+    public void setDeleteStatus_deleted(){
+        this.deleteStatus=1;
+    }
+    /**
+    * delete status 删除
+    */
+    public boolean deleteStatus_is_deleted(){
+        return Objects.equals(this.deleteStatus, 1);
+    }
+    /**
+    * delete status 未删除
+    */
+    public void setDeleteStatus_unDeleted(){
+        this.deleteStatus=2;
+    }
+    /**
+    * delete status 未删除
+    */
+    public boolean deleteStatus_is_unDeleted(){
+        return Objects.equals(this.deleteStatus, 2);
+    }
+    /**
+    * delete status
+    */
+    public boolean deleteStatus_isNull(){
+        return null==this.deleteStatus;
+    }
+
+    /**
+    * enable status
+    */
+    public String getEnableStatus(){
+        return this.enableStatus;
+    }
+    /**
+    * enable status
+    */
+    public void setEnableStatus(String value){
+        this.enableStatus=value;
+    }
+    /**
+    * enable status
+    */
+    public boolean enableStatus_is(String value){
+        return Objects.equals(this.enableStatus, value);
+    }
+    /**
+    * enable status 有效
+    */
+    public void setEnableStatus_enabled(){
+        this.enableStatus="sv1";
+    }
+    /**
+    * enable status 有效
+    */
+    public boolean enableStatus_is_enabled(){
+        return Objects.equals(this.enableStatus, "sv1");
+    }
+    /**
+    * enable status 无效
+    */
+    public void setEnableStatus_unEnabled(){
+        this.enableStatus="s\"v2";
+    }
+    /**
+    * enable status 无效
+    */
+    public boolean enableStatus_is_unEnabled(){
+        return Objects.equals(this.enableStatus, "s\"v2");
+    }
+    /**
+    * enable status
+    */
+    public boolean enableStatus_isNull(){
+        return null==this.enableStatus;
+    }
+    /**
+    * enable status
+    */
+    public boolean enableStatus_isBlank(){
+        return StrUtil.isBlank(this.enableStatus);
+    }
+
+    /**
+    * status
+    */
+    public Integer getStatus(){
+        return this.status;
+    }
+    /**
+    * status
+    */
+    public void setStatus(Integer value){
+        this.status=value;
+    }
+    /**
+    * status
+    */
+    public boolean status_is(Integer value){
+        return Objects.equals(this.status, value);
+    }
+    /**
+    * status 待审核
+    */
+    public void setStatus_pending(){
+        this.status=1;
+    }
+    /**
+    * status 待审核
+    */
+    public boolean status_is_pending(){
+        return Objects.equals(this.status, 1);
+    }
+    /**
+    * status 已驳回
+    */
+    public void setStatus_reject(){
+        this.status=2;
+    }
+    /**
+    * status 已驳回
+    */
+    public boolean status_is_reject(){
+        return Objects.equals(this.status, 2);
+    }
+    /**
+    * status 审批通过
+    */
+    public void setStatus_approved(){
+        this.status=3;
+    }
+    /**
+    * status 审批通过
+    */
+    public boolean status_is_approved(){
+        return Objects.equals(this.status, 3);
+    }
+    /**
+    * status
+    */
+    public boolean status_isNull(){
+        return null==this.status;
+    }
+
+    /**
+    * status
+    */
+    public String getStatus2(){
+        return this.status2;
+    }
+    /**
+    * status
+    */
+    public void setStatus2(String value){
+        this.status2=value;
+    }
+    /**
+    * status
+    */
+    public boolean status2_is(String value){
+        return Objects.equals(this.status2, value);
+    }
+    /**
+    * status 待审核
+    */
+    public void setStatus2_pending(){
+        this.status2="sv\"1";
+    }
+    /**
+    * status 待审核
+    */
+    public boolean status2_is_pending(){
+        return Objects.equals(this.status2, "sv\"1");
+    }
+    /**
+    * status 已驳回
+    */
+    public void setStatus2_reject(){
+        this.status2="sv2";
+    }
+    /**
+    * status 已驳回
+    */
+    public boolean status2_is_reject(){
+        return Objects.equals(this.status2, "sv2");
+    }
+    /**
+    * status 审批通过
+    */
+    public void setStatus2_approved(){
+        this.status2="sv3";
+    }
+    /**
+    * status 审批通过
+    */
+    public boolean status2_is_approved(){
+        return Objects.equals(this.status2, "sv3");
+    }
+    /**
+    * status
+    */
+    public boolean status2_isNull(){
+        return null==this.status2;
+    }
+    /**
+    * status
+    */
+    public boolean status2_isBlank(){
+        return StrUtil.isBlank(this.status2);
+    }
+
+    /**
+    * 创建时间
+    */
+    public Timestamp getCreationDate(){
+        return this.creationDate;
+    }
+    /**
+    * 创建时间
+    */
+    public void setCreationDate(Timestamp value){
+        this.creationDate=value;
+    }
+    /**
+    * 创建时间
+    */
+    public boolean creationDate_is(Timestamp value){
+        return Objects.equals(this.creationDate, value);
+    }
+    /**
+    * 创建时间
+    */
+    public boolean creationDate_isNull(){
+        return null==this.creationDate;
+    }
+
+}

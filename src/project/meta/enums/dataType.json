@@ -1,0 +1,15 @@
+{
+  "comment": "数据类型",
+  "type": "string",
+  "enumItems": [
+    {"value": "int", "name": "typeInt", "comment": "int"},
+    {"value": "long", "name": "typeLong", "comment": "long"},
+    {"value": "string", "name": "typeString", "comment": "string"},
+    {"value": "double", "name": "typeDouble", "comment": "double"},
+    {"value": "decimal", "name": "typeDecimal", "comment": "decimal"},
+    {"value": "timestamp", "name": "typeTimestamp", "comment": "timestamp"},
+    {"value": "list", "name": "typeList", "comment": "list"},
+    {"value": "set", "name": "typeSet", "comment": "set"},
+    {"value": "map", "name": "typeMap", "comment": "map"}
+  ]
+}

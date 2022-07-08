@@ -1,0 +1,186 @@
+allprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    apply plugin: 'jacoco'
+    apply plugin: 'io.spring.dependency-management'
+    apply plugin: "io.franzbecker.gradle-lombok"
+
+    ext.app_version = "1.0.0"
+//    ext.springCloudVersion = 'Finchley.RELEASE'
+    ext.springCloudVersion = '2021.0.1'
+    ext.project_build_sourceEncoding = "UTF-8"
+    ext.urlVersion = "/v1"
+
+//    group = 'comp'
+    version = app_version
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+    tasks.withType(JavaCompile) {
+        options.encoding = project_build_sourceEncoding
+        options.compilerArgs = ["-parameters"]
+    }
+
+    repositories {
+        maven {
+            allowInsecureProtocol = true
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        }
+        jcenter()
+        mavenCentral()
+    }
+    dependencies{
+//        implementation lib_jaxb_api
+//        implementation lib_jaxws_api
+//        implementation lib_jws_api
+//        implementation lib_sun_jaxb_impl
+//        implementation lib_istack
+//        implementation lib_beanutils
+
+//        implementation lib_jodd
+//        implementation lib_hutool
+//        implementation lib_guava
+
+        implementation lib_commons_io
+        implementation lib_commons_pool2
+        implementation lib_commons_lang3
+
+        implementation lib_fastjson
+        implementation lib_joda_time
+
+        implementation lib_javassist
+        implementation lib_lombok
+//        implementation lib_nimbus_jwt
+        implementation lib_okhttp3
+        
+        implementation lib_powermock_junit4
+        implementation lib_powermock_mockito2
+        
+//        implementation lib_prometheus_registry
+//        implementation lib_prometheus_core
+//        implementation lib_hystrix_core
+    }
+    jar{
+        enabled = true
+    }
+    lombok {
+        version = "1.18.4"
+        sha256 = ""
+    }
+
+//    jacocoTestReport {
+//        reports {
+//            xml.enabled true
+//            html.enabled true
+//        }
+//    }
+//    check.dependsOn jacocoTestReport
+}
+subprojects {
+    apply plugin: 'org.springframework.boot'
+    dependencyManagement {
+        imports {
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+            mavenBom "com.alibaba.cloud:spring-cloud-alibaba-dependencies:2021.0.1.0"
+        }
+    }
+}
+buildscript {
+
+    ext {
+        lib_jaxb_api = 'javax.xml.bind:jaxb-api:2.3.0'
+        lib_jaxws_api = 'javax.xml.ws:jaxws-api:2.3.0'
+        lib_sun_jaxb_impl = 'com.sun.xml.bind:jaxb-impl:2.3.1'
+        lib_jws_api = 'javax.jws:javax.jws-api:1.1'
+        lib_istack = 'com.sun.istack:istack-commons-runtime:2.2.1'
+        lib_javassist = 'org.javassist:javassist:3.24.0-GA'
+        lib_jodd = 'org.jodd:jodd-all:4.3.2'
+        lib_hutool = 'cn.hutool:hutool-all:5.8.0'
+//        lib_poiooxml = 'org.apache.poi:poi-ooxml:3.17'
+//        lib_xerces = 'xerces:xercesImpl:2.11.0'
+        lib_mockito = 'org.mockito:mockito-all:1.10.19'
+
+//        lib_ignite_core = 'org.apache.ignite:ignite-core:2.6.0'
+//        lib_ignite_spring = 'org.apache.ignite:ignite-spring:2.6.0'
+//        lib_ignite_indexing = 'org.apache.ignite:ignite-indexing:2.6.0'
+
+//        lib_mybatis = 'org.mybatis:mybatis:3.4.6'
+        lib_io_springfox_swagger2 = 'io.springfox:springfox-swagger2:2.8.0'
+        lib_io_springfox_swagger2_ui = 'io.springfox:springfox-swagger-ui:2.8.0'
+        lib_commons_io = 'commons-io:commons-io:2.4'
+        lib_commons_pool2 = 'org.apache.commons:commons-pool2:2.11.1'
+
+        lib_slf4j_api = 'org.slf4j:slf4j-api:1.7.12'
+        lib_logback_core = 'ch.qos.logback:logback-core:1.1.7'
+        lib_logback_classic = 'ch.qos.logback:logback-classic:1.1.7'
+//        lib_h2db = 'com.h2database:h2:1.4.196'
+        lib_fastjson = 'com.alibaba:fastjson:1.2.47'
+        lib_joda_time = 'joda-time:joda-time:2.9.3'
+        lib_commons_lang3 = 'org.apache.commons:commons-lang3:3.4'
+        lib_beanutils = 'commons-beanutils:commons-beanutils:1.9.4'
+        lib_guava = 'com.google.guava:guava:26.0-jre'
+        lib_druid = 'com.alibaba:druid:1.1.12'
+        lib_mysql = 'mysql:mysql-connector-java:5.1.19'
+        lib_lombok = 'org.projectlombok:lombok:1.18.4'
+//        lib_apollo_client = 'com.ctrip.framework.apollo:apollo-client:1.1.0'
+//        lib_lcnspringcloud = 'com.codingapi:transaction-springcloud:4.1.0'
+//        lib_lcnpluginsdb = 'com.codingapi:tx-plugins-db:4.1.0'
+//        lib_xxljob = 'com.xuxueli:xxl-job-core:2.0.1'
+//        lib_xxlrpccore = 'com.xuxueli:xxl-rpc-core:1.2.1'
+//        lib_kaptcha = 'com.github.penggle:kaptcha:2.3.2'
+//        lib_commons_email='org.apache.commons:commons-email:1.5'
+
+//        lib_groovy = 'org.codehaus.groovy:groovy:2.5.3'
+//        lib_commons_exec = 'org.apache.commons:commons-exec:1.3'
+//        lib_jackson_databind = 'com.fasterxml.jackson.core:jackson-databind:2.9.7'
+//        lib_sentinel = 'org.springframework.cloud:spring-cloud-starter-alibaba-sentinel:0.2.2.RELEASE'
+//        lib_sentinel_apollo =  'com.alibaba.csp:sentinel-datasource-apollo:1.4.1'
+
+//        lib_aliyun_sdk_sms='com.aliyun:aliyun-java-sdk-core:2.1.4'
+//        lib_aliyun_sdk_sms_api='com.aliyun:aliyun-java-sdk-dysmsapi:1.1.0'
+//        lib_aliyun_sdk_oss = 'com.aliyun.oss:aliyun-sdk-oss:2.8.3'
+
+//        lib_security_jwt ='org.springframework.security:spring-security-jwt:1.0.9.RELEASE'
+        
+        lib_okhttp3 = 'com.squareup.okhttp3:okhttp:3.8.1'
+        
+//        lib_zxing = 'com.google.zxing:core:3.3.0'
+
+//        lib_undertow = 'org.springframework.boot:spring-boot-starter-undertow'
+//        lib_undertow_core = 'io.undertow:undertow-core:2.0.16.Final'
+//        lib_undertow_servlet = 'io.undertow:undertow-servlet:2.0.16.Final'
+//        lib_undertow_websockets_jsr = 'io.undertow:undertow-websockets-jsr:2.0.16.Final'
+
+//        aliyun_sdk_oss = 'com.aliyun.oss:aliyun-sdk-oss:2.8.3'
+//        lib_ali_amqp = 'com.alibaba.mq-amqp:mq-amqp-client:1.0.3'
+        lib_nimbus_jwt = 'com.nimbusds:nimbus-jose-jwt:6.0'
+
+        lib_powermock_junit4 = 'org.powermock:powermock-module-junit4:2.0.2'
+        lib_powermock_mockito2 = 'org.powermock:powermock-api-mockito2:2.0.2'
+//        lib_prometheus_registry = 'io.micrometer:micrometer-registry-prometheus:1.2.0'
+//        lib_prometheus_core = 'io.micrometer:micrometer-core:1.2.0'
+        
+//        lib_hystrix_core = 'com.netflix.hystrix:hystrix-core:1.5.12'
+//        lib_liquibase_core = 'org.liquibase:liquibase-core:3.7.0'
+
+//        lib_azure = 'com.microsoft.azure:azure-storage:8.0.0'
+        lib_aspectjweaver='org.aspectj:aspectjweaver:1.9.6'
+        lib_javax_validation_api="javax.validation:validation-api:2.0.0.Final"
+        lib_nimbus_jose_jwt="com.nimbusds:nimbus-jose-jwt:6.0"
+        lib_mybatis="org.mybatis:mybatis:3.4.6"
+    }
+
+    repositories {
+        maven {
+            allowInsecureProtocol = true
+            url "http://maven.aliyun.com/nexus/content/groups/public/"
+        }
+        jcenter()
+        mavenCentral()
+        maven { url "https://plugins.gradle.org/m2/" }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.6.3")
+//        classpath(files('../../java-library/gradle-base-services-5.0.jar'))
+        classpath("io.franzbecker:gradle-lombok:1.14")
+    }
+}

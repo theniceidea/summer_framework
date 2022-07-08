@@ -1,0 +1,14 @@
+{
+  "comment": "数据库类型",
+  "type": "string",
+  "enumItems": [
+    {"value": "int", "name": "typeInt", "comment": "int"},
+    {"value": "bigint", "name": "typeBigint", "comment": "bigint"},
+    {"value": "char", "name": "typeChar", "comment": "char"},
+    {"value": "varchar", "name": "typeVarchar", "comment": "varchar"},
+    {"value": "double", "name": "typeDouble", "comment": "double"},
+    {"value": "decimal", "name": "typeDecimal", "comment": "decimal"},
+    {"value": "timestamp", "name": "typeTimestamp", "comment": "timestamp"},
+    {"value": "text", "name": "typeText", "comment": "text"}
+  ]
+}

@@ -1,0 +1,3 @@
+create database demo_db default character set utf8mb4 collate utf8mb4_unicode_ci;
+
+SHOW VARIABLES LIKE 'character%';

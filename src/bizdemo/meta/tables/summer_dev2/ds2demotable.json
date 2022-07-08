@@ -1,0 +1,122 @@
+{
+  "comment": "demo table",
+  "entityImports": [
+    "import cn.hutool.core.util.StrUtil;",
+    "import com.fmk.framework.daoannotations.*;",
+    "import com.fmk.framework.entitiesbasic.Entity;",
+    "import com.fmk.framework.annotations.validation.*;",
+    "import java.sql.Timestamp;",
+    "import java.math.BigDecimal;",
+    "import java.util.Objects;"
+  ],
+  "sqlImports": [
+    "import cn.hutool.core.date.DateUtil;",
+    "import cn.hutool.core.util.StrUtil;",
+    "import com.fmk.framework.exception.Excep;",
+    "import com.testcomp.entities0.bizdemo.summer_dev2.*;",
+    "import com.fmk.framework.daomodel.*;",
+    "import com.fmk.framework.restful.PageResultList;",
+    "import java.util.ArrayList;",
+    "import java.util.List;",
+    "import java.math.BigInteger;",
+    "import java.util.Map;",
+    "import java.util.Set;",
+    "import java.util.stream.Collectors;",
+    "",
+    "import java.sql.Timestamp;",
+    "import java.math.BigDecimal;",
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "int",
+      "comment": "id",
+      "annotations": [
+        {"SkipInsert": ""},
+        {"SkipUpdate": ""},
+        {"IdColumn": ""},
+        {"UniqueColumn": ""},
+        {"AutoIncrement": ""},
+        {"NotNull": {"msg": "\"Err_000300030001\""}}
+      ]
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "comment": "标题",
+      "annotations": [
+        {"LengthRange": {"min":0, "max": 10, "msg": "\"Err_000300030001\""}}
+      ]
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "comment": "类型"
+    },
+    {
+      "name": "num",
+      "type": "int",
+      "comment": "数量",
+      "annotations": [
+        {"Increment": ""}
+      ]
+    },
+    {
+      "name": "num2",
+      "type": "decimal",
+      "comment": "数量2",
+      "annotations": [
+        {"Increment": ""}
+      ]
+    },
+    {
+      "name": "num3",
+      "type": "double",
+      "comment": "数量3",
+      "annotations": [
+        {"Increment": ""}
+      ]
+    },
+    {
+      "name": "delete_status",
+      "type": "int",
+      "enumItems": "enum_deleteStatus",
+      "comment": "delete status"
+    },
+    {
+      "name": "enable_status",
+      "type": "string",
+      "enumItems": "enum_enableStatus",
+      "comment": "enable status"
+    },
+    {
+      "name": "status",
+      "type": "int",
+      "comment": "status",
+      "enumItems": [
+        {"value": 1, "name": "pending", "comment": "待审核"},
+        {"value": 2, "name": "reject", "comment": "已驳回"},
+        {"value": 3, "name": "approved", "comment": "审批通过"}
+      ]
+    },
+    {
+      "name": "status2",
+      "type": "string",
+      "comment": "status",
+      "enumItems": [
+        {"value": "sv\"1", "name": "pending", "comment": "待审核"},
+        {"value": "sv2", "name": "reject", "comment": "已驳回"},
+        {"value": "sv3", "name": "approved", "comment": "审批通过"}
+      ]
+    },
+    {
+      "name": "creation_date",
+      "type": "timestamp",
+      "comment": "创建时间",
+      "annotations": [
+        {"SkipInsert": ""},
+        {"SkipUpdate": ""}
+      ]
+    }
+  ]
+}

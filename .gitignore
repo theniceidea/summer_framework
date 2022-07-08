@@ -1,0 +1,11 @@
+# Created by .ignore
+.idea
+.gradle
+build
+java-library
+logs
+target
+*.iml
+.svn
+.DS_Store
+application-local.properties

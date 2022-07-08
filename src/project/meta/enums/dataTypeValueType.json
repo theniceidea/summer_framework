@@ -1,0 +1,8 @@
+{
+  "comment": "list, set, map 字段value 的数据类型的类型",
+  "type": "int",
+  "enumItems": [
+    {"value": 1, "name": "baseTypeName", "comment": "数据库类型名字"},
+    {"value": 2, "name": "dbId", "comment": "数据库类型id"}
+  ]
+}

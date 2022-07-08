@@ -1,0 +1,25 @@
+bootJar.enabled=false
+jar.enabled=true
+jar.archiveClassifier=''
+dependencies {
+//    implementation(files('../../../java-library/appconsts-config-1.0.0.jar'))
+    implementation(files('../../../java-library/framework-entitiesbasic-1.0.0.jar'))
+    implementation(files('../../../java-library/framework-basic-1.0.0.jar'))
+    implementation(files('../../../java-library/framework-daoannotations-1.0.0.jar'))
+    implementation(files('../../../java-library/framework-annotations-1.0.0.jar'))
+//    implementation(files('../../../java-library/framework-exception-1.0.0.jar'))
+    implementation(files('../../../java-library/framework-model-1.0.0.jar'))
+    implementation(files('../../../java-library/framework-const-1.0.0.jar'))
+    implementation(files('../../../java-library/framework-webmodel-1.0.0.jar'))
+    implementation(files('../../../java-library/summer-model.jar'))
+
+    implementation lib_hutool
+}
+build{
+    doLast {
+        copy{
+            from "${buildDir}/libs/${project.name}-1.0.0.jar"
+            into "../../../java-library/"
+        }
+    }
+}

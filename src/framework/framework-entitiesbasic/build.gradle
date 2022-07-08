@@ -1,0 +1,7 @@
+bootJar.enabled=false
+jar.enabled=true
+jar.archiveClassifier=''
+dependencies {
+    implementation project(':framework:framework-annotations')
+    implementation project(':framework:framework-daoannotations')
+}

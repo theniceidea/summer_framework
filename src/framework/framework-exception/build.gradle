@@ -1,0 +1,15 @@
+bootJar.enabled=false
+jar.enabled=true
+jar.archiveClassifier=''
+dependencies {
+    implementation project(':framework:framework-model')
+    implementation project(':framework:framework-basic')
+    implementation project(':framework:framework-const')
+
+    implementation('org.springframework.boot:spring-boot-starter-web')
+
+    implementation(files('../../../java-library/summer-model.jar'))
+
+    implementation lib_guava
+    implementation lib_jodd
+}

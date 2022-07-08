@@ -1,0 +1,15 @@
+bootJar.enabled=false
+jar.enabled=true
+jar.archiveClassifier=''
+dependencies {
+    implementation project(':framework:framework-logger')
+    implementation project(':framework:framework-annotations')
+    implementation project(':framework:framework-const')
+
+    implementation('org.springframework.boot:spring-boot-starter-web')
+
+    implementation lib_beanutils
+    implementation lib_jodd
+    implementation lib_hutool
+    implementation lib_guava
+}

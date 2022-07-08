@@ -1,0 +1,8 @@
+{
+  "comment": "delete status",
+  "type": "int",
+  "enumItems": [
+    {"value": 1, "name": "deleted", "comment": "删除"},
+    {"value": 2, "name": "unDeleted", "comment": "未删除"}
+  ]
+}

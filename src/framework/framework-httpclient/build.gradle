@@ -1,0 +1,10 @@
+bootJar.enabled=false
+jar.enabled=true
+jar.archiveClassifier=''
+dependencies {
+    implementation project(':framework:framework-exception')
+    implementation project(':framework:framework-logger')
+    implementation project(':framework:framework-basic')
+
+    implementation('org.springframework.boot:spring-boot-starter-web')
+}

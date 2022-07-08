@@ -1,0 +1,57 @@
+{
+  "comment": "project types",
+  "entityImports": [
+    "import cn.hutool.core.util.StrUtil;",
+    "import com.fmk.framework.daoannotations.*;",
+    "import com.fmk.framework.entitiesbasic.Entity;",
+    "import com.fmk.framework.annotations.validation.*;",
+    "import java.sql.Timestamp;",
+    "import java.math.BigDecimal;",
+    "import java.util.Objects;",
+    "import lombok.Builder;"
+  ],
+  "sqlImports": [
+    "import cn.hutool.core.date.DateUtil;",
+    "import com.fmk.framework.exception.Excep;",
+    "import com.comp.entities0.project.project_db.*;",
+    "import com.fmk.framework.daomodel.*;",
+    "import com.fmk.framework.restful.PageResultList;",
+    "import cn.hutool.core.util.StrUtil;",
+    "import java.util.ArrayList;",
+    "import java.util.List;",
+    "import java.math.BigInteger;",
+    "import java.util.Map;",
+    "import java.util.Set;",
+    "import java.util.stream.Collectors;",
+    "",
+    "import java.sql.Timestamp;",
+    "import java.math.BigDecimal;"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "comment": "id",
+      "annotations": [
+        {"SkipUpdate": ""},
+        {"IdColumn": ""},
+        {"UniqueColumn": ""}
+      ]
+    },
+    {
+      "name": "project_db_id",
+      "type": "string",
+      "comment": "数据库id"
+    },
+    {
+      "name": "project_type_id",
+      "type": "string",
+      "comment": "project_type_id"
+    },
+    {
+      "name": "dsp_order",
+      "type": "int",
+      "comment": "序号",
+    }
+  ]
+}

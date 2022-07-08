@@ -1,0 +1,8 @@
+{
+  "comment": "数据类型",
+  "type": "string",
+  "enumItems": [
+    {"value": "int", "name": "typeInt", "comment": "int"},
+    {"value": "string", "name": "typeString", "comment": "string"}
+  ]
+}
