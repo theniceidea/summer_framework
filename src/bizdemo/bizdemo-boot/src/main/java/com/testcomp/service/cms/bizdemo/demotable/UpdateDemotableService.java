@@ -1,5 +1,6 @@
 package com.testcomp.service.cms.bizdemo.demotable;
 
+import com.fmk.framework.session.CurrentUserId;
 import com.testcomp.entities0.bizdemo.summer_dev.Demotable;
 import com.testcomp.query0.bizdemo.summer_dev.SqlDemotable;
 import com.testcomp.summer.v1.cms.bizdemo.demotable.UpdateDemotable;
@@ -15,7 +16,9 @@ import java.util.List;
 public class UpdateDemotableService implements SummerServiceBean<UpdateDemotable> {
     @Override
     public void sum(UpdateDemotable summer) {
-        final List<Demotable> demotables = SqlDemotable.inst().num_eq(summer.getNum()).queryList();
+//        final List<Demotable> demotables = SqlDemotable.inst().num_eq(summer.getNum()).queryList();
+//        final String userid = CurrentUserId.s(false);
+//        System.out.println(userid);
 //        final Demotable entity = SqlDemotable.inst().id_eq(2).queryOne();
 
 //        entity.setTitle("title4");
@@ -30,12 +33,12 @@ public class UpdateDemotableService implements SummerServiceBean<UpdateDemotable
 //        entity.setCreationDate(DateTimeUtil.timestampNow());
 
 //        SqlDemotable.inst().save(entity);
-        final int count = SqlDemotable.inst()
-                .num_inc(-1)
-                .num2_inc(BigDecimal.ZERO.subtract(BigDecimal.TEN))
-                .id_eq(summer.getNum())
-                .executeIncrementUnChangeThrow("LError_文本错误");
-        System.out.println("count:"+count);
-        summer.setSummerResult(count);
+//        final int count = SqlDemotable.inst()
+//                .num_inc(-1)
+//                .num2_inc(BigDecimal.ZERO.subtract(BigDecimal.TEN))
+//                .id_eq(summer.getNum())
+//                .executeIncrementUnChangeThrow("LError_文本错误");
+//        System.out.println("count:"+count);
+//        summer.setSummerResult(count);
     }
 }

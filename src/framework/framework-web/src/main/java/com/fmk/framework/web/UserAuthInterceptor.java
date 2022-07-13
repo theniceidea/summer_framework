@@ -103,15 +103,15 @@ public class UserAuthInterceptor {
                 currentUserId = (String) decode.get(Consts.USER_PROPERTY_ID);
 
                 if (StringUtils.isNotBlank(currentUserId)) {
-                    CheckJwtToken.s(sessionValue,currentUserId);
+//                    CheckJwtToken.s(sessionValue,currentUserId);
 //                redisTemplate.opsForValue().set(Consts.REDIS_CURRENT_USER+currentUserId, JSON.toJSONString(decode), 20, TimeUnit.MINUTES);
-                    SetCurrentUserInfo.s(currentUserId, decode.containsKey(Consts.USER_PROPERTY_ADMIN));
+//                    SetCurrentUserInfo.s(currentUserId, decode.containsKey(Consts.USER_PROPERTY_ADMIN));
 //                redisTemplate.expire(Consts.REDIS_CURRENT_USER+currentUserId, 1, TimeUnit.DAYS);
 
                     String requestURI = request.getRequestURI();
                     if (!decode.containsKey(Consts.USER_PROPERTY_ADMIN)) {
                         Precondition.checkState(requestURI.contains(Consts.REQUEST_URL_PREFIX_PORTAL), ErrMsgs.Err_000200000016);
-                        CheckUserIsAgree.s(request.getRequestURI(), currentUserId);
+//                        CheckUserIsAgree.s(request.getRequestURI(), currentUserId);
                     } else {
                         Precondition.checkState(requestURI.contains(Consts.REQUEST_URL_PREFIX_CMS), ErrMsgs.Err_000200000016);
                     }
@@ -119,19 +119,19 @@ public class UserAuthInterceptor {
                     CURRENT_USER_ID.set(currentUserId);
 //                    requestAttributes.setAttribute(Consts.REQUEST_CURRENT_SESSION_ID, currentUserId, RequestAttributes.SCOPE_REQUEST);
 
-                    decode.put(STR_EXP, DateTime.now().plusDays(SESSION_LIFE_TIME).getMillis() / 1000);
-                    String encode = jwtService.encode(JSON.toJSONString(decode));
-                    response.setHeader(STR_AUTHORIZATION, STR_BEARER + " " + encode);
+//                    decode.put(STR_EXP, DateTime.now().plusDays(SESSION_LIFE_TIME).getMillis() / 1000);
+//                    String encode = jwtService.encode(JSON.toJSONString(decode));
+//                    response.setHeader(STR_AUTHORIZATION, STR_BEARER + " " + encode);
                 }
             }
 
             Precondition.checkState(StringUtils.isNotBlank(currentUserId), this.getClass(), ErrMsgs.Err_000000000010);
 
-            PreAuthorize preAuthorize = method.getAnnotation(PreAuthorize.class);
-            if (null != preAuthorize) {
-                String authority = preAuthorize.value();
-                CheckUserRight.s(authority, currentUserId);
-            }
+//            PreAuthorize preAuthorize = method.getAnnotation(PreAuthorize.class);
+//            if (null != preAuthorize) {
+//                String authority = preAuthorize.value();
+//                CheckUserRight.s(authority, currentUserId);
+//            }
         }
 
         return point.proceed();
