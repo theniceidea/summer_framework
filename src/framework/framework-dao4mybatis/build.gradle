@@ -1,0 +1,9 @@
+bootJar.enabled=false
+jar.enabled=true
+jar.archiveClassifier=''
+dependencies {
+    implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation('org.springframework.boot:spring-boot-starter-jdbc')
+
+    implementation lib_guava
+}

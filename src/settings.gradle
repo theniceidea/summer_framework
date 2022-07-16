@@ -26,8 +26,10 @@ rootProject.name = 'src'
 ////include ':framework:framework-sql'
 ////include ':framework:framework-sqlannotations'
 
-include ':project:project-boot'
-include ':project:project-model'
+include ':framework:framework-dao4mybatis'
+
+//include ':project:project-boot'
+//include ':project:project-model'
 include ':bizdemo:bizdemo-boot'
 include ':bizdemo:bizdemo-model'
 include ':bizdemo2:bizdemo2-boot'
