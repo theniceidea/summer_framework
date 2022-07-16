@@ -26,6 +26,18 @@ public class Demotable2 extends Entity{
 //    entity.setStatus();
 //    entity.setStatus2();
 //    entity.setCreationDate();
+//    entity
+//        .id()
+//        .title()
+//        .type()
+//        .num()
+//        .num2()
+//        .num3()
+//        .deleteStatus()
+//        .enableStatus()
+//        .status()
+//        .status2()
+//        .creationDate()
 	/**
 	* id
 	*/

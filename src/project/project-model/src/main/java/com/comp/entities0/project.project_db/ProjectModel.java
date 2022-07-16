@@ -30,6 +30,23 @@ public class ProjectModel extends Entity{
 //    entity.setDeleteStatus();
 //    entity.setCreateTime();
 //    entity.setUpdateTime();
+//    entity
+//        .id()
+//        .projectId()
+//        .projectDbId()
+//        .modelType()
+//        .tableModel()
+//        .summerModel()
+//        .summerNs()
+//        .imports()
+//        .cname()
+//        .ename()
+//        .extendsInfo()
+//        .dspOrder()
+//        .comment()
+//        .deleteStatus()
+//        .createTime()
+//        .updateTime()
 	/**
 	* id
 	*/

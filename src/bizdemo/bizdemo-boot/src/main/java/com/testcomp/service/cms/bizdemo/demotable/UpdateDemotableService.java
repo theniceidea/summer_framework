@@ -19,6 +19,9 @@ public class UpdateDemotableService implements SummerServiceBean<UpdateDemotable
                 .num_eq(summer.getNum())
                 .orderBy_id_asc()
                 .queryList();
+
+
+
 //        final String userid = CurrentUserId.s(false);
 //        System.out.println(userid);
 //        final Demotable entity = SqlDemotable.inst().id_eq(2).queryOne();

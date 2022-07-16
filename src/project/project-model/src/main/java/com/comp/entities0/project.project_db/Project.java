@@ -22,6 +22,15 @@ public class Project extends Entity{
 //    entity.setDeleteStatus();
 //    entity.setCreateTime();
 //    entity.setUpdateTime();
+//    entity
+//        .id()
+//        .cname()
+//        .ename()
+//        .dspOrder()
+//        .comment()
+//        .deleteStatus()
+//        .createTime()
+//        .updateTime()
 	/**
 	* id
 	*/

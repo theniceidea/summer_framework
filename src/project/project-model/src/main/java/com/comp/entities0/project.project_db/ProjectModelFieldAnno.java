@@ -26,6 +26,19 @@ public class ProjectModelFieldAnno extends Entity{
 //    entity.setDeleteStatus();
 //    entity.setCreateTime();
 //    entity.setUpdateTime();
+//    entity
+//        .id()
+//        .projectId()
+//        .projectDbId()
+//        .projectModelId()
+//        .projectModelFieldId()
+//        .imports()
+//        .anno()
+//        .dspOrder()
+//        .comment()
+//        .deleteStatus()
+//        .createTime()
+//        .updateTime()
 	/**
 	* id
 	*/

@@ -26,6 +26,19 @@ public class ProjectDb extends Entity{
 //    entity.setDeleteStatus();
 //    entity.setCreateTime();
 //    entity.setUpdateTime();
+//    entity
+//        .id()
+//        .cname()
+//        .ename()
+//        .dbname()
+//        .connnectString()
+//        .dbUser()
+//        .dbPwd()
+//        .dspOrder()
+//        .comment()
+//        .deleteStatus()
+//        .createTime()
+//        .updateTime()
 	/**
 	* id
 	*/

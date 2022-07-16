@@ -34,6 +34,27 @@ public class ProjectModelField extends Entity{
 //    entity.setDeleteStatus();
 //    entity.setCreateTime();
 //    entity.setUpdateTime();
+//    entity
+//        .id()
+//        .projectId()
+//        .projectDbId()
+//        .projectModelId()
+//        .cname()
+//        .ename()
+//        .dataType()
+//        .dataTypeMapKey()
+//        .dataTypeValue()
+//        .dbType()
+//        .dbTypeExt()
+//        .createExt()
+//        .refColumn()
+//        .defValue()
+//        .imports()
+//        .dspOrder()
+//        .comment()
+//        .deleteStatus()
+//        .createTime()
+//        .updateTime()
 	/**
 	* id
 	*/
