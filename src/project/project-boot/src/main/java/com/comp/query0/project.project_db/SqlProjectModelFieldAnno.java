@@ -27,6 +27,7 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     private static final String SQL_UPDATE="UPDATE project_model_field_anno SET project_id=?,project_db_id=?,project_model_id=?,project_model_field_id=?,imports=?,anno=?,dsp_order=?,comment=?,delete_status=? WHERE id=?";
     private static final String SQL_DELETE="DELETE project_model_field_anno WHERE id=?";
     private boolean existsWhere=false;
+    private boolean existsOrderBy=false;
     private StringBuilder builder=new StringBuilder();
     private List<Object> parameters =new ArrayList<>();
     private List<IncUpdateValue> incValues=null;
@@ -483,6 +484,34 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
 
 
     /**
+    * id
+    */
+    public SqlProjectModelFieldAnno orderBy_id_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" id asc");
+        return this;
+    }
+    /**
+    * id
+    */
+    public SqlProjectModelFieldAnno orderBy_id_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" id desc");
+        return this;
+    }
+    /**
     * 项目id
     */
     public SqlProjectModelFieldAnno projectId_eq(boolean cdn, String value){
@@ -816,6 +845,34 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     }
 
 
+    /**
+    * 项目id
+    */
+    public SqlProjectModelFieldAnno orderBy_projectId_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" project_id asc");
+        return this;
+    }
+    /**
+    * 项目id
+    */
+    public SqlProjectModelFieldAnno orderBy_projectId_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" project_id desc");
+        return this;
+    }
     /**
     * 数据库id
     */
@@ -1151,6 +1208,34 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
 
 
     /**
+    * 数据库id
+    */
+    public SqlProjectModelFieldAnno orderBy_projectDbId_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" project_db_id asc");
+        return this;
+    }
+    /**
+    * 数据库id
+    */
+    public SqlProjectModelFieldAnno orderBy_projectDbId_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" project_db_id desc");
+        return this;
+    }
+    /**
     * 数据模型id
     */
     public SqlProjectModelFieldAnno projectModelId_eq(boolean cdn, String value){
@@ -1484,6 +1569,34 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     }
 
 
+    /**
+    * 数据模型id
+    */
+    public SqlProjectModelFieldAnno orderBy_projectModelId_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" project_model_id asc");
+        return this;
+    }
+    /**
+    * 数据模型id
+    */
+    public SqlProjectModelFieldAnno orderBy_projectModelId_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" project_model_id desc");
+        return this;
+    }
     /**
     * 字段id
     */
@@ -1819,6 +1932,34 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
 
 
     /**
+    * 字段id
+    */
+    public SqlProjectModelFieldAnno orderBy_projectModelFieldId_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" project_model_field_id asc");
+        return this;
+    }
+    /**
+    * 字段id
+    */
+    public SqlProjectModelFieldAnno orderBy_projectModelFieldId_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" project_model_field_id desc");
+        return this;
+    }
+    /**
     * imports
     */
     public SqlProjectModelFieldAnno imports_eq(boolean cdn, String value){
@@ -2152,6 +2293,34 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     }
 
 
+    /**
+    * imports
+    */
+    public SqlProjectModelFieldAnno orderBy_imports_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" imports asc");
+        return this;
+    }
+    /**
+    * imports
+    */
+    public SqlProjectModelFieldAnno orderBy_imports_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" imports desc");
+        return this;
+    }
     /**
     * 注解
     */
@@ -2487,6 +2656,34 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
 
 
     /**
+    * 注解
+    */
+    public SqlProjectModelFieldAnno orderBy_anno_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" anno asc");
+        return this;
+    }
+    /**
+    * 注解
+    */
+    public SqlProjectModelFieldAnno orderBy_anno_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" anno desc");
+        return this;
+    }
+    /**
     * 序号
     */
     public SqlProjectModelFieldAnno dspOrder_eq(boolean cdn, Integer value){
@@ -2730,6 +2927,34 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     }
 
 
+    /**
+    * 序号
+    */
+    public SqlProjectModelFieldAnno orderBy_dspOrder_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" dsp_order asc");
+        return this;
+    }
+    /**
+    * 序号
+    */
+    public SqlProjectModelFieldAnno orderBy_dspOrder_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" dsp_order desc");
+        return this;
+    }
     /**
     * 备注
     */
@@ -3065,6 +3290,34 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
 
 
     /**
+    * 备注
+    */
+    public SqlProjectModelFieldAnno orderBy_comment_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" comment asc");
+        return this;
+    }
+    /**
+    * 备注
+    */
+    public SqlProjectModelFieldAnno orderBy_comment_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" comment desc");
+        return this;
+    }
+    /**
     * 删除状态
     */
     public SqlProjectModelFieldAnno deleteStatus_eq(boolean cdn, Integer value){
@@ -3308,6 +3561,34 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     }
 
 
+    /**
+    * 删除状态
+    */
+    public SqlProjectModelFieldAnno orderBy_deleteStatus_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" delete_status asc");
+        return this;
+    }
+    /**
+    * 删除状态
+    */
+    public SqlProjectModelFieldAnno orderBy_deleteStatus_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" delete_status desc");
+        return this;
+    }
     /**
     * 创建时间
     */
@@ -3693,6 +3974,34 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
 
 
     /**
+    * 创建时间
+    */
+    public SqlProjectModelFieldAnno orderBy_createTime_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" create_time asc");
+        return this;
+    }
+    /**
+    * 创建时间
+    */
+    public SqlProjectModelFieldAnno orderBy_createTime_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" create_time desc");
+        return this;
+    }
+    /**
     * 更新时间
     */
     public SqlProjectModelFieldAnno updateTime_eq(boolean cdn, Timestamp value){
@@ -4076,6 +4385,34 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     }
 
 
+    /**
+    * 更新时间
+    */
+    public SqlProjectModelFieldAnno orderBy_updateTime_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" update_time asc");
+        return this;
+    }
+    /**
+    * 更新时间
+    */
+    public SqlProjectModelFieldAnno orderBy_updateTime_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" update_time desc");
+        return this;
+    }
     @Override
     public String toSqlString() {
         StringBuilder buf=new StringBuilder("SELECT * FROM project_model_field_anno");

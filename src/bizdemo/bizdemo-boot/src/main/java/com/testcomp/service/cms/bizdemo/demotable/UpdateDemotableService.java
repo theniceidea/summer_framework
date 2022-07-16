@@ -1,6 +1,5 @@
 package com.testcomp.service.cms.bizdemo.demotable;
 
-import com.fmk.framework.session.CurrentUserId;
 import com.testcomp.entities0.bizdemo.summer_dev.Demotable;
 import com.testcomp.query0.bizdemo.summer_dev.SqlDemotable;
 import com.testcomp.summer.v1.cms.bizdemo.demotable.UpdateDemotable;
@@ -8,7 +7,6 @@ import org.springframework.stereotype.Service;
 import org.summerframework.model.SummerService;
 import org.summerframework.model.SummerServiceBean;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 @Service
@@ -16,7 +14,11 @@ import java.util.List;
 public class UpdateDemotableService implements SummerServiceBean<UpdateDemotable> {
     @Override
     public void sum(UpdateDemotable summer) {
-//        final List<Demotable> demotables = SqlDemotable.inst().num_eq(summer.getNum()).queryList();
+        final List<Demotable> demotables = SqlDemotable
+                .inst()
+                .num_eq(summer.getNum())
+                .orderBy_id_asc()
+                .queryList();
 //        final String userid = CurrentUserId.s(false);
 //        System.out.println(userid);
 //        final Demotable entity = SqlDemotable.inst().id_eq(2).queryOne();

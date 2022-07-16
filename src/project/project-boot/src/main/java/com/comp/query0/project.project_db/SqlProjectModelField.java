@@ -27,6 +27,7 @@ public class SqlProjectModelField implements QuerySelect {
     private static final String SQL_UPDATE="UPDATE project_model_field SET project_id=?,project_db_id=?,project_model_id=?,cname=?,ename=?,data_type=?,data_type_map_key=?,data_type_value=?,db_type=?,db_type_ext=?,create_ext=?,ref_column=?,def_value=?,imports=?,dsp_order=?,comment=?,delete_status=? WHERE id=?";
     private static final String SQL_DELETE="DELETE project_model_field WHERE id=?";
     private boolean existsWhere=false;
+    private boolean existsOrderBy=false;
     private StringBuilder builder=new StringBuilder();
     private List<Object> parameters =new ArrayList<>();
     private List<IncUpdateValue> incValues=null;
@@ -499,6 +500,34 @@ public class SqlProjectModelField implements QuerySelect {
 
 
     /**
+    * id
+    */
+    public SqlProjectModelField orderBy_id_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" id asc");
+        return this;
+    }
+    /**
+    * id
+    */
+    public SqlProjectModelField orderBy_id_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" id desc");
+        return this;
+    }
+    /**
     * 项目id
     */
     public SqlProjectModelField projectId_eq(boolean cdn, String value){
@@ -832,6 +861,34 @@ public class SqlProjectModelField implements QuerySelect {
     }
 
 
+    /**
+    * 项目id
+    */
+    public SqlProjectModelField orderBy_projectId_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" project_id asc");
+        return this;
+    }
+    /**
+    * 项目id
+    */
+    public SqlProjectModelField orderBy_projectId_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" project_id desc");
+        return this;
+    }
     /**
     * 数据库id
     */
@@ -1167,6 +1224,34 @@ public class SqlProjectModelField implements QuerySelect {
 
 
     /**
+    * 数据库id
+    */
+    public SqlProjectModelField orderBy_projectDbId_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" project_db_id asc");
+        return this;
+    }
+    /**
+    * 数据库id
+    */
+    public SqlProjectModelField orderBy_projectDbId_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" project_db_id desc");
+        return this;
+    }
+    /**
     * 数据模型id
     */
     public SqlProjectModelField projectModelId_eq(boolean cdn, String value){
@@ -1500,6 +1585,34 @@ public class SqlProjectModelField implements QuerySelect {
     }
 
 
+    /**
+    * 数据模型id
+    */
+    public SqlProjectModelField orderBy_projectModelId_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" project_model_id asc");
+        return this;
+    }
+    /**
+    * 数据模型id
+    */
+    public SqlProjectModelField orderBy_projectModelId_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" project_model_id desc");
+        return this;
+    }
     /**
     * 中文名
     */
@@ -1835,6 +1948,34 @@ public class SqlProjectModelField implements QuerySelect {
 
 
     /**
+    * 中文名
+    */
+    public SqlProjectModelField orderBy_cname_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" cname asc");
+        return this;
+    }
+    /**
+    * 中文名
+    */
+    public SqlProjectModelField orderBy_cname_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" cname desc");
+        return this;
+    }
+    /**
     * 英文名
     */
     public SqlProjectModelField ename_eq(boolean cdn, String value){
@@ -2168,6 +2309,34 @@ public class SqlProjectModelField implements QuerySelect {
     }
 
 
+    /**
+    * 英文名
+    */
+    public SqlProjectModelField orderBy_ename_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" ename asc");
+        return this;
+    }
+    /**
+    * 英文名
+    */
+    public SqlProjectModelField orderBy_ename_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" ename desc");
+        return this;
+    }
     /**
     * 字段数据类型
     */
@@ -2503,6 +2672,34 @@ public class SqlProjectModelField implements QuerySelect {
 
 
     /**
+    * 字段数据类型
+    */
+    public SqlProjectModelField orderBy_dataType_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" data_type asc");
+        return this;
+    }
+    /**
+    * 字段数据类型
+    */
+    public SqlProjectModelField orderBy_dataType_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" data_type desc");
+        return this;
+    }
+    /**
     * map字段key
     */
     public SqlProjectModelField dataTypeMapKey_eq(boolean cdn, String value){
@@ -2836,6 +3033,34 @@ public class SqlProjectModelField implements QuerySelect {
     }
 
 
+    /**
+    * map字段key
+    */
+    public SqlProjectModelField orderBy_dataTypeMapKey_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" data_type_map_key asc");
+        return this;
+    }
+    /**
+    * map字段key
+    */
+    public SqlProjectModelField orderBy_dataTypeMapKey_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" data_type_map_key desc");
+        return this;
+    }
     /**
     * list, set, map 字段value
     */
@@ -3171,6 +3396,34 @@ public class SqlProjectModelField implements QuerySelect {
 
 
     /**
+    * list, set, map 字段value
+    */
+    public SqlProjectModelField orderBy_dataTypeValue_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" data_type_value asc");
+        return this;
+    }
+    /**
+    * list, set, map 字段value
+    */
+    public SqlProjectModelField orderBy_dataTypeValue_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" data_type_value desc");
+        return this;
+    }
+    /**
     * 数据库类型
     */
     public SqlProjectModelField dbType_eq(boolean cdn, String value){
@@ -3504,6 +3757,34 @@ public class SqlProjectModelField implements QuerySelect {
     }
 
 
+    /**
+    * 数据库类型
+    */
+    public SqlProjectModelField orderBy_dbType_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" db_type asc");
+        return this;
+    }
+    /**
+    * 数据库类型
+    */
+    public SqlProjectModelField orderBy_dbType_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" db_type desc");
+        return this;
+    }
     /**
     * 数据库类型扩展信息
     */
@@ -3839,6 +4120,34 @@ public class SqlProjectModelField implements QuerySelect {
 
 
     /**
+    * 数据库类型扩展信息
+    */
+    public SqlProjectModelField orderBy_dbTypeExt_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" db_type_ext asc");
+        return this;
+    }
+    /**
+    * 数据库类型扩展信息
+    */
+    public SqlProjectModelField orderBy_dbTypeExt_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" db_type_ext desc");
+        return this;
+    }
+    /**
     * DDL语句中的扩展信息
     */
     public SqlProjectModelField createExt_eq(boolean cdn, String value){
@@ -4172,6 +4481,34 @@ public class SqlProjectModelField implements QuerySelect {
     }
 
 
+    /**
+    * DDL语句中的扩展信息
+    */
+    public SqlProjectModelField orderBy_createExt_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" create_ext asc");
+        return this;
+    }
+    /**
+    * DDL语句中的扩展信息
+    */
+    public SqlProjectModelField orderBy_createExt_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" create_ext desc");
+        return this;
+    }
     /**
     * 关联column
     */
@@ -4507,6 +4844,34 @@ public class SqlProjectModelField implements QuerySelect {
 
 
     /**
+    * 关联column
+    */
+    public SqlProjectModelField orderBy_refColumn_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" ref_column asc");
+        return this;
+    }
+    /**
+    * 关联column
+    */
+    public SqlProjectModelField orderBy_refColumn_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" ref_column desc");
+        return this;
+    }
+    /**
     * 默认值
     */
     public SqlProjectModelField defValue_eq(boolean cdn, String value){
@@ -4840,6 +5205,34 @@ public class SqlProjectModelField implements QuerySelect {
     }
 
 
+    /**
+    * 默认值
+    */
+    public SqlProjectModelField orderBy_defValue_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" def_value asc");
+        return this;
+    }
+    /**
+    * 默认值
+    */
+    public SqlProjectModelField orderBy_defValue_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" def_value desc");
+        return this;
+    }
     /**
     * imports
     */
@@ -5175,6 +5568,34 @@ public class SqlProjectModelField implements QuerySelect {
 
 
     /**
+    * imports
+    */
+    public SqlProjectModelField orderBy_imports_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" imports asc");
+        return this;
+    }
+    /**
+    * imports
+    */
+    public SqlProjectModelField orderBy_imports_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" imports desc");
+        return this;
+    }
+    /**
     * 序号
     */
     public SqlProjectModelField dspOrder_eq(boolean cdn, Integer value){
@@ -5418,6 +5839,34 @@ public class SqlProjectModelField implements QuerySelect {
     }
 
 
+    /**
+    * 序号
+    */
+    public SqlProjectModelField orderBy_dspOrder_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" dsp_order asc");
+        return this;
+    }
+    /**
+    * 序号
+    */
+    public SqlProjectModelField orderBy_dspOrder_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" dsp_order desc");
+        return this;
+    }
     /**
     * 备注
     */
@@ -5753,6 +6202,34 @@ public class SqlProjectModelField implements QuerySelect {
 
 
     /**
+    * 备注
+    */
+    public SqlProjectModelField orderBy_comment_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" comment asc");
+        return this;
+    }
+    /**
+    * 备注
+    */
+    public SqlProjectModelField orderBy_comment_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" comment desc");
+        return this;
+    }
+    /**
     * 删除状态
     */
     public SqlProjectModelField deleteStatus_eq(boolean cdn, Integer value){
@@ -5996,6 +6473,34 @@ public class SqlProjectModelField implements QuerySelect {
     }
 
 
+    /**
+    * 删除状态
+    */
+    public SqlProjectModelField orderBy_deleteStatus_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" delete_status asc");
+        return this;
+    }
+    /**
+    * 删除状态
+    */
+    public SqlProjectModelField orderBy_deleteStatus_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" delete_status desc");
+        return this;
+    }
     /**
     * 创建时间
     */
@@ -6381,6 +6886,34 @@ public class SqlProjectModelField implements QuerySelect {
 
 
     /**
+    * 创建时间
+    */
+    public SqlProjectModelField orderBy_createTime_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" create_time asc");
+        return this;
+    }
+    /**
+    * 创建时间
+    */
+    public SqlProjectModelField orderBy_createTime_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" create_time desc");
+        return this;
+    }
+    /**
     * 更新时间
     */
     public SqlProjectModelField updateTime_eq(boolean cdn, Timestamp value){
@@ -6764,6 +7297,34 @@ public class SqlProjectModelField implements QuerySelect {
     }
 
 
+    /**
+    * 更新时间
+    */
+    public SqlProjectModelField orderBy_updateTime_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" update_time asc");
+        return this;
+    }
+    /**
+    * 更新时间
+    */
+    public SqlProjectModelField orderBy_updateTime_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" update_time desc");
+        return this;
+    }
     @Override
     public String toSqlString() {
         StringBuilder buf=new StringBuilder("SELECT * FROM project_model_field");

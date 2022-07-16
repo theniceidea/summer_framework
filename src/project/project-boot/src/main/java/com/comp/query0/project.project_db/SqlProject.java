@@ -27,6 +27,7 @@ public class SqlProject implements QuerySelect {
     private static final String SQL_UPDATE="UPDATE project SET cname=?,ename=?,dsp_order=?,comment=?,delete_status=? WHERE id=?";
     private static final String SQL_DELETE="DELETE project WHERE id=?";
     private boolean existsWhere=false;
+    private boolean existsOrderBy=false;
     private StringBuilder builder=new StringBuilder();
     private List<Object> parameters =new ArrayList<>();
     private List<IncUpdateValue> incValues=null;
@@ -475,6 +476,34 @@ public class SqlProject implements QuerySelect {
 
 
     /**
+    * id
+    */
+    public SqlProject orderBy_id_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" id asc");
+        return this;
+    }
+    /**
+    * id
+    */
+    public SqlProject orderBy_id_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" id desc");
+        return this;
+    }
+    /**
     * 中文名
     */
     public SqlProject cname_eq(boolean cdn, String value){
@@ -808,6 +837,34 @@ public class SqlProject implements QuerySelect {
     }
 
 
+    /**
+    * 中文名
+    */
+    public SqlProject orderBy_cname_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" cname asc");
+        return this;
+    }
+    /**
+    * 中文名
+    */
+    public SqlProject orderBy_cname_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" cname desc");
+        return this;
+    }
     /**
     * 英文名
     */
@@ -1143,6 +1200,34 @@ public class SqlProject implements QuerySelect {
 
 
     /**
+    * 英文名
+    */
+    public SqlProject orderBy_ename_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" ename asc");
+        return this;
+    }
+    /**
+    * 英文名
+    */
+    public SqlProject orderBy_ename_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" ename desc");
+        return this;
+    }
+    /**
     * 序号
     */
     public SqlProject dspOrder_eq(boolean cdn, Integer value){
@@ -1386,6 +1471,34 @@ public class SqlProject implements QuerySelect {
     }
 
 
+    /**
+    * 序号
+    */
+    public SqlProject orderBy_dspOrder_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" dsp_order asc");
+        return this;
+    }
+    /**
+    * 序号
+    */
+    public SqlProject orderBy_dspOrder_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" dsp_order desc");
+        return this;
+    }
     /**
     * 备注
     */
@@ -1721,6 +1834,34 @@ public class SqlProject implements QuerySelect {
 
 
     /**
+    * 备注
+    */
+    public SqlProject orderBy_comment_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" comment asc");
+        return this;
+    }
+    /**
+    * 备注
+    */
+    public SqlProject orderBy_comment_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" comment desc");
+        return this;
+    }
+    /**
     * 删除状态
     */
     public SqlProject deleteStatus_eq(boolean cdn, Integer value){
@@ -1964,6 +2105,34 @@ public class SqlProject implements QuerySelect {
     }
 
 
+    /**
+    * 删除状态
+    */
+    public SqlProject orderBy_deleteStatus_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" delete_status asc");
+        return this;
+    }
+    /**
+    * 删除状态
+    */
+    public SqlProject orderBy_deleteStatus_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" delete_status desc");
+        return this;
+    }
     /**
     * 创建时间
     */
@@ -2349,6 +2518,34 @@ public class SqlProject implements QuerySelect {
 
 
     /**
+    * 创建时间
+    */
+    public SqlProject orderBy_createTime_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" create_time asc");
+        return this;
+    }
+    /**
+    * 创建时间
+    */
+    public SqlProject orderBy_createTime_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" create_time desc");
+        return this;
+    }
+    /**
     * 更新时间
     */
     public SqlProject updateTime_eq(boolean cdn, Timestamp value){
@@ -2732,6 +2929,34 @@ public class SqlProject implements QuerySelect {
     }
 
 
+    /**
+    * 更新时间
+    */
+    public SqlProject orderBy_updateTime_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" update_time asc");
+        return this;
+    }
+    /**
+    * 更新时间
+    */
+    public SqlProject orderBy_updateTime_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" update_time desc");
+        return this;
+    }
     @Override
     public String toSqlString() {
         StringBuilder buf=new StringBuilder("SELECT * FROM project");

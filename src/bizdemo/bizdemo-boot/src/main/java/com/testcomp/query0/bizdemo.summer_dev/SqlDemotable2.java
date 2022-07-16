@@ -29,6 +29,7 @@ public class SqlDemotable2 implements QuerySelect {
     private static final String SQL_UPDATE="UPDATE demotable2 SET title=?,type=?,delete_status=?,enable_status=?,status=?,status2=? WHERE id=?";
     private static final String SQL_DELETE="DELETE demotable2 WHERE id=?";
     private boolean existsWhere=false;
+    private boolean existsOrderBy=false;
     private StringBuilder builder=new StringBuilder();
     private List<Object> parameters =new ArrayList<>();
     private List<IncUpdateValue> incValues=null;
@@ -482,6 +483,34 @@ public class SqlDemotable2 implements QuerySelect {
 
 
     /**
+    * id
+    */
+    public SqlDemotable2 orderBy_id_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" id asc");
+        return this;
+    }
+    /**
+    * id
+    */
+    public SqlDemotable2 orderBy_id_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" id desc");
+        return this;
+    }
+    /**
     * 标题
     */
     public SqlDemotable2 title_eq(boolean cdn, String value){
@@ -815,6 +844,34 @@ public class SqlDemotable2 implements QuerySelect {
     }
 
 
+    /**
+    * 标题
+    */
+    public SqlDemotable2 orderBy_title_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" title asc");
+        return this;
+    }
+    /**
+    * 标题
+    */
+    public SqlDemotable2 orderBy_title_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" title desc");
+        return this;
+    }
     /**
     * 类型
     */
@@ -1150,6 +1207,34 @@ public class SqlDemotable2 implements QuerySelect {
 
 
     /**
+    * 类型
+    */
+    public SqlDemotable2 orderBy_type_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" type asc");
+        return this;
+    }
+    /**
+    * 类型
+    */
+    public SqlDemotable2 orderBy_type_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" type desc");
+        return this;
+    }
+    /**
     * 数量
     */
     public SqlDemotable2 num_eq(boolean cdn, Integer value){
@@ -1397,6 +1482,34 @@ public class SqlDemotable2 implements QuerySelect {
         return this;
     }
 
+    /**
+    * 数量
+    */
+    public SqlDemotable2 orderBy_num_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" num asc");
+        return this;
+    }
+    /**
+    * 数量
+    */
+    public SqlDemotable2 orderBy_num_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" num desc");
+        return this;
+    }
     /**
     * 数量2
     */
@@ -1646,6 +1759,34 @@ public class SqlDemotable2 implements QuerySelect {
     }
 
     /**
+    * 数量2
+    */
+    public SqlDemotable2 orderBy_num2_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" num2 asc");
+        return this;
+    }
+    /**
+    * 数量2
+    */
+    public SqlDemotable2 orderBy_num2_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" num2 desc");
+        return this;
+    }
+    /**
     * 数量3
     */
     public SqlDemotable2 num3_eq(boolean cdn, Double value){
@@ -1894,6 +2035,34 @@ public class SqlDemotable2 implements QuerySelect {
     }
 
     /**
+    * 数量3
+    */
+    public SqlDemotable2 orderBy_num3_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" num3 asc");
+        return this;
+    }
+    /**
+    * 数量3
+    */
+    public SqlDemotable2 orderBy_num3_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" num3 desc");
+        return this;
+    }
+    /**
     * delete status
     */
     public SqlDemotable2 deleteStatus_eq(boolean cdn, Integer value){
@@ -2137,6 +2306,34 @@ public class SqlDemotable2 implements QuerySelect {
     }
 
 
+    /**
+    * delete status
+    */
+    public SqlDemotable2 orderBy_deleteStatus_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" delete_status asc");
+        return this;
+    }
+    /**
+    * delete status
+    */
+    public SqlDemotable2 orderBy_deleteStatus_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" delete_status desc");
+        return this;
+    }
     /**
     * enable status
     */
@@ -2472,6 +2669,34 @@ public class SqlDemotable2 implements QuerySelect {
 
 
     /**
+    * enable status
+    */
+    public SqlDemotable2 orderBy_enableStatus_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" enable_status asc");
+        return this;
+    }
+    /**
+    * enable status
+    */
+    public SqlDemotable2 orderBy_enableStatus_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" enable_status desc");
+        return this;
+    }
+    /**
     * status
     */
     public SqlDemotable2 status_eq(boolean cdn, Integer value){
@@ -2715,6 +2940,34 @@ public class SqlDemotable2 implements QuerySelect {
     }
 
 
+    /**
+    * status
+    */
+    public SqlDemotable2 orderBy_status_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" status asc");
+        return this;
+    }
+    /**
+    * status
+    */
+    public SqlDemotable2 orderBy_status_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" status desc");
+        return this;
+    }
     /**
     * status
     */
@@ -3049,6 +3302,34 @@ public class SqlDemotable2 implements QuerySelect {
     }
 
 
+    /**
+    * status
+    */
+    public SqlDemotable2 orderBy_status2_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" status2 asc");
+        return this;
+    }
+    /**
+    * status
+    */
+    public SqlDemotable2 orderBy_status2_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" status2 desc");
+        return this;
+    }
     /**
     * 创建时间
     */
@@ -3433,6 +3714,34 @@ public class SqlDemotable2 implements QuerySelect {
     }
 
 
+    /**
+    * 创建时间
+    */
+    public SqlDemotable2 orderBy_creationDate_asc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" creation_date asc");
+        return this;
+    }
+    /**
+    * 创建时间
+    */
+    public SqlDemotable2 orderBy_creationDate_desc(){
+        String pre="";
+        if(existsOrderBy){
+            pre=",";
+        }else{
+            pre=" order by";
+            existsOrderBy=true;
+        }
+        builder.append(pre+" creation_date desc");
+        return this;
+    }
     @Override
     public String toSqlString() {
         StringBuilder buf=new StringBuilder("SELECT * FROM demotable2");
