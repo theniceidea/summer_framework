@@ -2,6 +2,7 @@ package com.testcomp.summer.v1.cms.bizdemo.demotable;
 
 import com.fmk.framework.annotations.ApiInfo;
 import com.fmk.framework.annotations.Publish;
+import com.fmk.framework.annotations.SkipUserAuth;
 import com.fmk.framework.annotations.validation.DateRange;
 import com.fmk.framework.annotations.validation.DecimalSize;
 import com.fmk.framework.annotations.validation.NotNull;
@@ -15,6 +16,7 @@ import java.util.List;
 @Setter
 @Getter
 @Publish
+@SkipUserAuth
 @ApiInfo("修改Demotable")
 public class UpdateDemotable extends BasicSummer<Object> {
     @ApiInfo("numfilter")

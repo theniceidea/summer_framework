@@ -18,7 +18,9 @@ public class UpdateDemotableService implements SummerServiceBean<UpdateDemotable
                 .inst()
                 .num_eq(summer.getNum())
                 .orderBy_id_asc()
+                .orderBy_num2_desc()
                 .queryList();
+        System.out.println("");
 
 
 
