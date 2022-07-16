@@ -98,6 +98,13 @@ public class Project extends Entity{
     /**
     * id
     */
+    public Project id(String value){
+        this.id=value;
+        return this;
+    }
+    /**
+    * id
+    */
     public boolean id_isNull(){
         return null==this.id;
     }
@@ -125,6 +132,13 @@ public class Project extends Entity{
     */
     public boolean cname_is(String value){
         return Objects.equals(this.cname, value);
+    }
+    /**
+    * 中文名
+    */
+    public Project cname(String value){
+        this.cname=value;
+        return this;
     }
     /**
     * 中文名
@@ -160,6 +174,13 @@ public class Project extends Entity{
     /**
     * 英文名
     */
+    public Project ename(String value){
+        this.ename=value;
+        return this;
+    }
+    /**
+    * 英文名
+    */
     public boolean ename_isNull(){
         return null==this.ename;
     }
@@ -191,6 +212,13 @@ public class Project extends Entity{
     /**
     * 序号
     */
+    public Project dspOrder(Integer value){
+        this.dspOrder=value;
+        return this;
+    }
+    /**
+    * 序号
+    */
     public boolean dspOrder_isNull(){
         return null==this.dspOrder;
     }
@@ -212,6 +240,13 @@ public class Project extends Entity{
     */
     public boolean comment_is(String value){
         return Objects.equals(this.comment, value);
+    }
+    /**
+    * 备注
+    */
+    public Project comment(String value){
+        this.comment=value;
+        return this;
     }
     /**
     * 备注
@@ -245,10 +280,24 @@ public class Project extends Entity{
         return Objects.equals(this.deleteStatus, value);
     }
     /**
+    * 删除状态
+    */
+    public Project deleteStatus(Integer value){
+        this.deleteStatus=value;
+        return this;
+    }
+    /**
     * 删除状态 删除
     */
     public void setDeleteStatus_deleted(){
         this.deleteStatus=1;
+    }
+    /**
+    * 删除状态 删除
+    */
+    public Project deleteStatus_deleted(){
+        this.deleteStatus=1;
+        return this;
     }
     /**
     * 删除状态 删除
@@ -261,6 +310,13 @@ public class Project extends Entity{
     */
     public void setDeleteStatus_unDeleted(){
         this.deleteStatus=0;
+    }
+    /**
+    * 删除状态 未删除
+    */
+    public Project deleteStatus_unDeleted(){
+        this.deleteStatus=0;
+        return this;
     }
     /**
     * 删除状态 未删除
@@ -296,6 +352,13 @@ public class Project extends Entity{
     /**
     * 创建时间
     */
+    public Project createTime(Timestamp value){
+        this.createTime=value;
+        return this;
+    }
+    /**
+    * 创建时间
+    */
     public boolean createTime_isNull(){
         return null==this.createTime;
     }
@@ -317,6 +380,13 @@ public class Project extends Entity{
     */
     public boolean updateTime_is(Timestamp value){
         return Objects.equals(this.updateTime, value);
+    }
+    /**
+    * 更新时间
+    */
+    public Project updateTime(Timestamp value){
+        this.updateTime=value;
+        return this;
     }
     /**
     * 更新时间

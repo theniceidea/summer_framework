@@ -182,6 +182,13 @@ public class ProjectModelField extends Entity{
     /**
     * id
     */
+    public ProjectModelField id(String value){
+        this.id=value;
+        return this;
+    }
+    /**
+    * id
+    */
     public boolean id_isNull(){
         return null==this.id;
     }
@@ -209,6 +216,13 @@ public class ProjectModelField extends Entity{
     */
     public boolean projectId_is(String value){
         return Objects.equals(this.projectId, value);
+    }
+    /**
+    * 项目id
+    */
+    public ProjectModelField projectId(String value){
+        this.projectId=value;
+        return this;
     }
     /**
     * 项目id
@@ -244,6 +258,13 @@ public class ProjectModelField extends Entity{
     /**
     * 数据库id
     */
+    public ProjectModelField projectDbId(String value){
+        this.projectDbId=value;
+        return this;
+    }
+    /**
+    * 数据库id
+    */
     public boolean projectDbId_isNull(){
         return null==this.projectDbId;
     }
@@ -271,6 +292,13 @@ public class ProjectModelField extends Entity{
     */
     public boolean projectModelId_is(String value){
         return Objects.equals(this.projectModelId, value);
+    }
+    /**
+    * 数据模型id
+    */
+    public ProjectModelField projectModelId(String value){
+        this.projectModelId=value;
+        return this;
     }
     /**
     * 数据模型id
@@ -306,6 +334,13 @@ public class ProjectModelField extends Entity{
     /**
     * 中文名
     */
+    public ProjectModelField cname(String value){
+        this.cname=value;
+        return this;
+    }
+    /**
+    * 中文名
+    */
     public boolean cname_isNull(){
         return null==this.cname;
     }
@@ -333,6 +368,13 @@ public class ProjectModelField extends Entity{
     */
     public boolean ename_is(String value){
         return Objects.equals(this.ename, value);
+    }
+    /**
+    * 英文名
+    */
+    public ProjectModelField ename(String value){
+        this.ename=value;
+        return this;
     }
     /**
     * 英文名
@@ -366,10 +408,24 @@ public class ProjectModelField extends Entity{
         return Objects.equals(this.dataType, value);
     }
     /**
+    * 字段数据类型
+    */
+    public ProjectModelField dataType(String value){
+        this.dataType=value;
+        return this;
+    }
+    /**
     * 字段数据类型 int
     */
     public void setDataType_typeInt(){
         this.dataType="int";
+    }
+    /**
+    * 字段数据类型 int
+    */
+    public ProjectModelField dataType_typeInt(){
+        this.dataType="int";
+        return this;
     }
     /**
     * 字段数据类型 int
@@ -386,6 +442,13 @@ public class ProjectModelField extends Entity{
     /**
     * 字段数据类型 long
     */
+    public ProjectModelField dataType_typeLong(){
+        this.dataType="long";
+        return this;
+    }
+    /**
+    * 字段数据类型 long
+    */
     public boolean dataType_is_typeLong(){
         return Objects.equals(this.dataType, "long");
     }
@@ -394,6 +457,13 @@ public class ProjectModelField extends Entity{
     */
     public void setDataType_typeString(){
         this.dataType="string";
+    }
+    /**
+    * 字段数据类型 string
+    */
+    public ProjectModelField dataType_typeString(){
+        this.dataType="string";
+        return this;
     }
     /**
     * 字段数据类型 string
@@ -410,6 +480,13 @@ public class ProjectModelField extends Entity{
     /**
     * 字段数据类型 double
     */
+    public ProjectModelField dataType_typeDouble(){
+        this.dataType="double";
+        return this;
+    }
+    /**
+    * 字段数据类型 double
+    */
     public boolean dataType_is_typeDouble(){
         return Objects.equals(this.dataType, "double");
     }
@@ -418,6 +495,13 @@ public class ProjectModelField extends Entity{
     */
     public void setDataType_typeDecimal(){
         this.dataType="decimal";
+    }
+    /**
+    * 字段数据类型 decimal
+    */
+    public ProjectModelField dataType_typeDecimal(){
+        this.dataType="decimal";
+        return this;
     }
     /**
     * 字段数据类型 decimal
@@ -434,6 +518,13 @@ public class ProjectModelField extends Entity{
     /**
     * 字段数据类型 timestamp
     */
+    public ProjectModelField dataType_typeTimestamp(){
+        this.dataType="timestamp";
+        return this;
+    }
+    /**
+    * 字段数据类型 timestamp
+    */
     public boolean dataType_is_typeTimestamp(){
         return Objects.equals(this.dataType, "timestamp");
     }
@@ -442,6 +533,13 @@ public class ProjectModelField extends Entity{
     */
     public void setDataType_typeList(){
         this.dataType="list";
+    }
+    /**
+    * 字段数据类型 list
+    */
+    public ProjectModelField dataType_typeList(){
+        this.dataType="list";
+        return this;
     }
     /**
     * 字段数据类型 list
@@ -458,6 +556,13 @@ public class ProjectModelField extends Entity{
     /**
     * 字段数据类型 set
     */
+    public ProjectModelField dataType_typeSet(){
+        this.dataType="set";
+        return this;
+    }
+    /**
+    * 字段数据类型 set
+    */
     public boolean dataType_is_typeSet(){
         return Objects.equals(this.dataType, "set");
     }
@@ -466,6 +571,13 @@ public class ProjectModelField extends Entity{
     */
     public void setDataType_typeMap(){
         this.dataType="map";
+    }
+    /**
+    * 字段数据类型 map
+    */
+    public ProjectModelField dataType_typeMap(){
+        this.dataType="map";
+        return this;
     }
     /**
     * 字段数据类型 map
@@ -505,10 +617,24 @@ public class ProjectModelField extends Entity{
         return Objects.equals(this.dataTypeMapKey, value);
     }
     /**
+    * map字段key
+    */
+    public ProjectModelField dataTypeMapKey(String value){
+        this.dataTypeMapKey=value;
+        return this;
+    }
+    /**
     * map字段key int
     */
     public void setDataTypeMapKey_typeInt(){
         this.dataTypeMapKey="int";
+    }
+    /**
+    * map字段key int
+    */
+    public ProjectModelField dataTypeMapKey_typeInt(){
+        this.dataTypeMapKey="int";
+        return this;
     }
     /**
     * map字段key int
@@ -521,6 +647,13 @@ public class ProjectModelField extends Entity{
     */
     public void setDataTypeMapKey_typeString(){
         this.dataTypeMapKey="string";
+    }
+    /**
+    * map字段key string
+    */
+    public ProjectModelField dataTypeMapKey_typeString(){
+        this.dataTypeMapKey="string";
+        return this;
     }
     /**
     * map字段key string
@@ -562,6 +695,13 @@ public class ProjectModelField extends Entity{
     /**
     * list, set, map 字段value
     */
+    public ProjectModelField dataTypeValue(String value){
+        this.dataTypeValue=value;
+        return this;
+    }
+    /**
+    * list, set, map 字段value
+    */
     public boolean dataTypeValue_isNull(){
         return null==this.dataTypeValue;
     }
@@ -591,10 +731,24 @@ public class ProjectModelField extends Entity{
         return Objects.equals(this.dbType, value);
     }
     /**
+    * 数据库类型
+    */
+    public ProjectModelField dbType(String value){
+        this.dbType=value;
+        return this;
+    }
+    /**
     * 数据库类型 int
     */
     public void setDbType_typeInt(){
         this.dbType="int";
+    }
+    /**
+    * 数据库类型 int
+    */
+    public ProjectModelField dbType_typeInt(){
+        this.dbType="int";
+        return this;
     }
     /**
     * 数据库类型 int
@@ -611,6 +765,13 @@ public class ProjectModelField extends Entity{
     /**
     * 数据库类型 bigint
     */
+    public ProjectModelField dbType_typeBigint(){
+        this.dbType="bigint";
+        return this;
+    }
+    /**
+    * 数据库类型 bigint
+    */
     public boolean dbType_is_typeBigint(){
         return Objects.equals(this.dbType, "bigint");
     }
@@ -619,6 +780,13 @@ public class ProjectModelField extends Entity{
     */
     public void setDbType_typeChar(){
         this.dbType="char";
+    }
+    /**
+    * 数据库类型 char
+    */
+    public ProjectModelField dbType_typeChar(){
+        this.dbType="char";
+        return this;
     }
     /**
     * 数据库类型 char
@@ -635,6 +803,13 @@ public class ProjectModelField extends Entity{
     /**
     * 数据库类型 varchar
     */
+    public ProjectModelField dbType_typeVarchar(){
+        this.dbType="varchar";
+        return this;
+    }
+    /**
+    * 数据库类型 varchar
+    */
     public boolean dbType_is_typeVarchar(){
         return Objects.equals(this.dbType, "varchar");
     }
@@ -643,6 +818,13 @@ public class ProjectModelField extends Entity{
     */
     public void setDbType_typeDouble(){
         this.dbType="double";
+    }
+    /**
+    * 数据库类型 double
+    */
+    public ProjectModelField dbType_typeDouble(){
+        this.dbType="double";
+        return this;
     }
     /**
     * 数据库类型 double
@@ -659,6 +841,13 @@ public class ProjectModelField extends Entity{
     /**
     * 数据库类型 decimal
     */
+    public ProjectModelField dbType_typeDecimal(){
+        this.dbType="decimal";
+        return this;
+    }
+    /**
+    * 数据库类型 decimal
+    */
     public boolean dbType_is_typeDecimal(){
         return Objects.equals(this.dbType, "decimal");
     }
@@ -671,6 +860,13 @@ public class ProjectModelField extends Entity{
     /**
     * 数据库类型 timestamp
     */
+    public ProjectModelField dbType_typeTimestamp(){
+        this.dbType="timestamp";
+        return this;
+    }
+    /**
+    * 数据库类型 timestamp
+    */
     public boolean dbType_is_typeTimestamp(){
         return Objects.equals(this.dbType, "timestamp");
     }
@@ -679,6 +875,13 @@ public class ProjectModelField extends Entity{
     */
     public void setDbType_typeText(){
         this.dbType="text";
+    }
+    /**
+    * 数据库类型 text
+    */
+    public ProjectModelField dbType_typeText(){
+        this.dbType="text";
+        return this;
     }
     /**
     * 数据库类型 text
@@ -720,6 +923,13 @@ public class ProjectModelField extends Entity{
     /**
     * 数据库类型扩展信息
     */
+    public ProjectModelField dbTypeExt(String value){
+        this.dbTypeExt=value;
+        return this;
+    }
+    /**
+    * 数据库类型扩展信息
+    */
     public boolean dbTypeExt_isNull(){
         return null==this.dbTypeExt;
     }
@@ -747,6 +957,13 @@ public class ProjectModelField extends Entity{
     */
     public boolean createExt_is(String value){
         return Objects.equals(this.createExt, value);
+    }
+    /**
+    * DDL语句中的扩展信息
+    */
+    public ProjectModelField createExt(String value){
+        this.createExt=value;
+        return this;
     }
     /**
     * DDL语句中的扩展信息
@@ -782,6 +999,13 @@ public class ProjectModelField extends Entity{
     /**
     * 关联column
     */
+    public ProjectModelField refColumn(String value){
+        this.refColumn=value;
+        return this;
+    }
+    /**
+    * 关联column
+    */
     public boolean refColumn_isNull(){
         return null==this.refColumn;
     }
@@ -809,6 +1033,13 @@ public class ProjectModelField extends Entity{
     */
     public boolean defValue_is(String value){
         return Objects.equals(this.defValue, value);
+    }
+    /**
+    * 默认值
+    */
+    public ProjectModelField defValue(String value){
+        this.defValue=value;
+        return this;
     }
     /**
     * 默认值
@@ -844,6 +1075,13 @@ public class ProjectModelField extends Entity{
     /**
     * imports
     */
+    public ProjectModelField imports(String value){
+        this.imports=value;
+        return this;
+    }
+    /**
+    * imports
+    */
     public boolean imports_isNull(){
         return null==this.imports;
     }
@@ -875,6 +1113,13 @@ public class ProjectModelField extends Entity{
     /**
     * 序号
     */
+    public ProjectModelField dspOrder(Integer value){
+        this.dspOrder=value;
+        return this;
+    }
+    /**
+    * 序号
+    */
     public boolean dspOrder_isNull(){
         return null==this.dspOrder;
     }
@@ -896,6 +1141,13 @@ public class ProjectModelField extends Entity{
     */
     public boolean comment_is(String value){
         return Objects.equals(this.comment, value);
+    }
+    /**
+    * 备注
+    */
+    public ProjectModelField comment(String value){
+        this.comment=value;
+        return this;
     }
     /**
     * 备注
@@ -929,10 +1181,24 @@ public class ProjectModelField extends Entity{
         return Objects.equals(this.deleteStatus, value);
     }
     /**
+    * 删除状态
+    */
+    public ProjectModelField deleteStatus(Integer value){
+        this.deleteStatus=value;
+        return this;
+    }
+    /**
     * 删除状态 删除
     */
     public void setDeleteStatus_deleted(){
         this.deleteStatus=1;
+    }
+    /**
+    * 删除状态 删除
+    */
+    public ProjectModelField deleteStatus_deleted(){
+        this.deleteStatus=1;
+        return this;
     }
     /**
     * 删除状态 删除
@@ -945,6 +1211,13 @@ public class ProjectModelField extends Entity{
     */
     public void setDeleteStatus_unDeleted(){
         this.deleteStatus=0;
+    }
+    /**
+    * 删除状态 未删除
+    */
+    public ProjectModelField deleteStatus_unDeleted(){
+        this.deleteStatus=0;
+        return this;
     }
     /**
     * 删除状态 未删除
@@ -980,6 +1253,13 @@ public class ProjectModelField extends Entity{
     /**
     * 创建时间
     */
+    public ProjectModelField createTime(Timestamp value){
+        this.createTime=value;
+        return this;
+    }
+    /**
+    * 创建时间
+    */
     public boolean createTime_isNull(){
         return null==this.createTime;
     }
@@ -1001,6 +1281,13 @@ public class ProjectModelField extends Entity{
     */
     public boolean updateTime_is(Timestamp value){
         return Objects.equals(this.updateTime, value);
+    }
+    /**
+    * 更新时间
+    */
+    public ProjectModelField updateTime(Timestamp value){
+        this.updateTime=value;
+        return this;
     }
     /**
     * 更新时间

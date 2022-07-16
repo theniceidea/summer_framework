@@ -126,6 +126,13 @@ public class ProjectDb extends Entity{
     /**
     * id
     */
+    public ProjectDb id(String value){
+        this.id=value;
+        return this;
+    }
+    /**
+    * id
+    */
     public boolean id_isNull(){
         return null==this.id;
     }
@@ -153,6 +160,13 @@ public class ProjectDb extends Entity{
     */
     public boolean cname_is(String value){
         return Objects.equals(this.cname, value);
+    }
+    /**
+    * 中文名
+    */
+    public ProjectDb cname(String value){
+        this.cname=value;
+        return this;
     }
     /**
     * 中文名
@@ -188,6 +202,13 @@ public class ProjectDb extends Entity{
     /**
     * 英文名不一定是数据库名字
     */
+    public ProjectDb ename(String value){
+        this.ename=value;
+        return this;
+    }
+    /**
+    * 英文名不一定是数据库名字
+    */
     public boolean ename_isNull(){
         return null==this.ename;
     }
@@ -215,6 +236,13 @@ public class ProjectDb extends Entity{
     */
     public boolean dbname_is(String value){
         return Objects.equals(this.dbname, value);
+    }
+    /**
+    * 数据库名字
+    */
+    public ProjectDb dbname(String value){
+        this.dbname=value;
+        return this;
     }
     /**
     * 数据库名字
@@ -250,6 +278,13 @@ public class ProjectDb extends Entity{
     /**
     * 连接字符串
     */
+    public ProjectDb connnectString(String value){
+        this.connnectString=value;
+        return this;
+    }
+    /**
+    * 连接字符串
+    */
     public boolean connnectString_isNull(){
         return null==this.connnectString;
     }
@@ -277,6 +312,13 @@ public class ProjectDb extends Entity{
     */
     public boolean dbUser_is(String value){
         return Objects.equals(this.dbUser, value);
+    }
+    /**
+    * 用户名
+    */
+    public ProjectDb dbUser(String value){
+        this.dbUser=value;
+        return this;
     }
     /**
     * 用户名
@@ -312,6 +354,13 @@ public class ProjectDb extends Entity{
     /**
     * 密码
     */
+    public ProjectDb dbPwd(String value){
+        this.dbPwd=value;
+        return this;
+    }
+    /**
+    * 密码
+    */
     public boolean dbPwd_isNull(){
         return null==this.dbPwd;
     }
@@ -343,6 +392,13 @@ public class ProjectDb extends Entity{
     /**
     * 序号
     */
+    public ProjectDb dspOrder(Integer value){
+        this.dspOrder=value;
+        return this;
+    }
+    /**
+    * 序号
+    */
     public boolean dspOrder_isNull(){
         return null==this.dspOrder;
     }
@@ -364,6 +420,13 @@ public class ProjectDb extends Entity{
     */
     public boolean comment_is(String value){
         return Objects.equals(this.comment, value);
+    }
+    /**
+    * 备注
+    */
+    public ProjectDb comment(String value){
+        this.comment=value;
+        return this;
     }
     /**
     * 备注
@@ -397,10 +460,24 @@ public class ProjectDb extends Entity{
         return Objects.equals(this.deleteStatus, value);
     }
     /**
+    * 删除状态
+    */
+    public ProjectDb deleteStatus(Integer value){
+        this.deleteStatus=value;
+        return this;
+    }
+    /**
     * 删除状态 删除
     */
     public void setDeleteStatus_deleted(){
         this.deleteStatus=1;
+    }
+    /**
+    * 删除状态 删除
+    */
+    public ProjectDb deleteStatus_deleted(){
+        this.deleteStatus=1;
+        return this;
     }
     /**
     * 删除状态 删除
@@ -413,6 +490,13 @@ public class ProjectDb extends Entity{
     */
     public void setDeleteStatus_unDeleted(){
         this.deleteStatus=0;
+    }
+    /**
+    * 删除状态 未删除
+    */
+    public ProjectDb deleteStatus_unDeleted(){
+        this.deleteStatus=0;
+        return this;
     }
     /**
     * 删除状态 未删除
@@ -448,6 +532,13 @@ public class ProjectDb extends Entity{
     /**
     * 创建时间
     */
+    public ProjectDb createTime(Timestamp value){
+        this.createTime=value;
+        return this;
+    }
+    /**
+    * 创建时间
+    */
     public boolean createTime_isNull(){
         return null==this.createTime;
     }
@@ -469,6 +560,13 @@ public class ProjectDb extends Entity{
     */
     public boolean updateTime_is(Timestamp value){
         return Objects.equals(this.updateTime, value);
+    }
+    /**
+    * 更新时间
+    */
+    public ProjectDb updateTime(Timestamp value){
+        this.updateTime=value;
+        return this;
     }
     /**
     * 更新时间

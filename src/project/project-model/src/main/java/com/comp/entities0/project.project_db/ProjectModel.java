@@ -154,6 +154,13 @@ public class ProjectModel extends Entity{
     /**
     * id
     */
+    public ProjectModel id(String value){
+        this.id=value;
+        return this;
+    }
+    /**
+    * id
+    */
     public boolean id_isNull(){
         return null==this.id;
     }
@@ -181,6 +188,13 @@ public class ProjectModel extends Entity{
     */
     public boolean projectId_is(String value){
         return Objects.equals(this.projectId, value);
+    }
+    /**
+    * 项目id
+    */
+    public ProjectModel projectId(String value){
+        this.projectId=value;
+        return this;
     }
     /**
     * 项目id
@@ -216,6 +230,13 @@ public class ProjectModel extends Entity{
     /**
     * 数据库id
     */
+    public ProjectModel projectDbId(String value){
+        this.projectDbId=value;
+        return this;
+    }
+    /**
+    * 数据库id
+    */
     public boolean projectDbId_isNull(){
         return null==this.projectDbId;
     }
@@ -245,10 +266,24 @@ public class ProjectModel extends Entity{
         return Objects.equals(this.modelType, value);
     }
     /**
+    * 类别
+    */
+    public ProjectModel modelType(Integer value){
+        this.modelType=value;
+        return this;
+    }
+    /**
     * 类别 类
     */
     public void setModelType_typeClass(){
         this.modelType=1;
+    }
+    /**
+    * 类别 类
+    */
+    public ProjectModel modelType_typeClass(){
+        this.modelType=1;
+        return this;
     }
     /**
     * 类别 类
@@ -261,6 +296,13 @@ public class ProjectModel extends Entity{
     */
     public void setModelType_typeEnum(){
         this.modelType=2;
+    }
+    /**
+    * 类别 枚举
+    */
+    public ProjectModel modelType_typeEnum(){
+        this.modelType=2;
+        return this;
     }
     /**
     * 类别 枚举
@@ -294,10 +336,24 @@ public class ProjectModel extends Entity{
         return Objects.equals(this.tableModel, value);
     }
     /**
+    * 是否数据库表mapping
+    */
+    public ProjectModel tableModel(Integer value){
+        this.tableModel=value;
+        return this;
+    }
+    /**
     * 是否数据库表mapping 数据库表
     */
     public void setTableModel_dbTable(){
         this.tableModel=1;
+    }
+    /**
+    * 是否数据库表mapping 数据库表
+    */
+    public ProjectModel tableModel_dbTable(){
+        this.tableModel=1;
+        return this;
     }
     /**
     * 是否数据库表mapping 数据库表
@@ -310,6 +366,13 @@ public class ProjectModel extends Entity{
     */
     public void setTableModel_noDbTable(){
         this.tableModel=2;
+    }
+    /**
+    * 是否数据库表mapping 非数据库表
+    */
+    public ProjectModel tableModel_noDbTable(){
+        this.tableModel=2;
+        return this;
     }
     /**
     * 是否数据库表mapping 非数据库表
@@ -343,10 +406,24 @@ public class ProjectModel extends Entity{
         return Objects.equals(this.summerModel, value);
     }
     /**
+    * 是否summer对象
+    */
+    public ProjectModel summerModel(Integer value){
+        this.summerModel=value;
+        return this;
+    }
+    /**
     * 是否summer对象 summer
     */
     public void setSummerModel_summer(){
         this.summerModel=1;
+    }
+    /**
+    * 是否summer对象 summer
+    */
+    public ProjectModel summerModel_summer(){
+        this.summerModel=1;
+        return this;
     }
     /**
     * 是否summer对象 summer
@@ -359,6 +436,13 @@ public class ProjectModel extends Entity{
     */
     public void setSummerModel_noSummer(){
         this.summerModel=2;
+    }
+    /**
+    * 是否summer对象 非summer对象
+    */
+    public ProjectModel summerModel_noSummer(){
+        this.summerModel=2;
+        return this;
     }
     /**
     * 是否summer对象 非summer对象
@@ -392,10 +476,24 @@ public class ProjectModel extends Entity{
         return Objects.equals(this.summerNs, value);
     }
     /**
+    * summer对象名称空间
+    */
+    public ProjectModel summerNs(String value){
+        this.summerNs=value;
+        return this;
+    }
+    /**
     * summer对象名称空间 local
     */
     public void setSummerNs_local(){
         this.summerNs="local";
+    }
+    /**
+    * summer对象名称空间 local
+    */
+    public ProjectModel summerNs_local(){
+        this.summerNs="local";
+        return this;
     }
     /**
     * summer对象名称空间 local
@@ -412,6 +510,13 @@ public class ProjectModel extends Entity{
     /**
     * summer对象名称空间 inner
     */
+    public ProjectModel summerNs_inner(){
+        this.summerNs="inner";
+        return this;
+    }
+    /**
+    * summer对象名称空间 inner
+    */
     public boolean summerNs_is_inner(){
         return Objects.equals(this.summerNs, "inner");
     }
@@ -424,6 +529,13 @@ public class ProjectModel extends Entity{
     /**
     * summer对象名称空间 cms
     */
+    public ProjectModel summerNs_cms(){
+        this.summerNs="cms";
+        return this;
+    }
+    /**
+    * summer对象名称空间 cms
+    */
     public boolean summerNs_is_cms(){
         return Objects.equals(this.summerNs, "cms");
     }
@@ -432,6 +544,13 @@ public class ProjectModel extends Entity{
     */
     public void setSummerNs_portal(){
         this.summerNs="portal";
+    }
+    /**
+    * summer对象名称空间 portal
+    */
+    public ProjectModel summerNs_portal(){
+        this.summerNs="portal";
+        return this;
     }
     /**
     * summer对象名称空间 portal
@@ -473,6 +592,13 @@ public class ProjectModel extends Entity{
     /**
     * imports
     */
+    public ProjectModel imports(String value){
+        this.imports=value;
+        return this;
+    }
+    /**
+    * imports
+    */
     public boolean imports_isNull(){
         return null==this.imports;
     }
@@ -500,6 +626,13 @@ public class ProjectModel extends Entity{
     */
     public boolean cname_is(String value){
         return Objects.equals(this.cname, value);
+    }
+    /**
+    * 中文名
+    */
+    public ProjectModel cname(String value){
+        this.cname=value;
+        return this;
     }
     /**
     * 中文名
@@ -535,6 +668,13 @@ public class ProjectModel extends Entity{
     /**
     * 英文名
     */
+    public ProjectModel ename(String value){
+        this.ename=value;
+        return this;
+    }
+    /**
+    * 英文名
+    */
     public boolean ename_isNull(){
         return null==this.ename;
     }
@@ -562,6 +702,13 @@ public class ProjectModel extends Entity{
     */
     public boolean extendsInfo_is(String value){
         return Objects.equals(this.extendsInfo, value);
+    }
+    /**
+    * 继承信息
+    */
+    public ProjectModel extendsInfo(String value){
+        this.extendsInfo=value;
+        return this;
     }
     /**
     * 继承信息
@@ -597,6 +744,13 @@ public class ProjectModel extends Entity{
     /**
     * 序号
     */
+    public ProjectModel dspOrder(Integer value){
+        this.dspOrder=value;
+        return this;
+    }
+    /**
+    * 序号
+    */
     public boolean dspOrder_isNull(){
         return null==this.dspOrder;
     }
@@ -618,6 +772,13 @@ public class ProjectModel extends Entity{
     */
     public boolean comment_is(String value){
         return Objects.equals(this.comment, value);
+    }
+    /**
+    * 备注
+    */
+    public ProjectModel comment(String value){
+        this.comment=value;
+        return this;
     }
     /**
     * 备注
@@ -651,10 +812,24 @@ public class ProjectModel extends Entity{
         return Objects.equals(this.deleteStatus, value);
     }
     /**
+    * 删除状态
+    */
+    public ProjectModel deleteStatus(Integer value){
+        this.deleteStatus=value;
+        return this;
+    }
+    /**
     * 删除状态 删除
     */
     public void setDeleteStatus_deleted(){
         this.deleteStatus=1;
+    }
+    /**
+    * 删除状态 删除
+    */
+    public ProjectModel deleteStatus_deleted(){
+        this.deleteStatus=1;
+        return this;
     }
     /**
     * 删除状态 删除
@@ -667,6 +842,13 @@ public class ProjectModel extends Entity{
     */
     public void setDeleteStatus_unDeleted(){
         this.deleteStatus=0;
+    }
+    /**
+    * 删除状态 未删除
+    */
+    public ProjectModel deleteStatus_unDeleted(){
+        this.deleteStatus=0;
+        return this;
     }
     /**
     * 删除状态 未删除
@@ -702,6 +884,13 @@ public class ProjectModel extends Entity{
     /**
     * 创建时间
     */
+    public ProjectModel createTime(Timestamp value){
+        this.createTime=value;
+        return this;
+    }
+    /**
+    * 创建时间
+    */
     public boolean createTime_isNull(){
         return null==this.createTime;
     }
@@ -723,6 +912,13 @@ public class ProjectModel extends Entity{
     */
     public boolean updateTime_is(Timestamp value){
         return Objects.equals(this.updateTime, value);
+    }
+    /**
+    * 更新时间
+    */
+    public ProjectModel updateTime(Timestamp value){
+        this.updateTime=value;
+        return this;
     }
     /**
     * 更新时间

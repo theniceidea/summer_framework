@@ -126,6 +126,13 @@ public class ProjectModelFieldAnno extends Entity{
     /**
     * id
     */
+    public ProjectModelFieldAnno id(String value){
+        this.id=value;
+        return this;
+    }
+    /**
+    * id
+    */
     public boolean id_isNull(){
         return null==this.id;
     }
@@ -153,6 +160,13 @@ public class ProjectModelFieldAnno extends Entity{
     */
     public boolean projectId_is(String value){
         return Objects.equals(this.projectId, value);
+    }
+    /**
+    * 项目id
+    */
+    public ProjectModelFieldAnno projectId(String value){
+        this.projectId=value;
+        return this;
     }
     /**
     * 项目id
@@ -188,6 +202,13 @@ public class ProjectModelFieldAnno extends Entity{
     /**
     * 数据库id
     */
+    public ProjectModelFieldAnno projectDbId(String value){
+        this.projectDbId=value;
+        return this;
+    }
+    /**
+    * 数据库id
+    */
     public boolean projectDbId_isNull(){
         return null==this.projectDbId;
     }
@@ -215,6 +236,13 @@ public class ProjectModelFieldAnno extends Entity{
     */
     public boolean projectModelId_is(String value){
         return Objects.equals(this.projectModelId, value);
+    }
+    /**
+    * 数据模型id
+    */
+    public ProjectModelFieldAnno projectModelId(String value){
+        this.projectModelId=value;
+        return this;
     }
     /**
     * 数据模型id
@@ -250,6 +278,13 @@ public class ProjectModelFieldAnno extends Entity{
     /**
     * 字段id
     */
+    public ProjectModelFieldAnno projectModelFieldId(String value){
+        this.projectModelFieldId=value;
+        return this;
+    }
+    /**
+    * 字段id
+    */
     public boolean projectModelFieldId_isNull(){
         return null==this.projectModelFieldId;
     }
@@ -277,6 +312,13 @@ public class ProjectModelFieldAnno extends Entity{
     */
     public boolean imports_is(String value){
         return Objects.equals(this.imports, value);
+    }
+    /**
+    * imports
+    */
+    public ProjectModelFieldAnno imports(String value){
+        this.imports=value;
+        return this;
     }
     /**
     * imports
@@ -312,6 +354,13 @@ public class ProjectModelFieldAnno extends Entity{
     /**
     * 注解
     */
+    public ProjectModelFieldAnno anno(String value){
+        this.anno=value;
+        return this;
+    }
+    /**
+    * 注解
+    */
     public boolean anno_isNull(){
         return null==this.anno;
     }
@@ -343,6 +392,13 @@ public class ProjectModelFieldAnno extends Entity{
     /**
     * 序号
     */
+    public ProjectModelFieldAnno dspOrder(Integer value){
+        this.dspOrder=value;
+        return this;
+    }
+    /**
+    * 序号
+    */
     public boolean dspOrder_isNull(){
         return null==this.dspOrder;
     }
@@ -364,6 +420,13 @@ public class ProjectModelFieldAnno extends Entity{
     */
     public boolean comment_is(String value){
         return Objects.equals(this.comment, value);
+    }
+    /**
+    * 备注
+    */
+    public ProjectModelFieldAnno comment(String value){
+        this.comment=value;
+        return this;
     }
     /**
     * 备注
@@ -397,10 +460,24 @@ public class ProjectModelFieldAnno extends Entity{
         return Objects.equals(this.deleteStatus, value);
     }
     /**
+    * 删除状态
+    */
+    public ProjectModelFieldAnno deleteStatus(Integer value){
+        this.deleteStatus=value;
+        return this;
+    }
+    /**
     * 删除状态 删除
     */
     public void setDeleteStatus_deleted(){
         this.deleteStatus=1;
+    }
+    /**
+    * 删除状态 删除
+    */
+    public ProjectModelFieldAnno deleteStatus_deleted(){
+        this.deleteStatus=1;
+        return this;
     }
     /**
     * 删除状态 删除
@@ -413,6 +490,13 @@ public class ProjectModelFieldAnno extends Entity{
     */
     public void setDeleteStatus_unDeleted(){
         this.deleteStatus=0;
+    }
+    /**
+    * 删除状态 未删除
+    */
+    public ProjectModelFieldAnno deleteStatus_unDeleted(){
+        this.deleteStatus=0;
+        return this;
     }
     /**
     * 删除状态 未删除
@@ -448,6 +532,13 @@ public class ProjectModelFieldAnno extends Entity{
     /**
     * 创建时间
     */
+    public ProjectModelFieldAnno createTime(Timestamp value){
+        this.createTime=value;
+        return this;
+    }
+    /**
+    * 创建时间
+    */
     public boolean createTime_isNull(){
         return null==this.createTime;
     }
@@ -469,6 +560,13 @@ public class ProjectModelFieldAnno extends Entity{
     */
     public boolean updateTime_is(Timestamp value){
         return Objects.equals(this.updateTime, value);
+    }
+    /**
+    * 更新时间
+    */
+    public ProjectModelFieldAnno updateTime(Timestamp value){
+        this.updateTime=value;
+        return this;
     }
     /**
     * 更新时间

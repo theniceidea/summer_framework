@@ -121,6 +121,13 @@ public class Demotable2 extends Entity{
     /**
     * id
     */
+    public Demotable2 id(String value){
+        this.id=value;
+        return this;
+    }
+    /**
+    * id
+    */
     public boolean id_isNull(){
         return null==this.id;
     }
@@ -148,6 +155,13 @@ public class Demotable2 extends Entity{
     */
     public boolean title_is(String value){
         return Objects.equals(this.title, value);
+    }
+    /**
+    * 标题
+    */
+    public Demotable2 title(String value){
+        this.title=value;
+        return this;
     }
     /**
     * 标题
@@ -183,6 +197,13 @@ public class Demotable2 extends Entity{
     /**
     * 类型
     */
+    public Demotable2 type(String value){
+        this.type=value;
+        return this;
+    }
+    /**
+    * 类型
+    */
     public boolean type_isNull(){
         return null==this.type;
     }
@@ -214,6 +235,13 @@ public class Demotable2 extends Entity{
     /**
     * 数量
     */
+    public Demotable2 num(Integer value){
+        this.num=value;
+        return this;
+    }
+    /**
+    * 数量
+    */
     public boolean num_isNull(){
         return null==this.num;
     }
@@ -235,6 +263,13 @@ public class Demotable2 extends Entity{
     */
     public boolean num2_is(BigDecimal value){
         return Objects.equals(this.num2, value);
+    }
+    /**
+    * 数量2
+    */
+    public Demotable2 num2(BigDecimal value){
+        this.num2=value;
+        return this;
     }
     /**
     * 数量2
@@ -264,6 +299,13 @@ public class Demotable2 extends Entity{
     /**
     * 数量3
     */
+    public Demotable2 num3(Double value){
+        this.num3=value;
+        return this;
+    }
+    /**
+    * 数量3
+    */
     public boolean num3_isNull(){
         return null==this.num3;
     }
@@ -287,10 +329,24 @@ public class Demotable2 extends Entity{
         return Objects.equals(this.deleteStatus, value);
     }
     /**
+    * delete status
+    */
+    public Demotable2 deleteStatus(Integer value){
+        this.deleteStatus=value;
+        return this;
+    }
+    /**
     * delete status 删除
     */
     public void setDeleteStatus_deleted(){
         this.deleteStatus=1;
+    }
+    /**
+    * delete status 删除
+    */
+    public Demotable2 deleteStatus_deleted(){
+        this.deleteStatus=1;
+        return this;
     }
     /**
     * delete status 删除
@@ -303,6 +359,13 @@ public class Demotable2 extends Entity{
     */
     public void setDeleteStatus_unDeleted(){
         this.deleteStatus=2;
+    }
+    /**
+    * delete status 未删除
+    */
+    public Demotable2 deleteStatus_unDeleted(){
+        this.deleteStatus=2;
+        return this;
     }
     /**
     * delete status 未删除
@@ -336,10 +399,24 @@ public class Demotable2 extends Entity{
         return Objects.equals(this.enableStatus, value);
     }
     /**
+    * enable status
+    */
+    public Demotable2 enableStatus(String value){
+        this.enableStatus=value;
+        return this;
+    }
+    /**
     * enable status 有效
     */
     public void setEnableStatus_enabled(){
         this.enableStatus="sv1";
+    }
+    /**
+    * enable status 有效
+    */
+    public Demotable2 enableStatus_enabled(){
+        this.enableStatus="sv1";
+        return this;
     }
     /**
     * enable status 有效
@@ -352,6 +429,13 @@ public class Demotable2 extends Entity{
     */
     public void setEnableStatus_unEnabled(){
         this.enableStatus="s\"v2";
+    }
+    /**
+    * enable status 无效
+    */
+    public Demotable2 enableStatus_unEnabled(){
+        this.enableStatus="s\"v2";
+        return this;
     }
     /**
     * enable status 无效
@@ -391,10 +475,24 @@ public class Demotable2 extends Entity{
         return Objects.equals(this.status, value);
     }
     /**
+    * status
+    */
+    public Demotable2 status(Integer value){
+        this.status=value;
+        return this;
+    }
+    /**
     * status 待审核
     */
     public void setStatus_pending(){
         this.status=1;
+    }
+    /**
+    * status 待审核
+    */
+    public Demotable2 status_pending(){
+        this.status=1;
+        return this;
     }
     /**
     * status 待审核
@@ -411,6 +509,13 @@ public class Demotable2 extends Entity{
     /**
     * status 已驳回
     */
+    public Demotable2 status_reject(){
+        this.status=2;
+        return this;
+    }
+    /**
+    * status 已驳回
+    */
     public boolean status_is_reject(){
         return Objects.equals(this.status, 2);
     }
@@ -419,6 +524,13 @@ public class Demotable2 extends Entity{
     */
     public void setStatus_approved(){
         this.status=3;
+    }
+    /**
+    * status 审批通过
+    */
+    public Demotable2 status_approved(){
+        this.status=3;
+        return this;
     }
     /**
     * status 审批通过
@@ -452,10 +564,24 @@ public class Demotable2 extends Entity{
         return Objects.equals(this.status2, value);
     }
     /**
+    * status
+    */
+    public Demotable2 status2(String value){
+        this.status2=value;
+        return this;
+    }
+    /**
     * status 待审核
     */
     public void setStatus2_pending(){
         this.status2="sv\"1";
+    }
+    /**
+    * status 待审核
+    */
+    public Demotable2 status2_pending(){
+        this.status2="sv\"1";
+        return this;
     }
     /**
     * status 待审核
@@ -472,6 +598,13 @@ public class Demotable2 extends Entity{
     /**
     * status 已驳回
     */
+    public Demotable2 status2_reject(){
+        this.status2="sv2";
+        return this;
+    }
+    /**
+    * status 已驳回
+    */
     public boolean status2_is_reject(){
         return Objects.equals(this.status2, "sv2");
     }
@@ -480,6 +613,13 @@ public class Demotable2 extends Entity{
     */
     public void setStatus2_approved(){
         this.status2="sv3";
+    }
+    /**
+    * status 审批通过
+    */
+    public Demotable2 status2_approved(){
+        this.status2="sv3";
+        return this;
     }
     /**
     * status 审批通过
@@ -517,6 +657,13 @@ public class Demotable2 extends Entity{
     */
     public boolean creationDate_is(Timestamp value){
         return Objects.equals(this.creationDate, value);
+    }
+    /**
+    * 创建时间
+    */
+    public Demotable2 creationDate(Timestamp value){
+        this.creationDate=value;
+        return this;
     }
     /**
     * 创建时间
