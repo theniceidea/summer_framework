@@ -144,6 +144,24 @@ public class ProjectDb extends Entity{
         return this;
     }
     /**
+    * id 如果为null返回默认值 value or default
+    */
+    public String id_vd(){
+        if(null==this.id){
+            return "";
+        }
+        return this.id;
+    }
+    /**
+    * id 如果为null返回默认值 value or default
+    */
+    public String id_vd(String defaultValue){
+        if(null==this.id){
+            return defaultValue;
+        }
+        return this.id;
+    }
+    /**
     * id
     */
     public boolean id_isNull(){
@@ -180,6 +198,24 @@ public class ProjectDb extends Entity{
     public ProjectDb cname(String value){
         this.cname=value;
         return this;
+    }
+    /**
+    * 中文名 如果为null返回默认值 value or default
+    */
+    public String cname_vd(){
+        if(null==this.cname){
+            return "";
+        }
+        return this.cname;
+    }
+    /**
+    * 中文名 如果为null返回默认值 value or default
+    */
+    public String cname_vd(String defaultValue){
+        if(null==this.cname){
+            return defaultValue;
+        }
+        return this.cname;
     }
     /**
     * 中文名
@@ -220,6 +256,24 @@ public class ProjectDb extends Entity{
         return this;
     }
     /**
+    * 英文名不一定是数据库名字 如果为null返回默认值 value or default
+    */
+    public String ename_vd(){
+        if(null==this.ename){
+            return "";
+        }
+        return this.ename;
+    }
+    /**
+    * 英文名不一定是数据库名字 如果为null返回默认值 value or default
+    */
+    public String ename_vd(String defaultValue){
+        if(null==this.ename){
+            return defaultValue;
+        }
+        return this.ename;
+    }
+    /**
     * 英文名不一定是数据库名字
     */
     public boolean ename_isNull(){
@@ -256,6 +310,24 @@ public class ProjectDb extends Entity{
     public ProjectDb dbname(String value){
         this.dbname=value;
         return this;
+    }
+    /**
+    * 数据库名字 如果为null返回默认值 value or default
+    */
+    public String dbname_vd(){
+        if(null==this.dbname){
+            return "";
+        }
+        return this.dbname;
+    }
+    /**
+    * 数据库名字 如果为null返回默认值 value or default
+    */
+    public String dbname_vd(String defaultValue){
+        if(null==this.dbname){
+            return defaultValue;
+        }
+        return this.dbname;
     }
     /**
     * 数据库名字
@@ -296,6 +368,24 @@ public class ProjectDb extends Entity{
         return this;
     }
     /**
+    * 连接字符串 如果为null返回默认值 value or default
+    */
+    public String connnectString_vd(){
+        if(null==this.connnectString){
+            return "";
+        }
+        return this.connnectString;
+    }
+    /**
+    * 连接字符串 如果为null返回默认值 value or default
+    */
+    public String connnectString_vd(String defaultValue){
+        if(null==this.connnectString){
+            return defaultValue;
+        }
+        return this.connnectString;
+    }
+    /**
     * 连接字符串
     */
     public boolean connnectString_isNull(){
@@ -332,6 +422,24 @@ public class ProjectDb extends Entity{
     public ProjectDb dbUser(String value){
         this.dbUser=value;
         return this;
+    }
+    /**
+    * 用户名 如果为null返回默认值 value or default
+    */
+    public String dbUser_vd(){
+        if(null==this.dbUser){
+            return "";
+        }
+        return this.dbUser;
+    }
+    /**
+    * 用户名 如果为null返回默认值 value or default
+    */
+    public String dbUser_vd(String defaultValue){
+        if(null==this.dbUser){
+            return defaultValue;
+        }
+        return this.dbUser;
     }
     /**
     * 用户名
@@ -372,6 +480,24 @@ public class ProjectDb extends Entity{
         return this;
     }
     /**
+    * 密码 如果为null返回默认值 value or default
+    */
+    public String dbPwd_vd(){
+        if(null==this.dbPwd){
+            return "";
+        }
+        return this.dbPwd;
+    }
+    /**
+    * 密码 如果为null返回默认值 value or default
+    */
+    public String dbPwd_vd(String defaultValue){
+        if(null==this.dbPwd){
+            return defaultValue;
+        }
+        return this.dbPwd;
+    }
+    /**
     * 密码
     */
     public boolean dbPwd_isNull(){
@@ -410,6 +536,24 @@ public class ProjectDb extends Entity{
         return this;
     }
     /**
+    * 序号 如果为null返回默认值 value or default
+    */
+    public int dspOrder_vd(){
+        if(null==this.dspOrder){
+            return 0;
+        }
+        return this.dspOrder;
+    }
+    /**
+    * 序号 如果为null返回默认值 value or default
+    */
+    public int dspOrder_vd(int defaultValue){
+        if(null==this.dspOrder){
+            return defaultValue;
+        }
+        return this.dspOrder;
+    }
+    /**
     * 序号
     */
     public boolean dspOrder_isNull(){
@@ -440,6 +584,24 @@ public class ProjectDb extends Entity{
     public ProjectDb comment(String value){
         this.comment=value;
         return this;
+    }
+    /**
+    * 备注 如果为null返回默认值 value or default
+    */
+    public String comment_vd(){
+        if(null==this.comment){
+            return "";
+        }
+        return this.comment;
+    }
+    /**
+    * 备注 如果为null返回默认值 value or default
+    */
+    public String comment_vd(String defaultValue){
+        if(null==this.comment){
+            return defaultValue;
+        }
+        return this.comment;
     }
     /**
     * 备注
@@ -478,6 +640,24 @@ public class ProjectDb extends Entity{
     public ProjectDb deleteStatus(Integer value){
         this.deleteStatus=value;
         return this;
+    }
+    /**
+    * 删除状态 如果为null返回默认值 value or default
+    */
+    public int deleteStatus_vd(){
+        if(null==this.deleteStatus){
+            return 0;
+        }
+        return this.deleteStatus;
+    }
+    /**
+    * 删除状态 如果为null返回默认值 value or default
+    */
+    public int deleteStatus_vd(int defaultValue){
+        if(null==this.deleteStatus){
+            return defaultValue;
+        }
+        return this.deleteStatus;
     }
     /**
     * 删除状态 删除
@@ -550,6 +730,24 @@ public class ProjectDb extends Entity{
         return this;
     }
     /**
+    * 创建时间 如果为null返回默认值 value or default
+    */
+    public Timestamp createTime_vd(){
+        if(null==this.createTime){
+            throw new RuntimeException("不支持此类型的默认值, 请手动指定默认值");
+        }
+        return this.createTime;
+    }
+    /**
+    * 创建时间 如果为null返回默认值 value or default
+    */
+    public Timestamp createTime_vd(Timestamp defaultValue){
+        if(null==this.createTime){
+            return defaultValue;
+        }
+        return this.createTime;
+    }
+    /**
     * 创建时间
     */
     public boolean createTime_isNull(){
@@ -580,6 +778,24 @@ public class ProjectDb extends Entity{
     public ProjectDb updateTime(Timestamp value){
         this.updateTime=value;
         return this;
+    }
+    /**
+    * 更新时间 如果为null返回默认值 value or default
+    */
+    public Timestamp updateTime_vd(){
+        if(null==this.updateTime){
+            throw new RuntimeException("不支持此类型的默认值, 请手动指定默认值");
+        }
+        return this.updateTime;
+    }
+    /**
+    * 更新时间 如果为null返回默认值 value or default
+    */
+    public Timestamp updateTime_vd(Timestamp defaultValue){
+        if(null==this.updateTime){
+            return defaultValue;
+        }
+        return this.updateTime;
     }
     /**
     * 更新时间

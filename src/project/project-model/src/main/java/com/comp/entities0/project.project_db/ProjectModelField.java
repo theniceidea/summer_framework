@@ -208,6 +208,24 @@ public class ProjectModelField extends Entity{
         return this;
     }
     /**
+    * id 如果为null返回默认值 value or default
+    */
+    public String id_vd(){
+        if(null==this.id){
+            return "";
+        }
+        return this.id;
+    }
+    /**
+    * id 如果为null返回默认值 value or default
+    */
+    public String id_vd(String defaultValue){
+        if(null==this.id){
+            return defaultValue;
+        }
+        return this.id;
+    }
+    /**
     * id
     */
     public boolean id_isNull(){
@@ -244,6 +262,24 @@ public class ProjectModelField extends Entity{
     public ProjectModelField projectId(String value){
         this.projectId=value;
         return this;
+    }
+    /**
+    * 项目id 如果为null返回默认值 value or default
+    */
+    public String projectId_vd(){
+        if(null==this.projectId){
+            return "";
+        }
+        return this.projectId;
+    }
+    /**
+    * 项目id 如果为null返回默认值 value or default
+    */
+    public String projectId_vd(String defaultValue){
+        if(null==this.projectId){
+            return defaultValue;
+        }
+        return this.projectId;
     }
     /**
     * 项目id
@@ -284,6 +320,24 @@ public class ProjectModelField extends Entity{
         return this;
     }
     /**
+    * 数据库id 如果为null返回默认值 value or default
+    */
+    public String projectDbId_vd(){
+        if(null==this.projectDbId){
+            return "";
+        }
+        return this.projectDbId;
+    }
+    /**
+    * 数据库id 如果为null返回默认值 value or default
+    */
+    public String projectDbId_vd(String defaultValue){
+        if(null==this.projectDbId){
+            return defaultValue;
+        }
+        return this.projectDbId;
+    }
+    /**
     * 数据库id
     */
     public boolean projectDbId_isNull(){
@@ -320,6 +374,24 @@ public class ProjectModelField extends Entity{
     public ProjectModelField projectModelId(String value){
         this.projectModelId=value;
         return this;
+    }
+    /**
+    * 数据模型id 如果为null返回默认值 value or default
+    */
+    public String projectModelId_vd(){
+        if(null==this.projectModelId){
+            return "";
+        }
+        return this.projectModelId;
+    }
+    /**
+    * 数据模型id 如果为null返回默认值 value or default
+    */
+    public String projectModelId_vd(String defaultValue){
+        if(null==this.projectModelId){
+            return defaultValue;
+        }
+        return this.projectModelId;
     }
     /**
     * 数据模型id
@@ -360,6 +432,24 @@ public class ProjectModelField extends Entity{
         return this;
     }
     /**
+    * 中文名 如果为null返回默认值 value or default
+    */
+    public String cname_vd(){
+        if(null==this.cname){
+            return "";
+        }
+        return this.cname;
+    }
+    /**
+    * 中文名 如果为null返回默认值 value or default
+    */
+    public String cname_vd(String defaultValue){
+        if(null==this.cname){
+            return defaultValue;
+        }
+        return this.cname;
+    }
+    /**
     * 中文名
     */
     public boolean cname_isNull(){
@@ -398,6 +488,24 @@ public class ProjectModelField extends Entity{
         return this;
     }
     /**
+    * 英文名 如果为null返回默认值 value or default
+    */
+    public String ename_vd(){
+        if(null==this.ename){
+            return "";
+        }
+        return this.ename;
+    }
+    /**
+    * 英文名 如果为null返回默认值 value or default
+    */
+    public String ename_vd(String defaultValue){
+        if(null==this.ename){
+            return defaultValue;
+        }
+        return this.ename;
+    }
+    /**
     * 英文名
     */
     public boolean ename_isNull(){
@@ -434,6 +542,24 @@ public class ProjectModelField extends Entity{
     public ProjectModelField dataType(String value){
         this.dataType=value;
         return this;
+    }
+    /**
+    * 字段数据类型 如果为null返回默认值 value or default
+    */
+    public String dataType_vd(){
+        if(null==this.dataType){
+            return "";
+        }
+        return this.dataType;
+    }
+    /**
+    * 字段数据类型 如果为null返回默认值 value or default
+    */
+    public String dataType_vd(String defaultValue){
+        if(null==this.dataType){
+            return defaultValue;
+        }
+        return this.dataType;
     }
     /**
     * 字段数据类型 int
@@ -645,6 +771,24 @@ public class ProjectModelField extends Entity{
         return this;
     }
     /**
+    * map字段key 如果为null返回默认值 value or default
+    */
+    public String dataTypeMapKey_vd(){
+        if(null==this.dataTypeMapKey){
+            return "";
+        }
+        return this.dataTypeMapKey;
+    }
+    /**
+    * map字段key 如果为null返回默认值 value or default
+    */
+    public String dataTypeMapKey_vd(String defaultValue){
+        if(null==this.dataTypeMapKey){
+            return defaultValue;
+        }
+        return this.dataTypeMapKey;
+    }
+    /**
     * map字段key int
     */
     public void setDataTypeMapKey_typeInt(){
@@ -721,6 +865,24 @@ public class ProjectModelField extends Entity{
         return this;
     }
     /**
+    * list, set, map 字段value 如果为null返回默认值 value or default
+    */
+    public String dataTypeValue_vd(){
+        if(null==this.dataTypeValue){
+            return "";
+        }
+        return this.dataTypeValue;
+    }
+    /**
+    * list, set, map 字段value 如果为null返回默认值 value or default
+    */
+    public String dataTypeValue_vd(String defaultValue){
+        if(null==this.dataTypeValue){
+            return defaultValue;
+        }
+        return this.dataTypeValue;
+    }
+    /**
     * list, set, map 字段value
     */
     public boolean dataTypeValue_isNull(){
@@ -757,6 +919,24 @@ public class ProjectModelField extends Entity{
     public ProjectModelField dbType(String value){
         this.dbType=value;
         return this;
+    }
+    /**
+    * 数据库类型 如果为null返回默认值 value or default
+    */
+    public String dbType_vd(){
+        if(null==this.dbType){
+            return "";
+        }
+        return this.dbType;
+    }
+    /**
+    * 数据库类型 如果为null返回默认值 value or default
+    */
+    public String dbType_vd(String defaultValue){
+        if(null==this.dbType){
+            return defaultValue;
+        }
+        return this.dbType;
     }
     /**
     * 数据库类型 int
@@ -949,6 +1129,24 @@ public class ProjectModelField extends Entity{
         return this;
     }
     /**
+    * 数据库类型扩展信息 如果为null返回默认值 value or default
+    */
+    public String dbTypeExt_vd(){
+        if(null==this.dbTypeExt){
+            return "";
+        }
+        return this.dbTypeExt;
+    }
+    /**
+    * 数据库类型扩展信息 如果为null返回默认值 value or default
+    */
+    public String dbTypeExt_vd(String defaultValue){
+        if(null==this.dbTypeExt){
+            return defaultValue;
+        }
+        return this.dbTypeExt;
+    }
+    /**
     * 数据库类型扩展信息
     */
     public boolean dbTypeExt_isNull(){
@@ -985,6 +1183,24 @@ public class ProjectModelField extends Entity{
     public ProjectModelField createExt(String value){
         this.createExt=value;
         return this;
+    }
+    /**
+    * DDL语句中的扩展信息 如果为null返回默认值 value or default
+    */
+    public String createExt_vd(){
+        if(null==this.createExt){
+            return "";
+        }
+        return this.createExt;
+    }
+    /**
+    * DDL语句中的扩展信息 如果为null返回默认值 value or default
+    */
+    public String createExt_vd(String defaultValue){
+        if(null==this.createExt){
+            return defaultValue;
+        }
+        return this.createExt;
     }
     /**
     * DDL语句中的扩展信息
@@ -1025,6 +1241,24 @@ public class ProjectModelField extends Entity{
         return this;
     }
     /**
+    * 关联column 如果为null返回默认值 value or default
+    */
+    public String refColumn_vd(){
+        if(null==this.refColumn){
+            return "";
+        }
+        return this.refColumn;
+    }
+    /**
+    * 关联column 如果为null返回默认值 value or default
+    */
+    public String refColumn_vd(String defaultValue){
+        if(null==this.refColumn){
+            return defaultValue;
+        }
+        return this.refColumn;
+    }
+    /**
     * 关联column
     */
     public boolean refColumn_isNull(){
@@ -1061,6 +1295,24 @@ public class ProjectModelField extends Entity{
     public ProjectModelField defValue(String value){
         this.defValue=value;
         return this;
+    }
+    /**
+    * 默认值 如果为null返回默认值 value or default
+    */
+    public String defValue_vd(){
+        if(null==this.defValue){
+            return "";
+        }
+        return this.defValue;
+    }
+    /**
+    * 默认值 如果为null返回默认值 value or default
+    */
+    public String defValue_vd(String defaultValue){
+        if(null==this.defValue){
+            return defaultValue;
+        }
+        return this.defValue;
     }
     /**
     * 默认值
@@ -1101,6 +1353,24 @@ public class ProjectModelField extends Entity{
         return this;
     }
     /**
+    * imports 如果为null返回默认值 value or default
+    */
+    public String imports_vd(){
+        if(null==this.imports){
+            return "";
+        }
+        return this.imports;
+    }
+    /**
+    * imports 如果为null返回默认值 value or default
+    */
+    public String imports_vd(String defaultValue){
+        if(null==this.imports){
+            return defaultValue;
+        }
+        return this.imports;
+    }
+    /**
     * imports
     */
     public boolean imports_isNull(){
@@ -1139,6 +1409,24 @@ public class ProjectModelField extends Entity{
         return this;
     }
     /**
+    * 序号 如果为null返回默认值 value or default
+    */
+    public int dspOrder_vd(){
+        if(null==this.dspOrder){
+            return 0;
+        }
+        return this.dspOrder;
+    }
+    /**
+    * 序号 如果为null返回默认值 value or default
+    */
+    public int dspOrder_vd(int defaultValue){
+        if(null==this.dspOrder){
+            return defaultValue;
+        }
+        return this.dspOrder;
+    }
+    /**
     * 序号
     */
     public boolean dspOrder_isNull(){
@@ -1169,6 +1457,24 @@ public class ProjectModelField extends Entity{
     public ProjectModelField comment(String value){
         this.comment=value;
         return this;
+    }
+    /**
+    * 备注 如果为null返回默认值 value or default
+    */
+    public String comment_vd(){
+        if(null==this.comment){
+            return "";
+        }
+        return this.comment;
+    }
+    /**
+    * 备注 如果为null返回默认值 value or default
+    */
+    public String comment_vd(String defaultValue){
+        if(null==this.comment){
+            return defaultValue;
+        }
+        return this.comment;
     }
     /**
     * 备注
@@ -1207,6 +1513,24 @@ public class ProjectModelField extends Entity{
     public ProjectModelField deleteStatus(Integer value){
         this.deleteStatus=value;
         return this;
+    }
+    /**
+    * 删除状态 如果为null返回默认值 value or default
+    */
+    public int deleteStatus_vd(){
+        if(null==this.deleteStatus){
+            return 0;
+        }
+        return this.deleteStatus;
+    }
+    /**
+    * 删除状态 如果为null返回默认值 value or default
+    */
+    public int deleteStatus_vd(int defaultValue){
+        if(null==this.deleteStatus){
+            return defaultValue;
+        }
+        return this.deleteStatus;
     }
     /**
     * 删除状态 删除
@@ -1279,6 +1603,24 @@ public class ProjectModelField extends Entity{
         return this;
     }
     /**
+    * 创建时间 如果为null返回默认值 value or default
+    */
+    public Timestamp createTime_vd(){
+        if(null==this.createTime){
+            throw new RuntimeException("不支持此类型的默认值, 请手动指定默认值");
+        }
+        return this.createTime;
+    }
+    /**
+    * 创建时间 如果为null返回默认值 value or default
+    */
+    public Timestamp createTime_vd(Timestamp defaultValue){
+        if(null==this.createTime){
+            return defaultValue;
+        }
+        return this.createTime;
+    }
+    /**
     * 创建时间
     */
     public boolean createTime_isNull(){
@@ -1309,6 +1651,24 @@ public class ProjectModelField extends Entity{
     public ProjectModelField updateTime(Timestamp value){
         this.updateTime=value;
         return this;
+    }
+    /**
+    * 更新时间 如果为null返回默认值 value or default
+    */
+    public Timestamp updateTime_vd(){
+        if(null==this.updateTime){
+            throw new RuntimeException("不支持此类型的默认值, 请手动指定默认值");
+        }
+        return this.updateTime;
+    }
+    /**
+    * 更新时间 如果为null返回默认值 value or default
+    */
+    public Timestamp updateTime_vd(Timestamp defaultValue){
+        if(null==this.updateTime){
+            return defaultValue;
+        }
+        return this.updateTime;
     }
     /**
     * 更新时间

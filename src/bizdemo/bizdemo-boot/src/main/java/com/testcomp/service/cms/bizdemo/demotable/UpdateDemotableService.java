@@ -1,7 +1,11 @@
 package com.testcomp.service.cms.bizdemo.demotable;
 
 import com.testcomp.entities0.bizdemo.summer_dev.Demotable;
+import com.testcomp.enums0.bizdemo.Enum_deleteStatus;
+import com.testcomp.model0.bizdemo.count1.GetCount1M;
+import com.testcomp.msql0.bizdemo.count1.GetCount1Service;
 import com.testcomp.query0.bizdemo.summer_dev.SqlDemotable;
+import com.testcomp.summer.v0.service.bizdemo.count1.GetCount1;
 import com.testcomp.summer.v1.cms.bizdemo.demotable.UpdateDemotable;
 import org.springframework.stereotype.Service;
 import org.summerframework.model.SummerService;
@@ -21,7 +25,8 @@ public class UpdateDemotableService implements SummerServiceBean<UpdateDemotable
                 .orderBy_num2_desc()
                 .queryList();
         System.out.println("");
-
+        final GetCount1M count1M = GetCount1.s(Enum_deleteStatus.unDeleted.value());
+        System.out.println(count1M.getCount1());
 
 
 //        final String userid = CurrentUserId.s(false);

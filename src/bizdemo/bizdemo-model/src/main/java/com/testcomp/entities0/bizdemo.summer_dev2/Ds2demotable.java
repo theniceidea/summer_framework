@@ -140,6 +140,24 @@ public class Ds2demotable extends Entity{
         return this;
     }
     /**
+    * id 如果为null返回默认值 value or default
+    */
+    public int id_vd(){
+        if(null==this.id){
+            return 0;
+        }
+        return this.id;
+    }
+    /**
+    * id 如果为null返回默认值 value or default
+    */
+    public int id_vd(int defaultValue){
+        if(null==this.id){
+            return defaultValue;
+        }
+        return this.id;
+    }
+    /**
     * id
     */
     public boolean id_isNull(){
@@ -170,6 +188,24 @@ public class Ds2demotable extends Entity{
     public Ds2demotable title(String value){
         this.title=value;
         return this;
+    }
+    /**
+    * 标题 如果为null返回默认值 value or default
+    */
+    public String title_vd(){
+        if(null==this.title){
+            return "";
+        }
+        return this.title;
+    }
+    /**
+    * 标题 如果为null返回默认值 value or default
+    */
+    public String title_vd(String defaultValue){
+        if(null==this.title){
+            return defaultValue;
+        }
+        return this.title;
     }
     /**
     * 标题
@@ -210,6 +246,24 @@ public class Ds2demotable extends Entity{
         return this;
     }
     /**
+    * 类型 如果为null返回默认值 value or default
+    */
+    public String type_vd(){
+        if(null==this.type){
+            return "";
+        }
+        return this.type;
+    }
+    /**
+    * 类型 如果为null返回默认值 value or default
+    */
+    public String type_vd(String defaultValue){
+        if(null==this.type){
+            return defaultValue;
+        }
+        return this.type;
+    }
+    /**
     * 类型
     */
     public boolean type_isNull(){
@@ -248,6 +302,24 @@ public class Ds2demotable extends Entity{
         return this;
     }
     /**
+    * 数量 如果为null返回默认值 value or default
+    */
+    public int num_vd(){
+        if(null==this.num){
+            return 0;
+        }
+        return this.num;
+    }
+    /**
+    * 数量 如果为null返回默认值 value or default
+    */
+    public int num_vd(int defaultValue){
+        if(null==this.num){
+            return defaultValue;
+        }
+        return this.num;
+    }
+    /**
     * 数量
     */
     public boolean num_isNull(){
@@ -278,6 +350,24 @@ public class Ds2demotable extends Entity{
     public Ds2demotable num2(BigDecimal value){
         this.num2=value;
         return this;
+    }
+    /**
+    * 数量2 如果为null返回默认值 value or default
+    */
+    public BigDecimal num2_vd(){
+        if(null==this.num2){
+            return BigDecimal.ZERO;
+        }
+        return this.num2;
+    }
+    /**
+    * 数量2 如果为null返回默认值 value or default
+    */
+    public BigDecimal num2_vd(BigDecimal defaultValue){
+        if(null==this.num2){
+            return defaultValue;
+        }
+        return this.num2;
     }
     /**
     * 数量2
@@ -312,6 +402,24 @@ public class Ds2demotable extends Entity{
         return this;
     }
     /**
+    * 数量3 如果为null返回默认值 value or default
+    */
+    public double num3_vd(){
+        if(null==this.num3){
+            return 0D;
+        }
+        return this.num3;
+    }
+    /**
+    * 数量3 如果为null返回默认值 value or default
+    */
+    public double num3_vd(double defaultValue){
+        if(null==this.num3){
+            return defaultValue;
+        }
+        return this.num3;
+    }
+    /**
     * 数量3
     */
     public boolean num3_isNull(){
@@ -342,6 +450,24 @@ public class Ds2demotable extends Entity{
     public Ds2demotable deleteStatus(Integer value){
         this.deleteStatus=value;
         return this;
+    }
+    /**
+    * delete status 如果为null返回默认值 value or default
+    */
+    public int deleteStatus_vd(){
+        if(null==this.deleteStatus){
+            return 0;
+        }
+        return this.deleteStatus;
+    }
+    /**
+    * delete status 如果为null返回默认值 value or default
+    */
+    public int deleteStatus_vd(int defaultValue){
+        if(null==this.deleteStatus){
+            return defaultValue;
+        }
+        return this.deleteStatus;
     }
     /**
     * delete status 删除
@@ -412,6 +538,24 @@ public class Ds2demotable extends Entity{
     public Ds2demotable enableStatus(String value){
         this.enableStatus=value;
         return this;
+    }
+    /**
+    * enable status 如果为null返回默认值 value or default
+    */
+    public String enableStatus_vd(){
+        if(null==this.enableStatus){
+            return "";
+        }
+        return this.enableStatus;
+    }
+    /**
+    * enable status 如果为null返回默认值 value or default
+    */
+    public String enableStatus_vd(String defaultValue){
+        if(null==this.enableStatus){
+            return defaultValue;
+        }
+        return this.enableStatus;
     }
     /**
     * enable status 有效
@@ -488,6 +632,24 @@ public class Ds2demotable extends Entity{
     public Ds2demotable status(Integer value){
         this.status=value;
         return this;
+    }
+    /**
+    * status 如果为null返回默认值 value or default
+    */
+    public int status_vd(){
+        if(null==this.status){
+            return 0;
+        }
+        return this.status;
+    }
+    /**
+    * status 如果为null返回默认值 value or default
+    */
+    public int status_vd(int defaultValue){
+        if(null==this.status){
+            return defaultValue;
+        }
+        return this.status;
     }
     /**
     * status 待审核
@@ -577,6 +739,24 @@ public class Ds2demotable extends Entity{
     public Ds2demotable status2(String value){
         this.status2=value;
         return this;
+    }
+    /**
+    * status 如果为null返回默认值 value or default
+    */
+    public String status2_vd(){
+        if(null==this.status2){
+            return "";
+        }
+        return this.status2;
+    }
+    /**
+    * status 如果为null返回默认值 value or default
+    */
+    public String status2_vd(String defaultValue){
+        if(null==this.status2){
+            return defaultValue;
+        }
+        return this.status2;
     }
     /**
     * status 待审核
@@ -672,6 +852,24 @@ public class Ds2demotable extends Entity{
     public Ds2demotable creationDate(Timestamp value){
         this.creationDate=value;
         return this;
+    }
+    /**
+    * 创建时间 如果为null返回默认值 value or default
+    */
+    public Timestamp creationDate_vd(){
+        if(null==this.creationDate){
+            throw new RuntimeException("不支持此类型的默认值, 请手动指定默认值");
+        }
+        return this.creationDate;
+    }
+    /**
+    * 创建时间 如果为null返回默认值 value or default
+    */
+    public Timestamp creationDate_vd(Timestamp defaultValue){
+        if(null==this.creationDate){
+            return defaultValue;
+        }
+        return this.creationDate;
     }
     /**
     * 创建时间

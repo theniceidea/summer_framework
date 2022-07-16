@@ -144,6 +144,24 @@ public class ProjectModelFieldAnno extends Entity{
         return this;
     }
     /**
+    * id 如果为null返回默认值 value or default
+    */
+    public String id_vd(){
+        if(null==this.id){
+            return "";
+        }
+        return this.id;
+    }
+    /**
+    * id 如果为null返回默认值 value or default
+    */
+    public String id_vd(String defaultValue){
+        if(null==this.id){
+            return defaultValue;
+        }
+        return this.id;
+    }
+    /**
     * id
     */
     public boolean id_isNull(){
@@ -180,6 +198,24 @@ public class ProjectModelFieldAnno extends Entity{
     public ProjectModelFieldAnno projectId(String value){
         this.projectId=value;
         return this;
+    }
+    /**
+    * 项目id 如果为null返回默认值 value or default
+    */
+    public String projectId_vd(){
+        if(null==this.projectId){
+            return "";
+        }
+        return this.projectId;
+    }
+    /**
+    * 项目id 如果为null返回默认值 value or default
+    */
+    public String projectId_vd(String defaultValue){
+        if(null==this.projectId){
+            return defaultValue;
+        }
+        return this.projectId;
     }
     /**
     * 项目id
@@ -220,6 +256,24 @@ public class ProjectModelFieldAnno extends Entity{
         return this;
     }
     /**
+    * 数据库id 如果为null返回默认值 value or default
+    */
+    public String projectDbId_vd(){
+        if(null==this.projectDbId){
+            return "";
+        }
+        return this.projectDbId;
+    }
+    /**
+    * 数据库id 如果为null返回默认值 value or default
+    */
+    public String projectDbId_vd(String defaultValue){
+        if(null==this.projectDbId){
+            return defaultValue;
+        }
+        return this.projectDbId;
+    }
+    /**
     * 数据库id
     */
     public boolean projectDbId_isNull(){
@@ -256,6 +310,24 @@ public class ProjectModelFieldAnno extends Entity{
     public ProjectModelFieldAnno projectModelId(String value){
         this.projectModelId=value;
         return this;
+    }
+    /**
+    * 数据模型id 如果为null返回默认值 value or default
+    */
+    public String projectModelId_vd(){
+        if(null==this.projectModelId){
+            return "";
+        }
+        return this.projectModelId;
+    }
+    /**
+    * 数据模型id 如果为null返回默认值 value or default
+    */
+    public String projectModelId_vd(String defaultValue){
+        if(null==this.projectModelId){
+            return defaultValue;
+        }
+        return this.projectModelId;
     }
     /**
     * 数据模型id
@@ -296,6 +368,24 @@ public class ProjectModelFieldAnno extends Entity{
         return this;
     }
     /**
+    * 字段id 如果为null返回默认值 value or default
+    */
+    public String projectModelFieldId_vd(){
+        if(null==this.projectModelFieldId){
+            return "";
+        }
+        return this.projectModelFieldId;
+    }
+    /**
+    * 字段id 如果为null返回默认值 value or default
+    */
+    public String projectModelFieldId_vd(String defaultValue){
+        if(null==this.projectModelFieldId){
+            return defaultValue;
+        }
+        return this.projectModelFieldId;
+    }
+    /**
     * 字段id
     */
     public boolean projectModelFieldId_isNull(){
@@ -332,6 +422,24 @@ public class ProjectModelFieldAnno extends Entity{
     public ProjectModelFieldAnno imports(String value){
         this.imports=value;
         return this;
+    }
+    /**
+    * imports 如果为null返回默认值 value or default
+    */
+    public String imports_vd(){
+        if(null==this.imports){
+            return "";
+        }
+        return this.imports;
+    }
+    /**
+    * imports 如果为null返回默认值 value or default
+    */
+    public String imports_vd(String defaultValue){
+        if(null==this.imports){
+            return defaultValue;
+        }
+        return this.imports;
     }
     /**
     * imports
@@ -372,6 +480,24 @@ public class ProjectModelFieldAnno extends Entity{
         return this;
     }
     /**
+    * 注解 如果为null返回默认值 value or default
+    */
+    public String anno_vd(){
+        if(null==this.anno){
+            return "";
+        }
+        return this.anno;
+    }
+    /**
+    * 注解 如果为null返回默认值 value or default
+    */
+    public String anno_vd(String defaultValue){
+        if(null==this.anno){
+            return defaultValue;
+        }
+        return this.anno;
+    }
+    /**
     * 注解
     */
     public boolean anno_isNull(){
@@ -410,6 +536,24 @@ public class ProjectModelFieldAnno extends Entity{
         return this;
     }
     /**
+    * 序号 如果为null返回默认值 value or default
+    */
+    public int dspOrder_vd(){
+        if(null==this.dspOrder){
+            return 0;
+        }
+        return this.dspOrder;
+    }
+    /**
+    * 序号 如果为null返回默认值 value or default
+    */
+    public int dspOrder_vd(int defaultValue){
+        if(null==this.dspOrder){
+            return defaultValue;
+        }
+        return this.dspOrder;
+    }
+    /**
     * 序号
     */
     public boolean dspOrder_isNull(){
@@ -440,6 +584,24 @@ public class ProjectModelFieldAnno extends Entity{
     public ProjectModelFieldAnno comment(String value){
         this.comment=value;
         return this;
+    }
+    /**
+    * 备注 如果为null返回默认值 value or default
+    */
+    public String comment_vd(){
+        if(null==this.comment){
+            return "";
+        }
+        return this.comment;
+    }
+    /**
+    * 备注 如果为null返回默认值 value or default
+    */
+    public String comment_vd(String defaultValue){
+        if(null==this.comment){
+            return defaultValue;
+        }
+        return this.comment;
     }
     /**
     * 备注
@@ -478,6 +640,24 @@ public class ProjectModelFieldAnno extends Entity{
     public ProjectModelFieldAnno deleteStatus(Integer value){
         this.deleteStatus=value;
         return this;
+    }
+    /**
+    * 删除状态 如果为null返回默认值 value or default
+    */
+    public int deleteStatus_vd(){
+        if(null==this.deleteStatus){
+            return 0;
+        }
+        return this.deleteStatus;
+    }
+    /**
+    * 删除状态 如果为null返回默认值 value or default
+    */
+    public int deleteStatus_vd(int defaultValue){
+        if(null==this.deleteStatus){
+            return defaultValue;
+        }
+        return this.deleteStatus;
     }
     /**
     * 删除状态 删除
@@ -550,6 +730,24 @@ public class ProjectModelFieldAnno extends Entity{
         return this;
     }
     /**
+    * 创建时间 如果为null返回默认值 value or default
+    */
+    public Timestamp createTime_vd(){
+        if(null==this.createTime){
+            throw new RuntimeException("不支持此类型的默认值, 请手动指定默认值");
+        }
+        return this.createTime;
+    }
+    /**
+    * 创建时间 如果为null返回默认值 value or default
+    */
+    public Timestamp createTime_vd(Timestamp defaultValue){
+        if(null==this.createTime){
+            return defaultValue;
+        }
+        return this.createTime;
+    }
+    /**
     * 创建时间
     */
     public boolean createTime_isNull(){
@@ -580,6 +778,24 @@ public class ProjectModelFieldAnno extends Entity{
     public ProjectModelFieldAnno updateTime(Timestamp value){
         this.updateTime=value;
         return this;
+    }
+    /**
+    * 更新时间 如果为null返回默认值 value or default
+    */
+    public Timestamp updateTime_vd(){
+        if(null==this.updateTime){
+            throw new RuntimeException("不支持此类型的默认值, 请手动指定默认值");
+        }
+        return this.updateTime;
+    }
+    /**
+    * 更新时间 如果为null返回默认值 value or default
+    */
+    public Timestamp updateTime_vd(Timestamp defaultValue){
+        if(null==this.updateTime){
+            return defaultValue;
+        }
+        return this.updateTime;
     }
     /**
     * 更新时间
