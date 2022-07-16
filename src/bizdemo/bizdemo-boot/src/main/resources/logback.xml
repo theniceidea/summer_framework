@@ -158,6 +158,7 @@
     <logger name="org.hibernate.tool" level="WARN" />
     <!--<logger name="org.springframework" level="WARN" />-->
     <logger name="org.apache.http" level="WARN"/>
+    <logger name="com.fmk.framework.daosimple.Dao" level="DEBUG"/>
 
     <!-- root级别   DEBUG -->
     <root level="INFO">

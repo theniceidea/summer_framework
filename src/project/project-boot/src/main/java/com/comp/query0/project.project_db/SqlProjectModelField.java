@@ -29,6 +29,7 @@ public class SqlProjectModelField implements QuerySelect {
     private boolean existsWhere=false;
     private boolean existsOrderBy=false;
     private StringBuilder builder=new StringBuilder();
+    private StringBuilder orderBuilder=new StringBuilder();
     private List<Object> parameters =new ArrayList<>();
     private List<IncUpdateValue> incValues=null;
     private Object ds(){
@@ -510,7 +511,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" id asc");
+        orderBuilder.append(pre+" id asc");
         return this;
     }
     /**
@@ -524,7 +525,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" id desc");
+        orderBuilder.append(pre+" id desc");
         return this;
     }
     /**
@@ -872,7 +873,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" project_id asc");
+        orderBuilder.append(pre+" project_id asc");
         return this;
     }
     /**
@@ -886,7 +887,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" project_id desc");
+        orderBuilder.append(pre+" project_id desc");
         return this;
     }
     /**
@@ -1234,7 +1235,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" project_db_id asc");
+        orderBuilder.append(pre+" project_db_id asc");
         return this;
     }
     /**
@@ -1248,7 +1249,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" project_db_id desc");
+        orderBuilder.append(pre+" project_db_id desc");
         return this;
     }
     /**
@@ -1596,7 +1597,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" project_model_id asc");
+        orderBuilder.append(pre+" project_model_id asc");
         return this;
     }
     /**
@@ -1610,7 +1611,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" project_model_id desc");
+        orderBuilder.append(pre+" project_model_id desc");
         return this;
     }
     /**
@@ -1958,7 +1959,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" cname asc");
+        orderBuilder.append(pre+" cname asc");
         return this;
     }
     /**
@@ -1972,7 +1973,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" cname desc");
+        orderBuilder.append(pre+" cname desc");
         return this;
     }
     /**
@@ -2320,7 +2321,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" ename asc");
+        orderBuilder.append(pre+" ename asc");
         return this;
     }
     /**
@@ -2334,7 +2335,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" ename desc");
+        orderBuilder.append(pre+" ename desc");
         return this;
     }
     /**
@@ -2682,7 +2683,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" data_type asc");
+        orderBuilder.append(pre+" data_type asc");
         return this;
     }
     /**
@@ -2696,7 +2697,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" data_type desc");
+        orderBuilder.append(pre+" data_type desc");
         return this;
     }
     /**
@@ -3044,7 +3045,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" data_type_map_key asc");
+        orderBuilder.append(pre+" data_type_map_key asc");
         return this;
     }
     /**
@@ -3058,7 +3059,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" data_type_map_key desc");
+        orderBuilder.append(pre+" data_type_map_key desc");
         return this;
     }
     /**
@@ -3406,7 +3407,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" data_type_value asc");
+        orderBuilder.append(pre+" data_type_value asc");
         return this;
     }
     /**
@@ -3420,7 +3421,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" data_type_value desc");
+        orderBuilder.append(pre+" data_type_value desc");
         return this;
     }
     /**
@@ -3768,7 +3769,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" db_type asc");
+        orderBuilder.append(pre+" db_type asc");
         return this;
     }
     /**
@@ -3782,7 +3783,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" db_type desc");
+        orderBuilder.append(pre+" db_type desc");
         return this;
     }
     /**
@@ -4130,7 +4131,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" db_type_ext asc");
+        orderBuilder.append(pre+" db_type_ext asc");
         return this;
     }
     /**
@@ -4144,7 +4145,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" db_type_ext desc");
+        orderBuilder.append(pre+" db_type_ext desc");
         return this;
     }
     /**
@@ -4492,7 +4493,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" create_ext asc");
+        orderBuilder.append(pre+" create_ext asc");
         return this;
     }
     /**
@@ -4506,7 +4507,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" create_ext desc");
+        orderBuilder.append(pre+" create_ext desc");
         return this;
     }
     /**
@@ -4854,7 +4855,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" ref_column asc");
+        orderBuilder.append(pre+" ref_column asc");
         return this;
     }
     /**
@@ -4868,7 +4869,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" ref_column desc");
+        orderBuilder.append(pre+" ref_column desc");
         return this;
     }
     /**
@@ -5216,7 +5217,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" def_value asc");
+        orderBuilder.append(pre+" def_value asc");
         return this;
     }
     /**
@@ -5230,7 +5231,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" def_value desc");
+        orderBuilder.append(pre+" def_value desc");
         return this;
     }
     /**
@@ -5578,7 +5579,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" imports asc");
+        orderBuilder.append(pre+" imports asc");
         return this;
     }
     /**
@@ -5592,7 +5593,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" imports desc");
+        orderBuilder.append(pre+" imports desc");
         return this;
     }
     /**
@@ -5850,7 +5851,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" dsp_order asc");
+        orderBuilder.append(pre+" dsp_order asc");
         return this;
     }
     /**
@@ -5864,7 +5865,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" dsp_order desc");
+        orderBuilder.append(pre+" dsp_order desc");
         return this;
     }
     /**
@@ -6212,7 +6213,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" comment asc");
+        orderBuilder.append(pre+" comment asc");
         return this;
     }
     /**
@@ -6226,7 +6227,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" comment desc");
+        orderBuilder.append(pre+" comment desc");
         return this;
     }
     /**
@@ -6484,7 +6485,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" delete_status asc");
+        orderBuilder.append(pre+" delete_status asc");
         return this;
     }
     /**
@@ -6498,7 +6499,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" delete_status desc");
+        orderBuilder.append(pre+" delete_status desc");
         return this;
     }
     /**
@@ -6896,7 +6897,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" create_time asc");
+        orderBuilder.append(pre+" create_time asc");
         return this;
     }
     /**
@@ -6910,7 +6911,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" create_time desc");
+        orderBuilder.append(pre+" create_time desc");
         return this;
     }
     /**
@@ -7308,7 +7309,7 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" update_time asc");
+        orderBuilder.append(pre+" update_time asc");
         return this;
     }
     /**
@@ -7322,22 +7323,24 @@ public class SqlProjectModelField implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" update_time desc");
+        orderBuilder.append(pre+" update_time desc");
         return this;
     }
     @Override
     public String toSqlString() {
         StringBuilder buf=new StringBuilder("SELECT * FROM project_model_field");
         buf.append(builder);
+        buf.append(orderBuilder);
         return buf.toString();
     }
     @Override
     public String toSqlString(int start, int limit) {
         StringBuilder buf=new StringBuilder("SELECT * FROM project_model_field");
         buf.append(builder);
+        buf.append(orderBuilder);
         buf.append(" limit ");
         buf.append(start);
-        buf.append(" ,");
+        buf.append(", ");
         buf.append(limit);
         return buf.toString();
     }

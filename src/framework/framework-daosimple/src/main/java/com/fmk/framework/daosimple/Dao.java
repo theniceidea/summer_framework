@@ -42,9 +42,19 @@ public class Dao {
 
     public void daoExecuteChangeSql(DaoExecuteChangeSql model){
         JdbcTemplate thatTemplate=(null != model.getTarget())?(JdbcTemplate) model.getTarget():jdbcTemplate;
-        final int changeNum = thatTemplate.update(model.getSql(), model.getParameters().toArray());
+        Object[] params = model.getParameters().toArray();
+        if(logger.isDebugEnabled()) {
+            logger.debug(model.getSql());
+            StringBuilder build = buildParamsLogString(params);
+            logger.debug(build.toString());
+        }
+        final int changeNum = thatTemplate.update(model.getSql(), params);
+        if(logger.isDebugEnabled()) {
+            logger.debug("改变行数: {}", changeNum);
+        }
         model.setSummerResult(changeNum);
     }
+
     public void queryPageList(DaoPageList model){
         JdbcTemplate thatTemplate=(null != model.getTarget())?(JdbcTemplate) model.getTarget():jdbcTemplate;
         QuerySelect selec = (QuerySelect) model.getSqlSelect();
@@ -53,8 +63,17 @@ public class Dao {
 
         PageResultList resultList = new PageResultList();
 
-        Long count = thatTemplate.queryForObject(selec.toCountSqlString(), selec.getParameters().toArray(), Long.class);
-        List<Map<String, Object>> mapList = thatTemplate.queryForList(selec.toSqlString(start, limit), selec.getParameters().toArray());
+        Object[] params = selec.getParameters().toArray();
+        final String countSqlString = selec.toCountSqlString();
+        final String sqlString = selec.toSqlString(start, limit);
+        if(logger.isDebugEnabled()) {
+            logger.debug(countSqlString);
+            logger.debug(sqlString);
+            StringBuilder build = buildParamsLogString(params);
+            logger.debug(build.toString());
+        }
+        Long count = thatTemplate.queryForObject(countSqlString, params, Long.class);
+        List<Map<String, Object>> mapList = thatTemplate.queryForList(sqlString, params);
 
         ImmutableList<Field> fields = ReflectUtil.getAnnotationField(model.getKls(), Column.class);
 
@@ -78,6 +97,11 @@ public class Dao {
             sql = selec.toSqlString();
         }
         Object[] parameters = selec.getParameters().toArray();
+        if(logger.isDebugEnabled()) {
+            logger.debug(sql);
+            StringBuilder build = buildParamsLogString(parameters);
+            logger.debug(build.toString());
+        }
 
         List<Map<String, Object>> mapList = thatTemplate.queryForList(sql, parameters);
         //BeanPropertyRowMapper
@@ -88,7 +112,13 @@ public class Dao {
 
     public void daoOne(DaoMap4Sql model){
         JdbcTemplate thatTemplate=(null != model.getTarget())?(JdbcTemplate) model.getTarget():jdbcTemplate;
-        final Map<String, Object> ret = thatTemplate.queryForMap(model.getSql(), model.getValues().toArray());
+        Object[] params = model.getValues().toArray();
+        if(logger.isDebugEnabled()) {
+            logger.debug(model.getSql());
+            StringBuilder build = buildParamsLogString(params);
+            logger.debug(build.toString());
+        }
+        final Map<String, Object> ret = thatTemplate.queryForMap(model.getSql(), params);
         model.setSummerResult(ret);
     }
     private String getColumnName(Field field){
@@ -115,5 +145,25 @@ public class Dao {
             }
         }
         return result;
+    }
+
+    private StringBuilder buildParamsLogString(Object[] params) {
+        StringBuilder build = new StringBuilder();
+        build.append("参数: [");
+        for(int i = 0; i< params.length; i++){
+            if(i>0){
+                build.append(", ");
+            }
+            final Object param = params[i];
+            if(null == param){
+                build.append("null");
+            }else{
+                build.append(param.getClass().getSimpleName());
+                build.append(":");
+                build.append(param);
+            }
+        }
+        build.append("]");
+        return build;
     }
 }

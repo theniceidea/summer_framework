@@ -29,6 +29,7 @@ public class SqlDs2demotable implements QuerySelect {
     private boolean existsWhere=false;
     private boolean existsOrderBy=false;
     private StringBuilder builder=new StringBuilder();
+    private StringBuilder orderBuilder=new StringBuilder();
     private List<Object> parameters =new ArrayList<>();
     private List<IncUpdateValue> incValues=null;
     private Object ds(){
@@ -403,7 +404,7 @@ public class SqlDs2demotable implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" id asc");
+        orderBuilder.append(pre+" id asc");
         return this;
     }
     /**
@@ -417,7 +418,7 @@ public class SqlDs2demotable implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" id desc");
+        orderBuilder.append(pre+" id desc");
         return this;
     }
     /**
@@ -765,7 +766,7 @@ public class SqlDs2demotable implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" title asc");
+        orderBuilder.append(pre+" title asc");
         return this;
     }
     /**
@@ -779,7 +780,7 @@ public class SqlDs2demotable implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" title desc");
+        orderBuilder.append(pre+" title desc");
         return this;
     }
     /**
@@ -1127,7 +1128,7 @@ public class SqlDs2demotable implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" type asc");
+        orderBuilder.append(pre+" type asc");
         return this;
     }
     /**
@@ -1141,7 +1142,7 @@ public class SqlDs2demotable implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" type desc");
+        orderBuilder.append(pre+" type desc");
         return this;
     }
     /**
@@ -1403,7 +1404,7 @@ public class SqlDs2demotable implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" num asc");
+        orderBuilder.append(pre+" num asc");
         return this;
     }
     /**
@@ -1417,7 +1418,7 @@ public class SqlDs2demotable implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" num desc");
+        orderBuilder.append(pre+" num desc");
         return this;
     }
     /**
@@ -1679,7 +1680,7 @@ public class SqlDs2demotable implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" num2 asc");
+        orderBuilder.append(pre+" num2 asc");
         return this;
     }
     /**
@@ -1693,7 +1694,7 @@ public class SqlDs2demotable implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" num2 desc");
+        orderBuilder.append(pre+" num2 desc");
         return this;
     }
     /**
@@ -1955,7 +1956,7 @@ public class SqlDs2demotable implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" num3 asc");
+        orderBuilder.append(pre+" num3 asc");
         return this;
     }
     /**
@@ -1969,7 +1970,7 @@ public class SqlDs2demotable implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" num3 desc");
+        orderBuilder.append(pre+" num3 desc");
         return this;
     }
     /**
@@ -2227,7 +2228,7 @@ public class SqlDs2demotable implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" delete_status asc");
+        orderBuilder.append(pre+" delete_status asc");
         return this;
     }
     /**
@@ -2241,7 +2242,7 @@ public class SqlDs2demotable implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" delete_status desc");
+        orderBuilder.append(pre+" delete_status desc");
         return this;
     }
     /**
@@ -2589,7 +2590,7 @@ public class SqlDs2demotable implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" enable_status asc");
+        orderBuilder.append(pre+" enable_status asc");
         return this;
     }
     /**
@@ -2603,7 +2604,7 @@ public class SqlDs2demotable implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" enable_status desc");
+        orderBuilder.append(pre+" enable_status desc");
         return this;
     }
     /**
@@ -2861,7 +2862,7 @@ public class SqlDs2demotable implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" status asc");
+        orderBuilder.append(pre+" status asc");
         return this;
     }
     /**
@@ -2875,7 +2876,7 @@ public class SqlDs2demotable implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" status desc");
+        orderBuilder.append(pre+" status desc");
         return this;
     }
     /**
@@ -3223,7 +3224,7 @@ public class SqlDs2demotable implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" status2 asc");
+        orderBuilder.append(pre+" status2 asc");
         return this;
     }
     /**
@@ -3237,7 +3238,7 @@ public class SqlDs2demotable implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" status2 desc");
+        orderBuilder.append(pre+" status2 desc");
         return this;
     }
     /**
@@ -3635,7 +3636,7 @@ public class SqlDs2demotable implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" creation_date asc");
+        orderBuilder.append(pre+" creation_date asc");
         return this;
     }
     /**
@@ -3649,22 +3650,24 @@ public class SqlDs2demotable implements QuerySelect {
             pre=" order by";
             existsOrderBy=true;
         }
-        builder.append(pre+" creation_date desc");
+        orderBuilder.append(pre+" creation_date desc");
         return this;
     }
     @Override
     public String toSqlString() {
         StringBuilder buf=new StringBuilder("SELECT * FROM ds2demotable");
         buf.append(builder);
+        buf.append(orderBuilder);
         return buf.toString();
     }
     @Override
     public String toSqlString(int start, int limit) {
         StringBuilder buf=new StringBuilder("SELECT * FROM ds2demotable");
         buf.append(builder);
+        buf.append(orderBuilder);
         buf.append(" limit ");
         buf.append(start);
-        buf.append(" ,");
+        buf.append(", ");
         buf.append(limit);
         return buf.toString();
     }

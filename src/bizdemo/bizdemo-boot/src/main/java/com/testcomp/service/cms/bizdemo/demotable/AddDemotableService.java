@@ -4,13 +4,21 @@ import com.alibaba.fastjson.JSON;
 import com.fmk.framework.basic.DateTimeUtil;
 import com.fmk.framework.basic.validat.SqlValidator;
 import com.fmk.framework.exception.Excep;
+import com.fmk.framework.restful.PageResultList;
 import com.fmk.framework.validation.Precondition;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Sets;
 import com.testcomp.entities0.bizdemo.summer_dev.Demotable;
 import com.testcomp.entities0.bizdemo.summer_dev2.Ds2demotable;
 import com.testcomp.enums0.bizdemo.Enum_deleteStatus;
+import com.testcomp.model0.bizdemo.app.GetAppM;
+import com.testcomp.model0.bizdemo.apps2.ListApps2M;
 import com.testcomp.model0.bizdemo.count1.GetCount1M;
 import com.testcomp.query0.bizdemo.summer_dev.SqlDemotable;
 import com.testcomp.query0.bizdemo.summer_dev2.SqlDs2demotable;
+import com.testcomp.summer.v0.service.bizdemo.app.GetApp;
+import com.testcomp.summer.v0.service.bizdemo.apps.ListApps;
+import com.testcomp.summer.v0.service.bizdemo.apps2.ListApps2;
 import com.testcomp.summer.v0.service.bizdemo.count1.GetCount1;
 import com.testcomp.summer.v1.cms.bizdemo.demotable.AddDemotable;
 import org.springframework.stereotype.Service;
@@ -19,6 +27,7 @@ import org.summerframework.model.SummerServiceBean;
 
 import java.math.BigDecimal;
 import java.util.Collection;
+import java.util.List;
 
 @Service
 @SummerService
@@ -27,7 +36,6 @@ public class AddDemotableService implements SummerServiceBean<AddDemotable> {
     public void sum(AddDemotable summer) {
         final GetCount1M count1M = GetCount1.s(Enum_deleteStatus.unDeleted.value());
         System.out.println(count1M.getCount1());
-
         Demotable entity = new Demotable();
         entity.setTitle("title");
         entity.setType("type");
@@ -39,6 +47,9 @@ public class AddDemotableService implements SummerServiceBean<AddDemotable> {
         entity.setStatus_approved();
         entity.setStatus2_pending();
         entity.setCreationDate(DateTimeUtil.timestampNow());
+
+        final GetAppM s1 = GetApp.s(Enum_deleteStatus.deleted.value(), Lists.newArrayList(1));
+        final PageResultList<ListApps2M> s2 = ListApps2.s(Enum_deleteStatus.deleted.value(), Sets.newHashSet(1), 0, 10);
 
         final String s = JSON.toJSONString(entity);
         System.out.println(s);
