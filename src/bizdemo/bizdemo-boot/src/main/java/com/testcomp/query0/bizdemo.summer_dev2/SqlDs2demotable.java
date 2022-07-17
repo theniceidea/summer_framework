@@ -6,6 +6,7 @@ import com.fmk.framework.exception.Excep;
 import com.testcomp.entities0.bizdemo.summer_dev2.*;
 import com.fmk.framework.daomodel.*;
 import com.fmk.framework.restful.PageResultList;
+import com.fmk.framework.valid.IValidatorSuccess;
 import java.util.ArrayList;
 import java.util.List;
 import java.math.BigInteger;
@@ -174,6 +175,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * id
     */
+    public SqlDs2demotable id_eq(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_eq(value);
+    }
+    /**
+    * id
+    */
     public SqlDs2demotable id_notNull_eq(Integer value){
         return id_eq(null != value, value);
     }
@@ -244,6 +259,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * id
     */
+    public SqlDs2demotable id_gt(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_gt(value);
+    }
+    /**
+    * id
+    */
     public SqlDs2demotable id_notNull_gt(Integer value){
         return id_gt(null != value, value);
     }
@@ -268,6 +297,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" id<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * id
+    */
+    public SqlDs2demotable id_lt(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_lt(value);
     }
     /**
     * id
@@ -300,6 +343,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * id
     */
+    public SqlDs2demotable id_ge(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_ge(value);
+    }
+    /**
+    * id
+    */
     public SqlDs2demotable id_notNull_ge(Integer value){
         return id_ge(null != value, value);
     }
@@ -324,6 +381,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" id<=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * id
+    */
+    public SqlDs2demotable id_le(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_le(value);
     }
     /**
     * id
@@ -356,6 +427,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * id
     */
+    public SqlDs2demotable id_ne(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_ne(value);
+    }
+    /**
+    * id
+    */
     public SqlDs2demotable id_notNull_ne(Integer value){
         return id_ne(null != value, value);
     }
@@ -384,6 +469,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" id in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * id
+    */
+    public SqlDs2demotable id_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_in(value);
     }
     /**
     * id
@@ -442,6 +541,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" title=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 标题
+    */
+    public SqlDs2demotable title_eq(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return title_eq(value);
     }
     /**
     * 标题
@@ -516,6 +629,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 标题
     */
+    public SqlDs2demotable title_gt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return title_gt(value);
+    }
+    /**
+    * 标题
+    */
     public SqlDs2demotable title_notNull_gt(String value){
         return title_gt(null != value, value);
     }
@@ -540,6 +667,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" title<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 标题
+    */
+    public SqlDs2demotable title_lt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return title_lt(value);
     }
     /**
     * 标题
@@ -572,6 +713,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 标题
     */
+    public SqlDs2demotable title_ge(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return title_ge(value);
+    }
+    /**
+    * 标题
+    */
     public SqlDs2demotable title_notNull_ge(String value){
         return title_ge(null != value, value);
     }
@@ -600,6 +755,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 标题
     */
+    public SqlDs2demotable title_le(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return title_le(value);
+    }
+    /**
+    * 标题
+    */
     public SqlDs2demotable title_notNull_le(String value){
         return title_le(null != value, value);
     }
@@ -624,6 +793,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" title<>?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 标题
+    */
+    public SqlDs2demotable title_ne(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return title_ne(value);
     }
     /**
     * 标题
@@ -662,6 +845,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 标题
     */
+    public SqlDs2demotable title_leftLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return title_leftLike(value);
+    }
+    /**
+    * 标题
+    */
     public SqlDs2demotable title_notBlank_leftLike(String value){
         return title_leftLike(StrUtil.isNotBlank(value), value);
     }
@@ -686,6 +883,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" title like ?");
         parameters.add("%"+value);
         return this;
+    }
+    /**
+    * 标题
+    */
+    public SqlDs2demotable title_rightLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return title_rightLike(value);
     }
     /**
     * 标题
@@ -718,6 +929,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 标题
     */
+    public SqlDs2demotable title_middleLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return title_middleLike(value);
+    }
+    /**
+    * 标题
+    */
     public SqlDs2demotable title_notBlank_middleLike(String value){
         return title_middleLike(StrUtil.isNotBlank(value), value);
     }
@@ -746,6 +971,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" title in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * 标题
+    */
+    public SqlDs2demotable title_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return title_in(value);
     }
     /**
     * 标题
@@ -804,6 +1043,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" type=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 类型
+    */
+    public SqlDs2demotable type_eq(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return type_eq(value);
     }
     /**
     * 类型
@@ -878,6 +1131,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 类型
     */
+    public SqlDs2demotable type_gt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return type_gt(value);
+    }
+    /**
+    * 类型
+    */
     public SqlDs2demotable type_notNull_gt(String value){
         return type_gt(null != value, value);
     }
@@ -902,6 +1169,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" type<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 类型
+    */
+    public SqlDs2demotable type_lt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return type_lt(value);
     }
     /**
     * 类型
@@ -934,6 +1215,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 类型
     */
+    public SqlDs2demotable type_ge(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return type_ge(value);
+    }
+    /**
+    * 类型
+    */
     public SqlDs2demotable type_notNull_ge(String value){
         return type_ge(null != value, value);
     }
@@ -962,6 +1257,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 类型
     */
+    public SqlDs2demotable type_le(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return type_le(value);
+    }
+    /**
+    * 类型
+    */
     public SqlDs2demotable type_notNull_le(String value){
         return type_le(null != value, value);
     }
@@ -986,6 +1295,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" type<>?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 类型
+    */
+    public SqlDs2demotable type_ne(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return type_ne(value);
     }
     /**
     * 类型
@@ -1024,6 +1347,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 类型
     */
+    public SqlDs2demotable type_leftLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return type_leftLike(value);
+    }
+    /**
+    * 类型
+    */
     public SqlDs2demotable type_notBlank_leftLike(String value){
         return type_leftLike(StrUtil.isNotBlank(value), value);
     }
@@ -1048,6 +1385,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" type like ?");
         parameters.add("%"+value);
         return this;
+    }
+    /**
+    * 类型
+    */
+    public SqlDs2demotable type_rightLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return type_rightLike(value);
     }
     /**
     * 类型
@@ -1080,6 +1431,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 类型
     */
+    public SqlDs2demotable type_middleLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return type_middleLike(value);
+    }
+    /**
+    * 类型
+    */
     public SqlDs2demotable type_notBlank_middleLike(String value){
         return type_middleLike(StrUtil.isNotBlank(value), value);
     }
@@ -1108,6 +1473,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" type in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * 类型
+    */
+    public SqlDs2demotable type_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return type_in(value);
     }
     /**
     * 类型
@@ -1166,6 +1545,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" num=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 数量
+    */
+    public SqlDs2demotable num_eq(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num_eq(value);
     }
     /**
     * 数量
@@ -1240,6 +1633,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 数量
     */
+    public SqlDs2demotable num_gt(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num_gt(value);
+    }
+    /**
+    * 数量
+    */
     public SqlDs2demotable num_notNull_gt(Integer value){
         return num_gt(null != value, value);
     }
@@ -1264,6 +1671,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" num<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 数量
+    */
+    public SqlDs2demotable num_lt(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num_lt(value);
     }
     /**
     * 数量
@@ -1296,6 +1717,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 数量
     */
+    public SqlDs2demotable num_ge(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num_ge(value);
+    }
+    /**
+    * 数量
+    */
     public SqlDs2demotable num_notNull_ge(Integer value){
         return num_ge(null != value, value);
     }
@@ -1320,6 +1755,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" num<=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 数量
+    */
+    public SqlDs2demotable num_le(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num_le(value);
     }
     /**
     * 数量
@@ -1352,6 +1801,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 数量
     */
+    public SqlDs2demotable num_ne(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num_ne(value);
+    }
+    /**
+    * 数量
+    */
     public SqlDs2demotable num_notNull_ne(Integer value){
         return num_ne(null != value, value);
     }
@@ -1380,6 +1843,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" num in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * 数量
+    */
+    public SqlDs2demotable num_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num_in(value);
     }
     /**
     * 数量
@@ -1442,6 +1919,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" num2=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 数量2
+    */
+    public SqlDs2demotable num2_eq(BigDecimal value, IValidatorSuccess<BigDecimal> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<BigDecimal> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num2_eq(value);
     }
     /**
     * 数量2
@@ -1516,6 +2007,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 数量2
     */
+    public SqlDs2demotable num2_gt(BigDecimal value, IValidatorSuccess<BigDecimal> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<BigDecimal> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num2_gt(value);
+    }
+    /**
+    * 数量2
+    */
     public SqlDs2demotable num2_notNull_gt(BigDecimal value){
         return num2_gt(null != value, value);
     }
@@ -1540,6 +2045,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" num2<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 数量2
+    */
+    public SqlDs2demotable num2_lt(BigDecimal value, IValidatorSuccess<BigDecimal> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<BigDecimal> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num2_lt(value);
     }
     /**
     * 数量2
@@ -1572,6 +2091,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 数量2
     */
+    public SqlDs2demotable num2_ge(BigDecimal value, IValidatorSuccess<BigDecimal> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<BigDecimal> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num2_ge(value);
+    }
+    /**
+    * 数量2
+    */
     public SqlDs2demotable num2_notNull_ge(BigDecimal value){
         return num2_ge(null != value, value);
     }
@@ -1596,6 +2129,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" num2<=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 数量2
+    */
+    public SqlDs2demotable num2_le(BigDecimal value, IValidatorSuccess<BigDecimal> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<BigDecimal> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num2_le(value);
     }
     /**
     * 数量2
@@ -1628,6 +2175,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 数量2
     */
+    public SqlDs2demotable num2_ne(BigDecimal value, IValidatorSuccess<BigDecimal> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<BigDecimal> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num2_ne(value);
+    }
+    /**
+    * 数量2
+    */
     public SqlDs2demotable num2_notNull_ne(BigDecimal value){
         return num2_ne(null != value, value);
     }
@@ -1656,6 +2217,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" num2 in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * 数量2
+    */
+    public SqlDs2demotable num2_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num2_in(value);
     }
     /**
     * 数量2
@@ -1718,6 +2293,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" num3=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 数量3
+    */
+    public SqlDs2demotable num3_eq(Double value, IValidatorSuccess<Double> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Double> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num3_eq(value);
     }
     /**
     * 数量3
@@ -1792,6 +2381,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 数量3
     */
+    public SqlDs2demotable num3_gt(Double value, IValidatorSuccess<Double> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Double> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num3_gt(value);
+    }
+    /**
+    * 数量3
+    */
     public SqlDs2demotable num3_notNull_gt(Double value){
         return num3_gt(null != value, value);
     }
@@ -1816,6 +2419,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" num3<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 数量3
+    */
+    public SqlDs2demotable num3_lt(Double value, IValidatorSuccess<Double> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Double> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num3_lt(value);
     }
     /**
     * 数量3
@@ -1848,6 +2465,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 数量3
     */
+    public SqlDs2demotable num3_ge(Double value, IValidatorSuccess<Double> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Double> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num3_ge(value);
+    }
+    /**
+    * 数量3
+    */
     public SqlDs2demotable num3_notNull_ge(Double value){
         return num3_ge(null != value, value);
     }
@@ -1872,6 +2503,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" num3<=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 数量3
+    */
+    public SqlDs2demotable num3_le(Double value, IValidatorSuccess<Double> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Double> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num3_le(value);
     }
     /**
     * 数量3
@@ -1904,6 +2549,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 数量3
     */
+    public SqlDs2demotable num3_ne(Double value, IValidatorSuccess<Double> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Double> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num3_ne(value);
+    }
+    /**
+    * 数量3
+    */
     public SqlDs2demotable num3_notNull_ne(Double value){
         return num3_ne(null != value, value);
     }
@@ -1932,6 +2591,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" num3 in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * 数量3
+    */
+    public SqlDs2demotable num3_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num3_in(value);
     }
     /**
     * 数量3
@@ -1994,6 +2667,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" delete_status=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * delete status
+    */
+    public SqlDs2demotable deleteStatus_eq(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return deleteStatus_eq(value);
     }
     /**
     * delete status
@@ -2068,6 +2755,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * delete status
     */
+    public SqlDs2demotable deleteStatus_gt(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return deleteStatus_gt(value);
+    }
+    /**
+    * delete status
+    */
     public SqlDs2demotable deleteStatus_notNull_gt(Integer value){
         return deleteStatus_gt(null != value, value);
     }
@@ -2092,6 +2793,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" delete_status<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * delete status
+    */
+    public SqlDs2demotable deleteStatus_lt(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return deleteStatus_lt(value);
     }
     /**
     * delete status
@@ -2124,6 +2839,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * delete status
     */
+    public SqlDs2demotable deleteStatus_ge(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return deleteStatus_ge(value);
+    }
+    /**
+    * delete status
+    */
     public SqlDs2demotable deleteStatus_notNull_ge(Integer value){
         return deleteStatus_ge(null != value, value);
     }
@@ -2148,6 +2877,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" delete_status<=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * delete status
+    */
+    public SqlDs2demotable deleteStatus_le(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return deleteStatus_le(value);
     }
     /**
     * delete status
@@ -2180,6 +2923,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * delete status
     */
+    public SqlDs2demotable deleteStatus_ne(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return deleteStatus_ne(value);
+    }
+    /**
+    * delete status
+    */
     public SqlDs2demotable deleteStatus_notNull_ne(Integer value){
         return deleteStatus_ne(null != value, value);
     }
@@ -2208,6 +2965,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" delete_status in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * delete status
+    */
+    public SqlDs2demotable deleteStatus_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return deleteStatus_in(value);
     }
     /**
     * delete status
@@ -2266,6 +3037,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" enable_status=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * enable status
+    */
+    public SqlDs2demotable enableStatus_eq(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return enableStatus_eq(value);
     }
     /**
     * enable status
@@ -2340,6 +3125,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * enable status
     */
+    public SqlDs2demotable enableStatus_gt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return enableStatus_gt(value);
+    }
+    /**
+    * enable status
+    */
     public SqlDs2demotable enableStatus_notNull_gt(String value){
         return enableStatus_gt(null != value, value);
     }
@@ -2364,6 +3163,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" enable_status<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * enable status
+    */
+    public SqlDs2demotable enableStatus_lt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return enableStatus_lt(value);
     }
     /**
     * enable status
@@ -2396,6 +3209,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * enable status
     */
+    public SqlDs2demotable enableStatus_ge(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return enableStatus_ge(value);
+    }
+    /**
+    * enable status
+    */
     public SqlDs2demotable enableStatus_notNull_ge(String value){
         return enableStatus_ge(null != value, value);
     }
@@ -2424,6 +3251,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * enable status
     */
+    public SqlDs2demotable enableStatus_le(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return enableStatus_le(value);
+    }
+    /**
+    * enable status
+    */
     public SqlDs2demotable enableStatus_notNull_le(String value){
         return enableStatus_le(null != value, value);
     }
@@ -2448,6 +3289,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" enable_status<>?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * enable status
+    */
+    public SqlDs2demotable enableStatus_ne(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return enableStatus_ne(value);
     }
     /**
     * enable status
@@ -2486,6 +3341,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * enable status
     */
+    public SqlDs2demotable enableStatus_leftLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return enableStatus_leftLike(value);
+    }
+    /**
+    * enable status
+    */
     public SqlDs2demotable enableStatus_notBlank_leftLike(String value){
         return enableStatus_leftLike(StrUtil.isNotBlank(value), value);
     }
@@ -2510,6 +3379,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" enable_status like ?");
         parameters.add("%"+value);
         return this;
+    }
+    /**
+    * enable status
+    */
+    public SqlDs2demotable enableStatus_rightLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return enableStatus_rightLike(value);
     }
     /**
     * enable status
@@ -2542,6 +3425,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * enable status
     */
+    public SqlDs2demotable enableStatus_middleLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return enableStatus_middleLike(value);
+    }
+    /**
+    * enable status
+    */
     public SqlDs2demotable enableStatus_notBlank_middleLike(String value){
         return enableStatus_middleLike(StrUtil.isNotBlank(value), value);
     }
@@ -2570,6 +3467,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" enable_status in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * enable status
+    */
+    public SqlDs2demotable enableStatus_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return enableStatus_in(value);
     }
     /**
     * enable status
@@ -2628,6 +3539,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" status=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * status
+    */
+    public SqlDs2demotable status_eq(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status_eq(value);
     }
     /**
     * status
@@ -2702,6 +3627,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * status
     */
+    public SqlDs2demotable status_gt(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status_gt(value);
+    }
+    /**
+    * status
+    */
     public SqlDs2demotable status_notNull_gt(Integer value){
         return status_gt(null != value, value);
     }
@@ -2726,6 +3665,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" status<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * status
+    */
+    public SqlDs2demotable status_lt(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status_lt(value);
     }
     /**
     * status
@@ -2758,6 +3711,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * status
     */
+    public SqlDs2demotable status_ge(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status_ge(value);
+    }
+    /**
+    * status
+    */
     public SqlDs2demotable status_notNull_ge(Integer value){
         return status_ge(null != value, value);
     }
@@ -2782,6 +3749,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" status<=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * status
+    */
+    public SqlDs2demotable status_le(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status_le(value);
     }
     /**
     * status
@@ -2814,6 +3795,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * status
     */
+    public SqlDs2demotable status_ne(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status_ne(value);
+    }
+    /**
+    * status
+    */
     public SqlDs2demotable status_notNull_ne(Integer value){
         return status_ne(null != value, value);
     }
@@ -2842,6 +3837,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" status in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * status
+    */
+    public SqlDs2demotable status_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status_in(value);
     }
     /**
     * status
@@ -2900,6 +3909,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" status2=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * status
+    */
+    public SqlDs2demotable status2_eq(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status2_eq(value);
     }
     /**
     * status
@@ -2974,6 +3997,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * status
     */
+    public SqlDs2demotable status2_gt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status2_gt(value);
+    }
+    /**
+    * status
+    */
     public SqlDs2demotable status2_notNull_gt(String value){
         return status2_gt(null != value, value);
     }
@@ -2998,6 +4035,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" status2<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * status
+    */
+    public SqlDs2demotable status2_lt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status2_lt(value);
     }
     /**
     * status
@@ -3030,6 +4081,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * status
     */
+    public SqlDs2demotable status2_ge(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status2_ge(value);
+    }
+    /**
+    * status
+    */
     public SqlDs2demotable status2_notNull_ge(String value){
         return status2_ge(null != value, value);
     }
@@ -3058,6 +4123,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * status
     */
+    public SqlDs2demotable status2_le(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status2_le(value);
+    }
+    /**
+    * status
+    */
     public SqlDs2demotable status2_notNull_le(String value){
         return status2_le(null != value, value);
     }
@@ -3082,6 +4161,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" status2<>?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * status
+    */
+    public SqlDs2demotable status2_ne(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status2_ne(value);
     }
     /**
     * status
@@ -3120,6 +4213,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * status
     */
+    public SqlDs2demotable status2_leftLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status2_leftLike(value);
+    }
+    /**
+    * status
+    */
     public SqlDs2demotable status2_notBlank_leftLike(String value){
         return status2_leftLike(StrUtil.isNotBlank(value), value);
     }
@@ -3144,6 +4251,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" status2 like ?");
         parameters.add("%"+value);
         return this;
+    }
+    /**
+    * status
+    */
+    public SqlDs2demotable status2_rightLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status2_rightLike(value);
     }
     /**
     * status
@@ -3176,6 +4297,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * status
     */
+    public SqlDs2demotable status2_middleLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status2_middleLike(value);
+    }
+    /**
+    * status
+    */
     public SqlDs2demotable status2_notBlank_middleLike(String value){
         return status2_middleLike(StrUtil.isNotBlank(value), value);
     }
@@ -3204,6 +4339,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" status2 in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * status
+    */
+    public SqlDs2demotable status2_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status2_in(value);
     }
     /**
     * status
@@ -3266,6 +4415,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 创建时间
     */
+    public SqlDs2demotable creationDate_eq(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_eq(value);
+    }
+    /**
+    * 创建时间
+    */
     public SqlDs2demotable creationDate_notNull_eq(Timestamp value){
         return creationDate_eq(null != value, value);
     }
@@ -3282,6 +4445,20 @@ public class SqlDs2demotable implements QuerySelect {
     public SqlDs2demotable creationDate_eq_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return creationDate_eq(value);
+    }
+    /**
+    * 创建时间
+    */
+    public SqlDs2demotable creationDate_eq_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_eq_yyyyMMdd(value);
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -3356,6 +4533,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 创建时间
     */
+    public SqlDs2demotable creationDate_gt(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_gt(value);
+    }
+    /**
+    * 创建时间
+    */
     public SqlDs2demotable creationDate_notNull_gt(Timestamp value){
         return creationDate_gt(null != value, value);
     }
@@ -3372,6 +4563,20 @@ public class SqlDs2demotable implements QuerySelect {
     public SqlDs2demotable creationDate_gt_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return creationDate_gt(value);
+    }
+    /**
+    * 创建时间
+    */
+    public SqlDs2demotable creationDate_gt_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_gt_yyyyMMdd(value);
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -3404,6 +4609,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 创建时间
     */
+    public SqlDs2demotable creationDate_lt(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_lt(value);
+    }
+    /**
+    * 创建时间
+    */
     public SqlDs2demotable creationDate_notNull_lt(Timestamp value){
         return creationDate_lt(null != value, value);
     }
@@ -3420,6 +4639,20 @@ public class SqlDs2demotable implements QuerySelect {
     public SqlDs2demotable creationDate_lt_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return creationDate_lt(value);
+    }
+    /**
+    * 创建时间
+    */
+    public SqlDs2demotable creationDate_lt_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_lt_yyyyMMdd(value);
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -3440,6 +4673,20 @@ public class SqlDs2demotable implements QuerySelect {
     public SqlDs2demotable creationDate_lt_nextDay_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(DateUtil.offsetDay(value, 1)).toTimestamp();
         return creationDate_lt(value);
+    }
+    /**
+    * 创建时间
+    */
+    public SqlDs2demotable creationDate_lt_nextDay_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_lt_nextDay_yyyyMMdd(value);
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日之后加一天,再查询
@@ -3472,6 +4719,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 创建时间
     */
+    public SqlDs2demotable creationDate_ge(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_ge(value);
+    }
+    /**
+    * 创建时间
+    */
     public SqlDs2demotable creationDate_notNull_ge(Timestamp value){
         return creationDate_ge(null != value, value);
     }
@@ -3488,6 +4749,20 @@ public class SqlDs2demotable implements QuerySelect {
     public SqlDs2demotable creationDate_ge_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return creationDate_ge(value);
+    }
+    /**
+    * 创建时间
+    */
+    public SqlDs2demotable creationDate_ge_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_ge_yyyyMMdd(value);
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -3520,6 +4795,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 创建时间
     */
+    public SqlDs2demotable creationDate_le(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_le(value);
+    }
+    /**
+    * 创建时间
+    */
     public SqlDs2demotable creationDate_notNull_le(Timestamp value){
         return creationDate_le(null != value, value);
     }
@@ -3536,6 +4825,20 @@ public class SqlDs2demotable implements QuerySelect {
     public SqlDs2demotable creationDate_le_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return creationDate_le(value);
+    }
+    /**
+    * 创建时间
+    */
+    public SqlDs2demotable creationDate_le_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_le_yyyyMMdd(value);
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -3568,6 +4871,20 @@ public class SqlDs2demotable implements QuerySelect {
     /**
     * 创建时间
     */
+    public SqlDs2demotable creationDate_ne(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_ne(value);
+    }
+    /**
+    * 创建时间
+    */
     public SqlDs2demotable creationDate_notNull_ne(Timestamp value){
         return creationDate_ne(null != value, value);
     }
@@ -3584,6 +4901,20 @@ public class SqlDs2demotable implements QuerySelect {
     public SqlDs2demotable creationDate_ne_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return creationDate_ne(value);
+    }
+    /**
+    * 创建时间
+    */
+    public SqlDs2demotable creationDate_ne_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_ne_yyyyMMdd(value);
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -3616,6 +4947,20 @@ public class SqlDs2demotable implements QuerySelect {
         builder.append(pre+" creation_date in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * 创建时间
+    */
+    public SqlDs2demotable creationDate_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_in(value);
     }
     /**
     * 创建时间

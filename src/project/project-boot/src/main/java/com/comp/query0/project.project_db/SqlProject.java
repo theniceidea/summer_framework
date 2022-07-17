@@ -167,6 +167,20 @@ public class SqlProject implements QuerySelect {
     /**
     * id
     */
+    public SqlProject id_eq(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_eq(value);
+    }
+    /**
+    * id
+    */
     public SqlProject id_notNull_eq(String value){
         return id_eq(null != value, value);
     }
@@ -237,6 +251,20 @@ public class SqlProject implements QuerySelect {
     /**
     * id
     */
+    public SqlProject id_gt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_gt(value);
+    }
+    /**
+    * id
+    */
     public SqlProject id_notNull_gt(String value){
         return id_gt(null != value, value);
     }
@@ -261,6 +289,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" id<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * id
+    */
+    public SqlProject id_lt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_lt(value);
     }
     /**
     * id
@@ -293,6 +335,20 @@ public class SqlProject implements QuerySelect {
     /**
     * id
     */
+    public SqlProject id_ge(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_ge(value);
+    }
+    /**
+    * id
+    */
     public SqlProject id_notNull_ge(String value){
         return id_ge(null != value, value);
     }
@@ -321,6 +377,20 @@ public class SqlProject implements QuerySelect {
     /**
     * id
     */
+    public SqlProject id_le(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_le(value);
+    }
+    /**
+    * id
+    */
     public SqlProject id_notNull_le(String value){
         return id_le(null != value, value);
     }
@@ -345,6 +415,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" id<>?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * id
+    */
+    public SqlProject id_ne(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_ne(value);
     }
     /**
     * id
@@ -383,6 +467,20 @@ public class SqlProject implements QuerySelect {
     /**
     * id
     */
+    public SqlProject id_leftLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_leftLike(value);
+    }
+    /**
+    * id
+    */
     public SqlProject id_notBlank_leftLike(String value){
         return id_leftLike(StrUtil.isNotBlank(value), value);
     }
@@ -407,6 +505,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" id like ?");
         parameters.add("%"+value);
         return this;
+    }
+    /**
+    * id
+    */
+    public SqlProject id_rightLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_rightLike(value);
     }
     /**
     * id
@@ -439,6 +551,20 @@ public class SqlProject implements QuerySelect {
     /**
     * id
     */
+    public SqlProject id_middleLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_middleLike(value);
+    }
+    /**
+    * id
+    */
     public SqlProject id_notBlank_middleLike(String value){
         return id_middleLike(StrUtil.isNotBlank(value), value);
     }
@@ -467,6 +593,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" id in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * id
+    */
+    public SqlProject id_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_in(value);
     }
     /**
     * id
@@ -525,6 +665,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" cname=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 中文名
+    */
+    public SqlProject cname_eq(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return cname_eq(value);
     }
     /**
     * 中文名
@@ -599,6 +753,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 中文名
     */
+    public SqlProject cname_gt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return cname_gt(value);
+    }
+    /**
+    * 中文名
+    */
     public SqlProject cname_notNull_gt(String value){
         return cname_gt(null != value, value);
     }
@@ -623,6 +791,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" cname<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 中文名
+    */
+    public SqlProject cname_lt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return cname_lt(value);
     }
     /**
     * 中文名
@@ -655,6 +837,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 中文名
     */
+    public SqlProject cname_ge(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return cname_ge(value);
+    }
+    /**
+    * 中文名
+    */
     public SqlProject cname_notNull_ge(String value){
         return cname_ge(null != value, value);
     }
@@ -683,6 +879,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 中文名
     */
+    public SqlProject cname_le(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return cname_le(value);
+    }
+    /**
+    * 中文名
+    */
     public SqlProject cname_notNull_le(String value){
         return cname_le(null != value, value);
     }
@@ -707,6 +917,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" cname<>?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 中文名
+    */
+    public SqlProject cname_ne(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return cname_ne(value);
     }
     /**
     * 中文名
@@ -745,6 +969,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 中文名
     */
+    public SqlProject cname_leftLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return cname_leftLike(value);
+    }
+    /**
+    * 中文名
+    */
     public SqlProject cname_notBlank_leftLike(String value){
         return cname_leftLike(StrUtil.isNotBlank(value), value);
     }
@@ -769,6 +1007,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" cname like ?");
         parameters.add("%"+value);
         return this;
+    }
+    /**
+    * 中文名
+    */
+    public SqlProject cname_rightLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return cname_rightLike(value);
     }
     /**
     * 中文名
@@ -801,6 +1053,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 中文名
     */
+    public SqlProject cname_middleLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return cname_middleLike(value);
+    }
+    /**
+    * 中文名
+    */
     public SqlProject cname_notBlank_middleLike(String value){
         return cname_middleLike(StrUtil.isNotBlank(value), value);
     }
@@ -829,6 +1095,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" cname in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * 中文名
+    */
+    public SqlProject cname_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return cname_in(value);
     }
     /**
     * 中文名
@@ -887,6 +1167,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" ename=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 英文名
+    */
+    public SqlProject ename_eq(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return ename_eq(value);
     }
     /**
     * 英文名
@@ -961,6 +1255,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 英文名
     */
+    public SqlProject ename_gt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return ename_gt(value);
+    }
+    /**
+    * 英文名
+    */
     public SqlProject ename_notNull_gt(String value){
         return ename_gt(null != value, value);
     }
@@ -985,6 +1293,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" ename<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 英文名
+    */
+    public SqlProject ename_lt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return ename_lt(value);
     }
     /**
     * 英文名
@@ -1017,6 +1339,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 英文名
     */
+    public SqlProject ename_ge(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return ename_ge(value);
+    }
+    /**
+    * 英文名
+    */
     public SqlProject ename_notNull_ge(String value){
         return ename_ge(null != value, value);
     }
@@ -1045,6 +1381,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 英文名
     */
+    public SqlProject ename_le(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return ename_le(value);
+    }
+    /**
+    * 英文名
+    */
     public SqlProject ename_notNull_le(String value){
         return ename_le(null != value, value);
     }
@@ -1069,6 +1419,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" ename<>?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 英文名
+    */
+    public SqlProject ename_ne(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return ename_ne(value);
     }
     /**
     * 英文名
@@ -1107,6 +1471,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 英文名
     */
+    public SqlProject ename_leftLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return ename_leftLike(value);
+    }
+    /**
+    * 英文名
+    */
     public SqlProject ename_notBlank_leftLike(String value){
         return ename_leftLike(StrUtil.isNotBlank(value), value);
     }
@@ -1131,6 +1509,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" ename like ?");
         parameters.add("%"+value);
         return this;
+    }
+    /**
+    * 英文名
+    */
+    public SqlProject ename_rightLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return ename_rightLike(value);
     }
     /**
     * 英文名
@@ -1163,6 +1555,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 英文名
     */
+    public SqlProject ename_middleLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return ename_middleLike(value);
+    }
+    /**
+    * 英文名
+    */
     public SqlProject ename_notBlank_middleLike(String value){
         return ename_middleLike(StrUtil.isNotBlank(value), value);
     }
@@ -1191,6 +1597,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" ename in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * 英文名
+    */
+    public SqlProject ename_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return ename_in(value);
     }
     /**
     * 英文名
@@ -1249,6 +1669,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" dsp_order=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 序号
+    */
+    public SqlProject dspOrder_eq(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return dspOrder_eq(value);
     }
     /**
     * 序号
@@ -1323,6 +1757,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 序号
     */
+    public SqlProject dspOrder_gt(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return dspOrder_gt(value);
+    }
+    /**
+    * 序号
+    */
     public SqlProject dspOrder_notNull_gt(Integer value){
         return dspOrder_gt(null != value, value);
     }
@@ -1347,6 +1795,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" dsp_order<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 序号
+    */
+    public SqlProject dspOrder_lt(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return dspOrder_lt(value);
     }
     /**
     * 序号
@@ -1379,6 +1841,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 序号
     */
+    public SqlProject dspOrder_ge(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return dspOrder_ge(value);
+    }
+    /**
+    * 序号
+    */
     public SqlProject dspOrder_notNull_ge(Integer value){
         return dspOrder_ge(null != value, value);
     }
@@ -1403,6 +1879,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" dsp_order<=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 序号
+    */
+    public SqlProject dspOrder_le(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return dspOrder_le(value);
     }
     /**
     * 序号
@@ -1435,6 +1925,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 序号
     */
+    public SqlProject dspOrder_ne(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return dspOrder_ne(value);
+    }
+    /**
+    * 序号
+    */
     public SqlProject dspOrder_notNull_ne(Integer value){
         return dspOrder_ne(null != value, value);
     }
@@ -1463,6 +1967,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" dsp_order in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * 序号
+    */
+    public SqlProject dspOrder_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return dspOrder_in(value);
     }
     /**
     * 序号
@@ -1521,6 +2039,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" comment=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 备注
+    */
+    public SqlProject comment_eq(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return comment_eq(value);
     }
     /**
     * 备注
@@ -1595,6 +2127,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 备注
     */
+    public SqlProject comment_gt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return comment_gt(value);
+    }
+    /**
+    * 备注
+    */
     public SqlProject comment_notNull_gt(String value){
         return comment_gt(null != value, value);
     }
@@ -1619,6 +2165,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" comment<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 备注
+    */
+    public SqlProject comment_lt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return comment_lt(value);
     }
     /**
     * 备注
@@ -1651,6 +2211,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 备注
     */
+    public SqlProject comment_ge(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return comment_ge(value);
+    }
+    /**
+    * 备注
+    */
     public SqlProject comment_notNull_ge(String value){
         return comment_ge(null != value, value);
     }
@@ -1679,6 +2253,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 备注
     */
+    public SqlProject comment_le(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return comment_le(value);
+    }
+    /**
+    * 备注
+    */
     public SqlProject comment_notNull_le(String value){
         return comment_le(null != value, value);
     }
@@ -1703,6 +2291,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" comment<>?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 备注
+    */
+    public SqlProject comment_ne(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return comment_ne(value);
     }
     /**
     * 备注
@@ -1741,6 +2343,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 备注
     */
+    public SqlProject comment_leftLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return comment_leftLike(value);
+    }
+    /**
+    * 备注
+    */
     public SqlProject comment_notBlank_leftLike(String value){
         return comment_leftLike(StrUtil.isNotBlank(value), value);
     }
@@ -1765,6 +2381,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" comment like ?");
         parameters.add("%"+value);
         return this;
+    }
+    /**
+    * 备注
+    */
+    public SqlProject comment_rightLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return comment_rightLike(value);
     }
     /**
     * 备注
@@ -1797,6 +2427,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 备注
     */
+    public SqlProject comment_middleLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return comment_middleLike(value);
+    }
+    /**
+    * 备注
+    */
     public SqlProject comment_notBlank_middleLike(String value){
         return comment_middleLike(StrUtil.isNotBlank(value), value);
     }
@@ -1825,6 +2469,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" comment in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * 备注
+    */
+    public SqlProject comment_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return comment_in(value);
     }
     /**
     * 备注
@@ -1883,6 +2541,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" delete_status=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 删除状态
+    */
+    public SqlProject deleteStatus_eq(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return deleteStatus_eq(value);
     }
     /**
     * 删除状态
@@ -1957,6 +2629,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 删除状态
     */
+    public SqlProject deleteStatus_gt(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return deleteStatus_gt(value);
+    }
+    /**
+    * 删除状态
+    */
     public SqlProject deleteStatus_notNull_gt(Integer value){
         return deleteStatus_gt(null != value, value);
     }
@@ -1981,6 +2667,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" delete_status<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 删除状态
+    */
+    public SqlProject deleteStatus_lt(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return deleteStatus_lt(value);
     }
     /**
     * 删除状态
@@ -2013,6 +2713,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 删除状态
     */
+    public SqlProject deleteStatus_ge(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return deleteStatus_ge(value);
+    }
+    /**
+    * 删除状态
+    */
     public SqlProject deleteStatus_notNull_ge(Integer value){
         return deleteStatus_ge(null != value, value);
     }
@@ -2037,6 +2751,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" delete_status<=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 删除状态
+    */
+    public SqlProject deleteStatus_le(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return deleteStatus_le(value);
     }
     /**
     * 删除状态
@@ -2069,6 +2797,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 删除状态
     */
+    public SqlProject deleteStatus_ne(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return deleteStatus_ne(value);
+    }
+    /**
+    * 删除状态
+    */
     public SqlProject deleteStatus_notNull_ne(Integer value){
         return deleteStatus_ne(null != value, value);
     }
@@ -2097,6 +2839,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" delete_status in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * 删除状态
+    */
+    public SqlProject deleteStatus_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return deleteStatus_in(value);
     }
     /**
     * 删除状态
@@ -2159,6 +2915,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 创建时间
     */
+    public SqlProject createTime_eq(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return createTime_eq(value);
+    }
+    /**
+    * 创建时间
+    */
     public SqlProject createTime_notNull_eq(Timestamp value){
         return createTime_eq(null != value, value);
     }
@@ -2175,6 +2945,20 @@ public class SqlProject implements QuerySelect {
     public SqlProject createTime_eq_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return createTime_eq(value);
+    }
+    /**
+    * 创建时间
+    */
+    public SqlProject createTime_eq_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return createTime_eq_yyyyMMdd(value);
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -2249,6 +3033,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 创建时间
     */
+    public SqlProject createTime_gt(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return createTime_gt(value);
+    }
+    /**
+    * 创建时间
+    */
     public SqlProject createTime_notNull_gt(Timestamp value){
         return createTime_gt(null != value, value);
     }
@@ -2265,6 +3063,20 @@ public class SqlProject implements QuerySelect {
     public SqlProject createTime_gt_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return createTime_gt(value);
+    }
+    /**
+    * 创建时间
+    */
+    public SqlProject createTime_gt_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return createTime_gt_yyyyMMdd(value);
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -2297,6 +3109,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 创建时间
     */
+    public SqlProject createTime_lt(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return createTime_lt(value);
+    }
+    /**
+    * 创建时间
+    */
     public SqlProject createTime_notNull_lt(Timestamp value){
         return createTime_lt(null != value, value);
     }
@@ -2313,6 +3139,20 @@ public class SqlProject implements QuerySelect {
     public SqlProject createTime_lt_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return createTime_lt(value);
+    }
+    /**
+    * 创建时间
+    */
+    public SqlProject createTime_lt_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return createTime_lt_yyyyMMdd(value);
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -2333,6 +3173,20 @@ public class SqlProject implements QuerySelect {
     public SqlProject createTime_lt_nextDay_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(DateUtil.offsetDay(value, 1)).toTimestamp();
         return createTime_lt(value);
+    }
+    /**
+    * 创建时间
+    */
+    public SqlProject createTime_lt_nextDay_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return createTime_lt_nextDay_yyyyMMdd(value);
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日之后加一天,再查询
@@ -2365,6 +3219,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 创建时间
     */
+    public SqlProject createTime_ge(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return createTime_ge(value);
+    }
+    /**
+    * 创建时间
+    */
     public SqlProject createTime_notNull_ge(Timestamp value){
         return createTime_ge(null != value, value);
     }
@@ -2381,6 +3249,20 @@ public class SqlProject implements QuerySelect {
     public SqlProject createTime_ge_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return createTime_ge(value);
+    }
+    /**
+    * 创建时间
+    */
+    public SqlProject createTime_ge_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return createTime_ge_yyyyMMdd(value);
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -2413,6 +3295,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 创建时间
     */
+    public SqlProject createTime_le(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return createTime_le(value);
+    }
+    /**
+    * 创建时间
+    */
     public SqlProject createTime_notNull_le(Timestamp value){
         return createTime_le(null != value, value);
     }
@@ -2429,6 +3325,20 @@ public class SqlProject implements QuerySelect {
     public SqlProject createTime_le_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return createTime_le(value);
+    }
+    /**
+    * 创建时间
+    */
+    public SqlProject createTime_le_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return createTime_le_yyyyMMdd(value);
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -2461,6 +3371,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 创建时间
     */
+    public SqlProject createTime_ne(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return createTime_ne(value);
+    }
+    /**
+    * 创建时间
+    */
     public SqlProject createTime_notNull_ne(Timestamp value){
         return createTime_ne(null != value, value);
     }
@@ -2477,6 +3401,20 @@ public class SqlProject implements QuerySelect {
     public SqlProject createTime_ne_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return createTime_ne(value);
+    }
+    /**
+    * 创建时间
+    */
+    public SqlProject createTime_ne_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return createTime_ne_yyyyMMdd(value);
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -2509,6 +3447,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" create_time in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * 创建时间
+    */
+    public SqlProject createTime_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return createTime_in(value);
     }
     /**
     * 创建时间
@@ -2571,6 +3523,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 更新时间
     */
+    public SqlProject updateTime_eq(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return updateTime_eq(value);
+    }
+    /**
+    * 更新时间
+    */
     public SqlProject updateTime_notNull_eq(Timestamp value){
         return updateTime_eq(null != value, value);
     }
@@ -2587,6 +3553,20 @@ public class SqlProject implements QuerySelect {
     public SqlProject updateTime_eq_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return updateTime_eq(value);
+    }
+    /**
+    * 更新时间
+    */
+    public SqlProject updateTime_eq_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return updateTime_eq_yyyyMMdd(value);
     }
     /**
     * 更新时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -2661,6 +3641,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 更新时间
     */
+    public SqlProject updateTime_gt(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return updateTime_gt(value);
+    }
+    /**
+    * 更新时间
+    */
     public SqlProject updateTime_notNull_gt(Timestamp value){
         return updateTime_gt(null != value, value);
     }
@@ -2677,6 +3671,20 @@ public class SqlProject implements QuerySelect {
     public SqlProject updateTime_gt_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return updateTime_gt(value);
+    }
+    /**
+    * 更新时间
+    */
+    public SqlProject updateTime_gt_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return updateTime_gt_yyyyMMdd(value);
     }
     /**
     * 更新时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -2709,6 +3717,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 更新时间
     */
+    public SqlProject updateTime_lt(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return updateTime_lt(value);
+    }
+    /**
+    * 更新时间
+    */
     public SqlProject updateTime_notNull_lt(Timestamp value){
         return updateTime_lt(null != value, value);
     }
@@ -2725,6 +3747,20 @@ public class SqlProject implements QuerySelect {
     public SqlProject updateTime_lt_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return updateTime_lt(value);
+    }
+    /**
+    * 更新时间
+    */
+    public SqlProject updateTime_lt_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return updateTime_lt_yyyyMMdd(value);
     }
     /**
     * 更新时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -2745,6 +3781,20 @@ public class SqlProject implements QuerySelect {
     public SqlProject updateTime_lt_nextDay_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(DateUtil.offsetDay(value, 1)).toTimestamp();
         return updateTime_lt(value);
+    }
+    /**
+    * 更新时间
+    */
+    public SqlProject updateTime_lt_nextDay_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return updateTime_lt_nextDay_yyyyMMdd(value);
     }
     /**
     * 更新时间 把value时间小时及之后的部分舍弃只留年月日之后加一天,再查询
@@ -2777,6 +3827,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 更新时间
     */
+    public SqlProject updateTime_ge(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return updateTime_ge(value);
+    }
+    /**
+    * 更新时间
+    */
     public SqlProject updateTime_notNull_ge(Timestamp value){
         return updateTime_ge(null != value, value);
     }
@@ -2793,6 +3857,20 @@ public class SqlProject implements QuerySelect {
     public SqlProject updateTime_ge_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return updateTime_ge(value);
+    }
+    /**
+    * 更新时间
+    */
+    public SqlProject updateTime_ge_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return updateTime_ge_yyyyMMdd(value);
     }
     /**
     * 更新时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -2825,6 +3903,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 更新时间
     */
+    public SqlProject updateTime_le(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return updateTime_le(value);
+    }
+    /**
+    * 更新时间
+    */
     public SqlProject updateTime_notNull_le(Timestamp value){
         return updateTime_le(null != value, value);
     }
@@ -2841,6 +3933,20 @@ public class SqlProject implements QuerySelect {
     public SqlProject updateTime_le_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return updateTime_le(value);
+    }
+    /**
+    * 更新时间
+    */
+    public SqlProject updateTime_le_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return updateTime_le_yyyyMMdd(value);
     }
     /**
     * 更新时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -2873,6 +3979,20 @@ public class SqlProject implements QuerySelect {
     /**
     * 更新时间
     */
+    public SqlProject updateTime_ne(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return updateTime_ne(value);
+    }
+    /**
+    * 更新时间
+    */
     public SqlProject updateTime_notNull_ne(Timestamp value){
         return updateTime_ne(null != value, value);
     }
@@ -2889,6 +4009,20 @@ public class SqlProject implements QuerySelect {
     public SqlProject updateTime_ne_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return updateTime_ne(value);
+    }
+    /**
+    * 更新时间
+    */
+    public SqlProject updateTime_ne_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return updateTime_ne_yyyyMMdd(value);
     }
     /**
     * 更新时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -2921,6 +4055,20 @@ public class SqlProject implements QuerySelect {
         builder.append(pre+" update_time in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * 更新时间
+    */
+    public SqlProject updateTime_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return updateTime_in(value);
     }
     /**
     * 更新时间

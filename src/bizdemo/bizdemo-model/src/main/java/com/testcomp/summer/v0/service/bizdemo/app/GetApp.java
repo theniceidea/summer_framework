@@ -2,6 +2,7 @@ package com.testcomp.summer.v0.service.bizdemo.app;
 import com.fmk.framework.annotations.*;
 import com.fmk.framework.summer.BasicSummer;
 import com.fmk.framework.valid.IValidator;
+import com.fmk.framework.valid.IValidatorSuccess;
 import com.testcomp.model0.bizdemo.app.GetAppM;
 
 /**
@@ -52,6 +53,21 @@ public class GetApp extends BasicSummer<GetAppM>{
     /**
     * 删除状态
     */
+    public GetApp deleteStatus(java.lang.Integer value, IValidatorSuccess<java.lang.Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<java.lang.Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        this.deleteStatus=value;
+        return this;
+    }
+    /**
+    * 删除状态
+    */
     public GetApp deleteStatus_valid(IValidator<java.lang.Integer> validator, String msg){
         validator.valid(this.deleteStatus, msg);
         return this;
@@ -72,6 +88,21 @@ public class GetApp extends BasicSummer<GetAppM>{
     * 删除状态
     */
     public GetApp ds(java.util.List<Object> value){
+        this.ds=value;
+        return this;
+    }
+    /**
+    * 删除状态
+    */
+    public GetApp ds(java.util.List<Object> value, IValidatorSuccess<java.util.List<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<java.util.List<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
         this.ds=value;
         return this;
     }

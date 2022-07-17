@@ -19,6 +19,7 @@
     "import com.testcomp.entities0.bizdemo.summer_dev.*;",
     "import com.fmk.framework.daomodel.*;",
     "import com.fmk.framework.restful.PageResultList;",
+    "import com.fmk.framework.valid.IValidatorSuccess;",
     "import java.util.ArrayList;",
     "import java.util.List;",
     "import java.math.BigInteger;",

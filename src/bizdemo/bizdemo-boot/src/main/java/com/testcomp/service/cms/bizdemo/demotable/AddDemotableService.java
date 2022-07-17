@@ -21,12 +21,20 @@ import org.summerframework.model.SummerService;
 import org.summerframework.model.SummerServiceBean;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Service
 @SummerService
 public class AddDemotableService implements SummerServiceBean<AddDemotable> {
     @Override
     public void sum(AddDemotable summer) {
+
+        final List<Demotable> demotables = SqlDemotable
+                .inst()
+                .num_eq(1)
+                .orderBy_id_asc()
+                .orderBy_num2_desc()
+                .queryList();
 
         final GetCount1M count1M = GetCount1.s(Enum_deleteStatus.unDeleted.value());
         final PageResultList<ListApps2M> sum = ListApps2
@@ -41,6 +49,7 @@ public class AddDemotableService implements SummerServiceBean<AddDemotable> {
 
         System.out.println(count1M.getCount1());
         Demotable entity = new Demotable();
+        entity.title("", Valid::notNull);
         entity.setTitle("title");
         entity.setType("type");
         entity.setNum(1);

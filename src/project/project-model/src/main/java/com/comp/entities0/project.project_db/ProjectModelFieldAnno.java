@@ -139,10 +139,17 @@ public class ProjectModelFieldAnno extends Entity{
     /**
     * id
     */
+    public ProjectModelFieldAnno id(String value){
+        this.id=value;
+        return this;
+    }
+    /**
+    * id
+    */
     public ProjectModelFieldAnno id(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.id)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -210,10 +217,17 @@ public class ProjectModelFieldAnno extends Entity{
     /**
     * 项目id
     */
+    public ProjectModelFieldAnno projectId(String value){
+        this.projectId=value;
+        return this;
+    }
+    /**
+    * 项目id
+    */
     public ProjectModelFieldAnno projectId(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.projectId)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -281,10 +295,17 @@ public class ProjectModelFieldAnno extends Entity{
     /**
     * 数据库id
     */
+    public ProjectModelFieldAnno projectDbId(String value){
+        this.projectDbId=value;
+        return this;
+    }
+    /**
+    * 数据库id
+    */
     public ProjectModelFieldAnno projectDbId(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.projectDbId)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -352,10 +373,17 @@ public class ProjectModelFieldAnno extends Entity{
     /**
     * 数据模型id
     */
+    public ProjectModelFieldAnno projectModelId(String value){
+        this.projectModelId=value;
+        return this;
+    }
+    /**
+    * 数据模型id
+    */
     public ProjectModelFieldAnno projectModelId(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.projectModelId)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -423,10 +451,17 @@ public class ProjectModelFieldAnno extends Entity{
     /**
     * 字段id
     */
+    public ProjectModelFieldAnno projectModelFieldId(String value){
+        this.projectModelFieldId=value;
+        return this;
+    }
+    /**
+    * 字段id
+    */
     public ProjectModelFieldAnno projectModelFieldId(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.projectModelFieldId)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -494,10 +529,17 @@ public class ProjectModelFieldAnno extends Entity{
     /**
     * imports
     */
+    public ProjectModelFieldAnno imports(String value){
+        this.imports=value;
+        return this;
+    }
+    /**
+    * imports
+    */
     public ProjectModelFieldAnno imports(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.imports)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -565,10 +607,17 @@ public class ProjectModelFieldAnno extends Entity{
     /**
     * 注解
     */
+    public ProjectModelFieldAnno anno(String value){
+        this.anno=value;
+        return this;
+    }
+    /**
+    * 注解
+    */
     public ProjectModelFieldAnno anno(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.anno)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -636,10 +685,17 @@ public class ProjectModelFieldAnno extends Entity{
     /**
     * 序号
     */
+    public ProjectModelFieldAnno dspOrder(Integer value){
+        this.dspOrder=value;
+        return this;
+    }
+    /**
+    * 序号
+    */
     public ProjectModelFieldAnno dspOrder(Integer value, IValidatorSuccess<Integer> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(this.dspOrder)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -701,10 +757,17 @@ public class ProjectModelFieldAnno extends Entity{
     /**
     * 备注
     */
+    public ProjectModelFieldAnno comment(String value){
+        this.comment=value;
+        return this;
+    }
+    /**
+    * 备注
+    */
     public ProjectModelFieldAnno comment(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.comment)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -772,10 +835,17 @@ public class ProjectModelFieldAnno extends Entity{
     /**
     * 删除状态
     */
+    public ProjectModelFieldAnno deleteStatus(Integer value){
+        this.deleteStatus=value;
+        return this;
+    }
+    /**
+    * 删除状态
+    */
     public ProjectModelFieldAnno deleteStatus(Integer value, IValidatorSuccess<Integer> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(this.deleteStatus)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -875,10 +945,17 @@ public class ProjectModelFieldAnno extends Entity{
     /**
     * 创建时间
     */
+    public ProjectModelFieldAnno createTime(Timestamp value){
+        this.createTime=value;
+        return this;
+    }
+    /**
+    * 创建时间
+    */
     public ProjectModelFieldAnno createTime(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(this.createTime)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -940,10 +1017,17 @@ public class ProjectModelFieldAnno extends Entity{
     /**
     * 更新时间
     */
+    public ProjectModelFieldAnno updateTime(Timestamp value){
+        this.updateTime=value;
+        return this;
+    }
+    /**
+    * 更新时间
+    */
     public ProjectModelFieldAnno updateTime(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(this.updateTime)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }

@@ -6,6 +6,7 @@ import com.fmk.framework.exception.Excep;
 import com.testcomp.entities0.bizdemo.summer_dev.*;
 import com.fmk.framework.daomodel.*;
 import com.fmk.framework.restful.PageResultList;
+import com.fmk.framework.valid.IValidatorSuccess;
 import java.util.ArrayList;
 import java.util.List;
 import java.math.BigInteger;
@@ -177,6 +178,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * id
     */
+    public SqlDemotable3 id_eq(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_eq(value);
+    }
+    /**
+    * id
+    */
     public SqlDemotable3 id_notNull_eq(Integer value){
         return id_eq(null != value, value);
     }
@@ -247,6 +262,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * id
     */
+    public SqlDemotable3 id_gt(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_gt(value);
+    }
+    /**
+    * id
+    */
     public SqlDemotable3 id_notNull_gt(Integer value){
         return id_gt(null != value, value);
     }
@@ -271,6 +300,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" id<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * id
+    */
+    public SqlDemotable3 id_lt(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_lt(value);
     }
     /**
     * id
@@ -303,6 +346,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * id
     */
+    public SqlDemotable3 id_ge(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_ge(value);
+    }
+    /**
+    * id
+    */
     public SqlDemotable3 id_notNull_ge(Integer value){
         return id_ge(null != value, value);
     }
@@ -327,6 +384,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" id<=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * id
+    */
+    public SqlDemotable3 id_le(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_le(value);
     }
     /**
     * id
@@ -359,6 +430,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * id
     */
+    public SqlDemotable3 id_ne(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_ne(value);
+    }
+    /**
+    * id
+    */
     public SqlDemotable3 id_notNull_ne(Integer value){
         return id_ne(null != value, value);
     }
@@ -387,6 +472,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" id in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * id
+    */
+    public SqlDemotable3 id_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return id_in(value);
     }
     /**
     * id
@@ -445,6 +544,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" title=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 标题
+    */
+    public SqlDemotable3 title_eq(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return title_eq(value);
     }
     /**
     * 标题
@@ -519,6 +632,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 标题
     */
+    public SqlDemotable3 title_gt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return title_gt(value);
+    }
+    /**
+    * 标题
+    */
     public SqlDemotable3 title_notNull_gt(String value){
         return title_gt(null != value, value);
     }
@@ -543,6 +670,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" title<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 标题
+    */
+    public SqlDemotable3 title_lt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return title_lt(value);
     }
     /**
     * 标题
@@ -575,6 +716,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 标题
     */
+    public SqlDemotable3 title_ge(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return title_ge(value);
+    }
+    /**
+    * 标题
+    */
     public SqlDemotable3 title_notNull_ge(String value){
         return title_ge(null != value, value);
     }
@@ -603,6 +758,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 标题
     */
+    public SqlDemotable3 title_le(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return title_le(value);
+    }
+    /**
+    * 标题
+    */
     public SqlDemotable3 title_notNull_le(String value){
         return title_le(null != value, value);
     }
@@ -627,6 +796,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" title<>?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 标题
+    */
+    public SqlDemotable3 title_ne(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return title_ne(value);
     }
     /**
     * 标题
@@ -665,6 +848,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 标题
     */
+    public SqlDemotable3 title_leftLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return title_leftLike(value);
+    }
+    /**
+    * 标题
+    */
     public SqlDemotable3 title_notBlank_leftLike(String value){
         return title_leftLike(StrUtil.isNotBlank(value), value);
     }
@@ -689,6 +886,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" title like ?");
         parameters.add("%"+value);
         return this;
+    }
+    /**
+    * 标题
+    */
+    public SqlDemotable3 title_rightLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return title_rightLike(value);
     }
     /**
     * 标题
@@ -721,6 +932,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 标题
     */
+    public SqlDemotable3 title_middleLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return title_middleLike(value);
+    }
+    /**
+    * 标题
+    */
     public SqlDemotable3 title_notBlank_middleLike(String value){
         return title_middleLike(StrUtil.isNotBlank(value), value);
     }
@@ -749,6 +974,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" title in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * 标题
+    */
+    public SqlDemotable3 title_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return title_in(value);
     }
     /**
     * 标题
@@ -807,6 +1046,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" type=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 类型
+    */
+    public SqlDemotable3 type_eq(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return type_eq(value);
     }
     /**
     * 类型
@@ -881,6 +1134,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 类型
     */
+    public SqlDemotable3 type_gt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return type_gt(value);
+    }
+    /**
+    * 类型
+    */
     public SqlDemotable3 type_notNull_gt(String value){
         return type_gt(null != value, value);
     }
@@ -905,6 +1172,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" type<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 类型
+    */
+    public SqlDemotable3 type_lt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return type_lt(value);
     }
     /**
     * 类型
@@ -937,6 +1218,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 类型
     */
+    public SqlDemotable3 type_ge(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return type_ge(value);
+    }
+    /**
+    * 类型
+    */
     public SqlDemotable3 type_notNull_ge(String value){
         return type_ge(null != value, value);
     }
@@ -965,6 +1260,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 类型
     */
+    public SqlDemotable3 type_le(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return type_le(value);
+    }
+    /**
+    * 类型
+    */
     public SqlDemotable3 type_notNull_le(String value){
         return type_le(null != value, value);
     }
@@ -989,6 +1298,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" type<>?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 类型
+    */
+    public SqlDemotable3 type_ne(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return type_ne(value);
     }
     /**
     * 类型
@@ -1027,6 +1350,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 类型
     */
+    public SqlDemotable3 type_leftLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return type_leftLike(value);
+    }
+    /**
+    * 类型
+    */
     public SqlDemotable3 type_notBlank_leftLike(String value){
         return type_leftLike(StrUtil.isNotBlank(value), value);
     }
@@ -1051,6 +1388,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" type like ?");
         parameters.add("%"+value);
         return this;
+    }
+    /**
+    * 类型
+    */
+    public SqlDemotable3 type_rightLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return type_rightLike(value);
     }
     /**
     * 类型
@@ -1083,6 +1434,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 类型
     */
+    public SqlDemotable3 type_middleLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return type_middleLike(value);
+    }
+    /**
+    * 类型
+    */
     public SqlDemotable3 type_notBlank_middleLike(String value){
         return type_middleLike(StrUtil.isNotBlank(value), value);
     }
@@ -1111,6 +1476,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" type in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * 类型
+    */
+    public SqlDemotable3 type_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return type_in(value);
     }
     /**
     * 类型
@@ -1169,6 +1548,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" num=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 数量
+    */
+    public SqlDemotable3 num_eq(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num_eq(value);
     }
     /**
     * 数量
@@ -1243,6 +1636,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量
     */
+    public SqlDemotable3 num_gt(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num_gt(value);
+    }
+    /**
+    * 数量
+    */
     public SqlDemotable3 num_notNull_gt(Integer value){
         return num_gt(null != value, value);
     }
@@ -1267,6 +1674,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" num<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 数量
+    */
+    public SqlDemotable3 num_lt(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num_lt(value);
     }
     /**
     * 数量
@@ -1299,6 +1720,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量
     */
+    public SqlDemotable3 num_ge(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num_ge(value);
+    }
+    /**
+    * 数量
+    */
     public SqlDemotable3 num_notNull_ge(Integer value){
         return num_ge(null != value, value);
     }
@@ -1323,6 +1758,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" num<=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 数量
+    */
+    public SqlDemotable3 num_le(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num_le(value);
     }
     /**
     * 数量
@@ -1355,6 +1804,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量
     */
+    public SqlDemotable3 num_ne(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num_ne(value);
+    }
+    /**
+    * 数量
+    */
     public SqlDemotable3 num_notNull_ne(Integer value){
         return num_ne(null != value, value);
     }
@@ -1383,6 +1846,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" num in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * 数量
+    */
+    public SqlDemotable3 num_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num_in(value);
     }
     /**
     * 数量
@@ -1445,6 +1922,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" num2=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 数量2
+    */
+    public SqlDemotable3 num2_eq(BigDecimal value, IValidatorSuccess<BigDecimal> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<BigDecimal> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num2_eq(value);
     }
     /**
     * 数量2
@@ -1519,6 +2010,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量2
     */
+    public SqlDemotable3 num2_gt(BigDecimal value, IValidatorSuccess<BigDecimal> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<BigDecimal> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num2_gt(value);
+    }
+    /**
+    * 数量2
+    */
     public SqlDemotable3 num2_notNull_gt(BigDecimal value){
         return num2_gt(null != value, value);
     }
@@ -1543,6 +2048,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" num2<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 数量2
+    */
+    public SqlDemotable3 num2_lt(BigDecimal value, IValidatorSuccess<BigDecimal> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<BigDecimal> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num2_lt(value);
     }
     /**
     * 数量2
@@ -1575,6 +2094,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量2
     */
+    public SqlDemotable3 num2_ge(BigDecimal value, IValidatorSuccess<BigDecimal> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<BigDecimal> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num2_ge(value);
+    }
+    /**
+    * 数量2
+    */
     public SqlDemotable3 num2_notNull_ge(BigDecimal value){
         return num2_ge(null != value, value);
     }
@@ -1599,6 +2132,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" num2<=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 数量2
+    */
+    public SqlDemotable3 num2_le(BigDecimal value, IValidatorSuccess<BigDecimal> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<BigDecimal> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num2_le(value);
     }
     /**
     * 数量2
@@ -1631,6 +2178,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量2
     */
+    public SqlDemotable3 num2_ne(BigDecimal value, IValidatorSuccess<BigDecimal> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<BigDecimal> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num2_ne(value);
+    }
+    /**
+    * 数量2
+    */
     public SqlDemotable3 num2_notNull_ne(BigDecimal value){
         return num2_ne(null != value, value);
     }
@@ -1659,6 +2220,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" num2 in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * 数量2
+    */
+    public SqlDemotable3 num2_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num2_in(value);
     }
     /**
     * 数量2
@@ -1721,6 +2296,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" num3=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 数量3
+    */
+    public SqlDemotable3 num3_eq(Double value, IValidatorSuccess<Double> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Double> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num3_eq(value);
     }
     /**
     * 数量3
@@ -1795,6 +2384,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量3
     */
+    public SqlDemotable3 num3_gt(Double value, IValidatorSuccess<Double> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Double> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num3_gt(value);
+    }
+    /**
+    * 数量3
+    */
     public SqlDemotable3 num3_notNull_gt(Double value){
         return num3_gt(null != value, value);
     }
@@ -1819,6 +2422,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" num3<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 数量3
+    */
+    public SqlDemotable3 num3_lt(Double value, IValidatorSuccess<Double> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Double> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num3_lt(value);
     }
     /**
     * 数量3
@@ -1851,6 +2468,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量3
     */
+    public SqlDemotable3 num3_ge(Double value, IValidatorSuccess<Double> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Double> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num3_ge(value);
+    }
+    /**
+    * 数量3
+    */
     public SqlDemotable3 num3_notNull_ge(Double value){
         return num3_ge(null != value, value);
     }
@@ -1875,6 +2506,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" num3<=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * 数量3
+    */
+    public SqlDemotable3 num3_le(Double value, IValidatorSuccess<Double> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Double> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num3_le(value);
     }
     /**
     * 数量3
@@ -1907,6 +2552,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量3
     */
+    public SqlDemotable3 num3_ne(Double value, IValidatorSuccess<Double> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Double> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num3_ne(value);
+    }
+    /**
+    * 数量3
+    */
     public SqlDemotable3 num3_notNull_ne(Double value){
         return num3_ne(null != value, value);
     }
@@ -1935,6 +2594,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" num3 in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * 数量3
+    */
+    public SqlDemotable3 num3_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return num3_in(value);
     }
     /**
     * 数量3
@@ -1997,6 +2670,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" demotable2_id=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * demotable2
+    */
+    public SqlDemotable3 demotable2Id_eq(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return demotable2Id_eq(value);
     }
     /**
     * demotable2
@@ -2071,6 +2758,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * demotable2
     */
+    public SqlDemotable3 demotable2Id_gt(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return demotable2Id_gt(value);
+    }
+    /**
+    * demotable2
+    */
     public SqlDemotable3 demotable2Id_notNull_gt(Integer value){
         return demotable2Id_gt(null != value, value);
     }
@@ -2095,6 +2796,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" demotable2_id<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * demotable2
+    */
+    public SqlDemotable3 demotable2Id_lt(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return demotable2Id_lt(value);
     }
     /**
     * demotable2
@@ -2127,6 +2842,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * demotable2
     */
+    public SqlDemotable3 demotable2Id_ge(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return demotable2Id_ge(value);
+    }
+    /**
+    * demotable2
+    */
     public SqlDemotable3 demotable2Id_notNull_ge(Integer value){
         return demotable2Id_ge(null != value, value);
     }
@@ -2155,6 +2884,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * demotable2
     */
+    public SqlDemotable3 demotable2Id_le(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return demotable2Id_le(value);
+    }
+    /**
+    * demotable2
+    */
     public SqlDemotable3 demotable2Id_notNull_le(Integer value){
         return demotable2Id_le(null != value, value);
     }
@@ -2179,6 +2922,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" demotable2_id<>?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * demotable2
+    */
+    public SqlDemotable3 demotable2Id_ne(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return demotable2Id_ne(value);
     }
     /**
     * demotable2
@@ -2215,6 +2972,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * demotable2
     */
+    public SqlDemotable3 demotable2Id_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return demotable2Id_in(value);
+    }
+    /**
+    * demotable2
+    */
     public SqlDemotable3 demotable2Id_notEmpty_in(Set<Object> values){
         return demotable2Id_in(null != values && !values.isEmpty(), values);
     }
@@ -2237,6 +3008,20 @@ public class SqlDemotable3 implements QuerySelect {
             throw new RuntimeException("entities 必须拥有有效的id元素");
         }
         return demotable2Id_in(vals);
+    }
+    /**
+    * demotable2
+    */
+    public SqlDemotable3 demotable2Id_in(List<Demotable2> value, IValidatorSuccess<List<Demotable2>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<List<Demotable2>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return demotable2Id_in(value);
     }
     /**
     * demotable2
@@ -2295,6 +3080,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" delete_status=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * delete status
+    */
+    public SqlDemotable3 deleteStatus_eq(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return deleteStatus_eq(value);
     }
     /**
     * delete status
@@ -2369,6 +3168,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * delete status
     */
+    public SqlDemotable3 deleteStatus_gt(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return deleteStatus_gt(value);
+    }
+    /**
+    * delete status
+    */
     public SqlDemotable3 deleteStatus_notNull_gt(Integer value){
         return deleteStatus_gt(null != value, value);
     }
@@ -2393,6 +3206,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" delete_status<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * delete status
+    */
+    public SqlDemotable3 deleteStatus_lt(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return deleteStatus_lt(value);
     }
     /**
     * delete status
@@ -2425,6 +3252,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * delete status
     */
+    public SqlDemotable3 deleteStatus_ge(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return deleteStatus_ge(value);
+    }
+    /**
+    * delete status
+    */
     public SqlDemotable3 deleteStatus_notNull_ge(Integer value){
         return deleteStatus_ge(null != value, value);
     }
@@ -2449,6 +3290,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" delete_status<=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * delete status
+    */
+    public SqlDemotable3 deleteStatus_le(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return deleteStatus_le(value);
     }
     /**
     * delete status
@@ -2481,6 +3336,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * delete status
     */
+    public SqlDemotable3 deleteStatus_ne(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return deleteStatus_ne(value);
+    }
+    /**
+    * delete status
+    */
     public SqlDemotable3 deleteStatus_notNull_ne(Integer value){
         return deleteStatus_ne(null != value, value);
     }
@@ -2509,6 +3378,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" delete_status in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * delete status
+    */
+    public SqlDemotable3 deleteStatus_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return deleteStatus_in(value);
     }
     /**
     * delete status
@@ -2567,6 +3450,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" enable_status=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * enable status
+    */
+    public SqlDemotable3 enableStatus_eq(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return enableStatus_eq(value);
     }
     /**
     * enable status
@@ -2641,6 +3538,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * enable status
     */
+    public SqlDemotable3 enableStatus_gt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return enableStatus_gt(value);
+    }
+    /**
+    * enable status
+    */
     public SqlDemotable3 enableStatus_notNull_gt(String value){
         return enableStatus_gt(null != value, value);
     }
@@ -2665,6 +3576,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" enable_status<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * enable status
+    */
+    public SqlDemotable3 enableStatus_lt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return enableStatus_lt(value);
     }
     /**
     * enable status
@@ -2697,6 +3622,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * enable status
     */
+    public SqlDemotable3 enableStatus_ge(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return enableStatus_ge(value);
+    }
+    /**
+    * enable status
+    */
     public SqlDemotable3 enableStatus_notNull_ge(String value){
         return enableStatus_ge(null != value, value);
     }
@@ -2725,6 +3664,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * enable status
     */
+    public SqlDemotable3 enableStatus_le(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return enableStatus_le(value);
+    }
+    /**
+    * enable status
+    */
     public SqlDemotable3 enableStatus_notNull_le(String value){
         return enableStatus_le(null != value, value);
     }
@@ -2749,6 +3702,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" enable_status<>?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * enable status
+    */
+    public SqlDemotable3 enableStatus_ne(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return enableStatus_ne(value);
     }
     /**
     * enable status
@@ -2787,6 +3754,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * enable status
     */
+    public SqlDemotable3 enableStatus_leftLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return enableStatus_leftLike(value);
+    }
+    /**
+    * enable status
+    */
     public SqlDemotable3 enableStatus_notBlank_leftLike(String value){
         return enableStatus_leftLike(StrUtil.isNotBlank(value), value);
     }
@@ -2811,6 +3792,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" enable_status like ?");
         parameters.add("%"+value);
         return this;
+    }
+    /**
+    * enable status
+    */
+    public SqlDemotable3 enableStatus_rightLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return enableStatus_rightLike(value);
     }
     /**
     * enable status
@@ -2843,6 +3838,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * enable status
     */
+    public SqlDemotable3 enableStatus_middleLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return enableStatus_middleLike(value);
+    }
+    /**
+    * enable status
+    */
     public SqlDemotable3 enableStatus_notBlank_middleLike(String value){
         return enableStatus_middleLike(StrUtil.isNotBlank(value), value);
     }
@@ -2871,6 +3880,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" enable_status in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * enable status
+    */
+    public SqlDemotable3 enableStatus_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return enableStatus_in(value);
     }
     /**
     * enable status
@@ -2929,6 +3952,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" status=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * status
+    */
+    public SqlDemotable3 status_eq(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status_eq(value);
     }
     /**
     * status
@@ -3003,6 +4040,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
+    public SqlDemotable3 status_gt(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status_gt(value);
+    }
+    /**
+    * status
+    */
     public SqlDemotable3 status_notNull_gt(Integer value){
         return status_gt(null != value, value);
     }
@@ -3027,6 +4078,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" status<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * status
+    */
+    public SqlDemotable3 status_lt(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status_lt(value);
     }
     /**
     * status
@@ -3059,6 +4124,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
+    public SqlDemotable3 status_ge(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status_ge(value);
+    }
+    /**
+    * status
+    */
     public SqlDemotable3 status_notNull_ge(Integer value){
         return status_ge(null != value, value);
     }
@@ -3083,6 +4162,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" status<=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * status
+    */
+    public SqlDemotable3 status_le(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status_le(value);
     }
     /**
     * status
@@ -3115,6 +4208,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
+    public SqlDemotable3 status_ne(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status_ne(value);
+    }
+    /**
+    * status
+    */
     public SqlDemotable3 status_notNull_ne(Integer value){
         return status_ne(null != value, value);
     }
@@ -3143,6 +4250,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" status in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * status
+    */
+    public SqlDemotable3 status_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status_in(value);
     }
     /**
     * status
@@ -3201,6 +4322,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" status2=?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * status
+    */
+    public SqlDemotable3 status2_eq(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status2_eq(value);
     }
     /**
     * status
@@ -3275,6 +4410,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
+    public SqlDemotable3 status2_gt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status2_gt(value);
+    }
+    /**
+    * status
+    */
     public SqlDemotable3 status2_notNull_gt(String value){
         return status2_gt(null != value, value);
     }
@@ -3299,6 +4448,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" status2<?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * status
+    */
+    public SqlDemotable3 status2_lt(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status2_lt(value);
     }
     /**
     * status
@@ -3331,6 +4494,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
+    public SqlDemotable3 status2_ge(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status2_ge(value);
+    }
+    /**
+    * status
+    */
     public SqlDemotable3 status2_notNull_ge(String value){
         return status2_ge(null != value, value);
     }
@@ -3359,6 +4536,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
+    public SqlDemotable3 status2_le(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status2_le(value);
+    }
+    /**
+    * status
+    */
     public SqlDemotable3 status2_notNull_le(String value){
         return status2_le(null != value, value);
     }
@@ -3383,6 +4574,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" status2<>?");
         parameters.add(value);
         return this;
+    }
+    /**
+    * status
+    */
+    public SqlDemotable3 status2_ne(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status2_ne(value);
     }
     /**
     * status
@@ -3421,6 +4626,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
+    public SqlDemotable3 status2_leftLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status2_leftLike(value);
+    }
+    /**
+    * status
+    */
     public SqlDemotable3 status2_notBlank_leftLike(String value){
         return status2_leftLike(StrUtil.isNotBlank(value), value);
     }
@@ -3445,6 +4664,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" status2 like ?");
         parameters.add("%"+value);
         return this;
+    }
+    /**
+    * status
+    */
+    public SqlDemotable3 status2_rightLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status2_rightLike(value);
     }
     /**
     * status
@@ -3477,6 +4710,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
+    public SqlDemotable3 status2_middleLike(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status2_middleLike(value);
+    }
+    /**
+    * status
+    */
     public SqlDemotable3 status2_notBlank_middleLike(String value){
         return status2_middleLike(StrUtil.isNotBlank(value), value);
     }
@@ -3505,6 +4752,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" status2 in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * status
+    */
+    public SqlDemotable3 status2_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return status2_in(value);
     }
     /**
     * status
@@ -3567,6 +4828,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间
     */
+    public SqlDemotable3 creationDate_eq(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_eq(value);
+    }
+    /**
+    * 创建时间
+    */
     public SqlDemotable3 creationDate_notNull_eq(Timestamp value){
         return creationDate_eq(null != value, value);
     }
@@ -3583,6 +4858,20 @@ public class SqlDemotable3 implements QuerySelect {
     public SqlDemotable3 creationDate_eq_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return creationDate_eq(value);
+    }
+    /**
+    * 创建时间
+    */
+    public SqlDemotable3 creationDate_eq_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_eq_yyyyMMdd(value);
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -3657,6 +4946,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间
     */
+    public SqlDemotable3 creationDate_gt(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_gt(value);
+    }
+    /**
+    * 创建时间
+    */
     public SqlDemotable3 creationDate_notNull_gt(Timestamp value){
         return creationDate_gt(null != value, value);
     }
@@ -3673,6 +4976,20 @@ public class SqlDemotable3 implements QuerySelect {
     public SqlDemotable3 creationDate_gt_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return creationDate_gt(value);
+    }
+    /**
+    * 创建时间
+    */
+    public SqlDemotable3 creationDate_gt_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_gt_yyyyMMdd(value);
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -3705,6 +5022,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间
     */
+    public SqlDemotable3 creationDate_lt(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_lt(value);
+    }
+    /**
+    * 创建时间
+    */
     public SqlDemotable3 creationDate_notNull_lt(Timestamp value){
         return creationDate_lt(null != value, value);
     }
@@ -3721,6 +5052,20 @@ public class SqlDemotable3 implements QuerySelect {
     public SqlDemotable3 creationDate_lt_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return creationDate_lt(value);
+    }
+    /**
+    * 创建时间
+    */
+    public SqlDemotable3 creationDate_lt_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_lt_yyyyMMdd(value);
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -3741,6 +5086,20 @@ public class SqlDemotable3 implements QuerySelect {
     public SqlDemotable3 creationDate_lt_nextDay_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(DateUtil.offsetDay(value, 1)).toTimestamp();
         return creationDate_lt(value);
+    }
+    /**
+    * 创建时间
+    */
+    public SqlDemotable3 creationDate_lt_nextDay_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_lt_nextDay_yyyyMMdd(value);
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日之后加一天,再查询
@@ -3773,6 +5132,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间
     */
+    public SqlDemotable3 creationDate_ge(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_ge(value);
+    }
+    /**
+    * 创建时间
+    */
     public SqlDemotable3 creationDate_notNull_ge(Timestamp value){
         return creationDate_ge(null != value, value);
     }
@@ -3789,6 +5162,20 @@ public class SqlDemotable3 implements QuerySelect {
     public SqlDemotable3 creationDate_ge_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return creationDate_ge(value);
+    }
+    /**
+    * 创建时间
+    */
+    public SqlDemotable3 creationDate_ge_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_ge_yyyyMMdd(value);
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -3821,6 +5208,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间
     */
+    public SqlDemotable3 creationDate_le(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_le(value);
+    }
+    /**
+    * 创建时间
+    */
     public SqlDemotable3 creationDate_notNull_le(Timestamp value){
         return creationDate_le(null != value, value);
     }
@@ -3837,6 +5238,20 @@ public class SqlDemotable3 implements QuerySelect {
     public SqlDemotable3 creationDate_le_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return creationDate_le(value);
+    }
+    /**
+    * 创建时间
+    */
+    public SqlDemotable3 creationDate_le_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_le_yyyyMMdd(value);
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -3869,6 +5284,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间
     */
+    public SqlDemotable3 creationDate_ne(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_ne(value);
+    }
+    /**
+    * 创建时间
+    */
     public SqlDemotable3 creationDate_notNull_ne(Timestamp value){
         return creationDate_ne(null != value, value);
     }
@@ -3885,6 +5314,20 @@ public class SqlDemotable3 implements QuerySelect {
     public SqlDemotable3 creationDate_ne_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return creationDate_ne(value);
+    }
+    /**
+    * 创建时间
+    */
+    public SqlDemotable3 creationDate_ne_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_ne_yyyyMMdd(value);
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -3917,6 +5360,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" creation_date in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * 创建时间
+    */
+    public SqlDemotable3 creationDate_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate_in(value);
     }
     /**
     * 创建时间
@@ -3979,6 +5436,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间2
     */
+    public SqlDemotable3 creationDate2_eq(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate2_eq(value);
+    }
+    /**
+    * 创建时间2
+    */
     public SqlDemotable3 creationDate2_notNull_eq(Timestamp value){
         return creationDate2_eq(null != value, value);
     }
@@ -3995,6 +5466,20 @@ public class SqlDemotable3 implements QuerySelect {
     public SqlDemotable3 creationDate2_eq_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return creationDate2_eq(value);
+    }
+    /**
+    * 创建时间2
+    */
+    public SqlDemotable3 creationDate2_eq_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate2_eq_yyyyMMdd(value);
     }
     /**
     * 创建时间2 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -4069,6 +5554,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间2
     */
+    public SqlDemotable3 creationDate2_gt(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate2_gt(value);
+    }
+    /**
+    * 创建时间2
+    */
     public SqlDemotable3 creationDate2_notNull_gt(Timestamp value){
         return creationDate2_gt(null != value, value);
     }
@@ -4085,6 +5584,20 @@ public class SqlDemotable3 implements QuerySelect {
     public SqlDemotable3 creationDate2_gt_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return creationDate2_gt(value);
+    }
+    /**
+    * 创建时间2
+    */
+    public SqlDemotable3 creationDate2_gt_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate2_gt_yyyyMMdd(value);
     }
     /**
     * 创建时间2 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -4117,6 +5630,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间2
     */
+    public SqlDemotable3 creationDate2_lt(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate2_lt(value);
+    }
+    /**
+    * 创建时间2
+    */
     public SqlDemotable3 creationDate2_notNull_lt(Timestamp value){
         return creationDate2_lt(null != value, value);
     }
@@ -4133,6 +5660,20 @@ public class SqlDemotable3 implements QuerySelect {
     public SqlDemotable3 creationDate2_lt_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return creationDate2_lt(value);
+    }
+    /**
+    * 创建时间2
+    */
+    public SqlDemotable3 creationDate2_lt_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate2_lt_yyyyMMdd(value);
     }
     /**
     * 创建时间2 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -4153,6 +5694,20 @@ public class SqlDemotable3 implements QuerySelect {
     public SqlDemotable3 creationDate2_lt_nextDay_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(DateUtil.offsetDay(value, 1)).toTimestamp();
         return creationDate2_lt(value);
+    }
+    /**
+    * 创建时间2
+    */
+    public SqlDemotable3 creationDate2_lt_nextDay_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate2_lt_nextDay_yyyyMMdd(value);
     }
     /**
     * 创建时间2 把value时间小时及之后的部分舍弃只留年月日之后加一天,再查询
@@ -4185,6 +5740,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间2
     */
+    public SqlDemotable3 creationDate2_ge(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate2_ge(value);
+    }
+    /**
+    * 创建时间2
+    */
     public SqlDemotable3 creationDate2_notNull_ge(Timestamp value){
         return creationDate2_ge(null != value, value);
     }
@@ -4201,6 +5770,20 @@ public class SqlDemotable3 implements QuerySelect {
     public SqlDemotable3 creationDate2_ge_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return creationDate2_ge(value);
+    }
+    /**
+    * 创建时间2
+    */
+    public SqlDemotable3 creationDate2_ge_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate2_ge_yyyyMMdd(value);
     }
     /**
     * 创建时间2 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -4233,6 +5816,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间2
     */
+    public SqlDemotable3 creationDate2_le(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate2_le(value);
+    }
+    /**
+    * 创建时间2
+    */
     public SqlDemotable3 creationDate2_notNull_le(Timestamp value){
         return creationDate2_le(null != value, value);
     }
@@ -4249,6 +5846,20 @@ public class SqlDemotable3 implements QuerySelect {
     public SqlDemotable3 creationDate2_le_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return creationDate2_le(value);
+    }
+    /**
+    * 创建时间2
+    */
+    public SqlDemotable3 creationDate2_le_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate2_le_yyyyMMdd(value);
     }
     /**
     * 创建时间2 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -4281,6 +5892,20 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间2
     */
+    public SqlDemotable3 creationDate2_ne(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate2_ne(value);
+    }
+    /**
+    * 创建时间2
+    */
     public SqlDemotable3 creationDate2_notNull_ne(Timestamp value){
         return creationDate2_ne(null != value, value);
     }
@@ -4297,6 +5922,20 @@ public class SqlDemotable3 implements QuerySelect {
     public SqlDemotable3 creationDate2_ne_yyyyMMdd(Timestamp value){
         value=DateUtil.beginOfDay(value).toTimestamp();
         return creationDate2_ne(value);
+    }
+    /**
+    * 创建时间2
+    */
+    public SqlDemotable3 creationDate2_ne_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate2_ne_yyyyMMdd(value);
     }
     /**
     * 创建时间2 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -4329,6 +5968,20 @@ public class SqlDemotable3 implements QuerySelect {
         builder.append(pre+" creation_date2 in ("+txt+")");
         parameters.addAll(values);
         return this;
+    }
+    /**
+    * 创建时间2
+    */
+    public SqlDemotable3 creationDate2_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        return creationDate2_in(value);
     }
     /**
     * 创建时间2

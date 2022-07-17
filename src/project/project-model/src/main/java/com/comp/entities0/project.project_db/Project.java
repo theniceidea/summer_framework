@@ -107,10 +107,17 @@ public class Project extends Entity{
     /**
     * id
     */
+    public Project id(String value){
+        this.id=value;
+        return this;
+    }
+    /**
+    * id
+    */
     public Project id(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.id)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -178,10 +185,17 @@ public class Project extends Entity{
     /**
     * 中文名
     */
+    public Project cname(String value){
+        this.cname=value;
+        return this;
+    }
+    /**
+    * 中文名
+    */
     public Project cname(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.cname)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -249,10 +263,17 @@ public class Project extends Entity{
     /**
     * 英文名
     */
+    public Project ename(String value){
+        this.ename=value;
+        return this;
+    }
+    /**
+    * 英文名
+    */
     public Project ename(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.ename)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -320,10 +341,17 @@ public class Project extends Entity{
     /**
     * 序号
     */
+    public Project dspOrder(Integer value){
+        this.dspOrder=value;
+        return this;
+    }
+    /**
+    * 序号
+    */
     public Project dspOrder(Integer value, IValidatorSuccess<Integer> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(this.dspOrder)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -385,10 +413,17 @@ public class Project extends Entity{
     /**
     * 备注
     */
+    public Project comment(String value){
+        this.comment=value;
+        return this;
+    }
+    /**
+    * 备注
+    */
     public Project comment(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.comment)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -456,10 +491,17 @@ public class Project extends Entity{
     /**
     * 删除状态
     */
+    public Project deleteStatus(Integer value){
+        this.deleteStatus=value;
+        return this;
+    }
+    /**
+    * 删除状态
+    */
     public Project deleteStatus(Integer value, IValidatorSuccess<Integer> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(this.deleteStatus)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -559,10 +601,17 @@ public class Project extends Entity{
     /**
     * 创建时间
     */
+    public Project createTime(Timestamp value){
+        this.createTime=value;
+        return this;
+    }
+    /**
+    * 创建时间
+    */
     public Project createTime(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(this.createTime)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -624,10 +673,17 @@ public class Project extends Entity{
     /**
     * 更新时间
     */
+    public Project updateTime(Timestamp value){
+        this.updateTime=value;
+        return this;
+    }
+    /**
+    * 更新时间
+    */
     public Project updateTime(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(this.updateTime)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }

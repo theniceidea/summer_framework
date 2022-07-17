@@ -145,10 +145,17 @@ public class Demotable extends Entity{
     /**
     * id
     */
+    public Demotable id(Integer value){
+        this.id=value;
+        return this;
+    }
+    /**
+    * id
+    */
     public Demotable id(Integer value, IValidatorSuccess<Integer> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(this.id)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -210,10 +217,17 @@ public class Demotable extends Entity{
     /**
     * 标题
     */
+    public Demotable title(String value){
+        this.title=value;
+        return this;
+    }
+    /**
+    * 标题
+    */
     public Demotable title(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.title)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -281,10 +295,17 @@ public class Demotable extends Entity{
     /**
     * 类型
     */
+    public Demotable type(String value){
+        this.type=value;
+        return this;
+    }
+    /**
+    * 类型
+    */
     public Demotable type(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.type)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -352,10 +373,17 @@ public class Demotable extends Entity{
     /**
     * 数量
     */
+    public Demotable num(Integer value){
+        this.num=value;
+        return this;
+    }
+    /**
+    * 数量
+    */
     public Demotable num(Integer value, IValidatorSuccess<Integer> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(this.num)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -417,10 +445,17 @@ public class Demotable extends Entity{
     /**
     * 数量2
     */
+    public Demotable num2(BigDecimal value){
+        this.num2=value;
+        return this;
+    }
+    /**
+    * 数量2
+    */
     public Demotable num2(BigDecimal value, IValidatorSuccess<BigDecimal> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<BigDecimal> itm : ivs){
-                if(!itm.isValidSuccess(this.num2)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -482,10 +517,17 @@ public class Demotable extends Entity{
     /**
     * 数量3
     */
+    public Demotable num3(Double value){
+        this.num3=value;
+        return this;
+    }
+    /**
+    * 数量3
+    */
     public Demotable num3(Double value, IValidatorSuccess<Double> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Double> itm : ivs){
-                if(!itm.isValidSuccess(this.num3)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -547,10 +589,17 @@ public class Demotable extends Entity{
     /**
     * demotable2
     */
+    public Demotable demotable2Id(Integer value){
+        this.demotable2Id=value;
+        return this;
+    }
+    /**
+    * demotable2
+    */
     public Demotable demotable2Id(Integer value, IValidatorSuccess<Integer> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(this.demotable2Id)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -612,10 +661,17 @@ public class Demotable extends Entity{
     /**
     * delete status
     */
+    public Demotable deleteStatus(Integer value){
+        this.deleteStatus=value;
+        return this;
+    }
+    /**
+    * delete status
+    */
     public Demotable deleteStatus(Integer value, IValidatorSuccess<Integer> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(this.deleteStatus)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -715,10 +771,17 @@ public class Demotable extends Entity{
     /**
     * enable status
     */
+    public Demotable enableStatus(String value){
+        this.enableStatus=value;
+        return this;
+    }
+    /**
+    * enable status
+    */
     public Demotable enableStatus(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.enableStatus)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -824,10 +887,17 @@ public class Demotable extends Entity{
     /**
     * status
     */
+    public Demotable status(Integer value){
+        this.status=value;
+        return this;
+    }
+    /**
+    * status
+    */
     public Demotable status(Integer value, IValidatorSuccess<Integer> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(this.status)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -946,10 +1016,17 @@ public class Demotable extends Entity{
     /**
     * status
     */
+    public Demotable status2(String value){
+        this.status2=value;
+        return this;
+    }
+    /**
+    * status
+    */
     public Demotable status2(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.status2)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -1074,10 +1151,17 @@ public class Demotable extends Entity{
     /**
     * 创建时间
     */
+    public Demotable creationDate(Timestamp value){
+        this.creationDate=value;
+        return this;
+    }
+    /**
+    * 创建时间
+    */
     public Demotable creationDate(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(this.creationDate)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }

@@ -171,10 +171,17 @@ public class ProjectModel extends Entity{
     /**
     * id
     */
+    public ProjectModel id(String value){
+        this.id=value;
+        return this;
+    }
+    /**
+    * id
+    */
     public ProjectModel id(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.id)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -242,10 +249,17 @@ public class ProjectModel extends Entity{
     /**
     * 项目id
     */
+    public ProjectModel projectId(String value){
+        this.projectId=value;
+        return this;
+    }
+    /**
+    * 项目id
+    */
     public ProjectModel projectId(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.projectId)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -313,10 +327,17 @@ public class ProjectModel extends Entity{
     /**
     * 数据库id
     */
+    public ProjectModel projectDbId(String value){
+        this.projectDbId=value;
+        return this;
+    }
+    /**
+    * 数据库id
+    */
     public ProjectModel projectDbId(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.projectDbId)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -384,10 +405,17 @@ public class ProjectModel extends Entity{
     /**
     * 类别
     */
+    public ProjectModel modelType(Integer value){
+        this.modelType=value;
+        return this;
+    }
+    /**
+    * 类别
+    */
     public ProjectModel modelType(Integer value, IValidatorSuccess<Integer> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(this.modelType)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -487,10 +515,17 @@ public class ProjectModel extends Entity{
     /**
     * 是否数据库表mapping
     */
+    public ProjectModel tableModel(Integer value){
+        this.tableModel=value;
+        return this;
+    }
+    /**
+    * 是否数据库表mapping
+    */
     public ProjectModel tableModel(Integer value, IValidatorSuccess<Integer> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(this.tableModel)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -590,10 +625,17 @@ public class ProjectModel extends Entity{
     /**
     * 是否summer对象
     */
+    public ProjectModel summerModel(Integer value){
+        this.summerModel=value;
+        return this;
+    }
+    /**
+    * 是否summer对象
+    */
     public ProjectModel summerModel(Integer value, IValidatorSuccess<Integer> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(this.summerModel)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -693,10 +735,17 @@ public class ProjectModel extends Entity{
     /**
     * summer对象名称空间
     */
+    public ProjectModel summerNs(String value){
+        this.summerNs=value;
+        return this;
+    }
+    /**
+    * summer对象名称空间
+    */
     public ProjectModel summerNs(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.summerNs)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -840,10 +889,17 @@ public class ProjectModel extends Entity{
     /**
     * imports
     */
+    public ProjectModel imports(String value){
+        this.imports=value;
+        return this;
+    }
+    /**
+    * imports
+    */
     public ProjectModel imports(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.imports)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -911,10 +967,17 @@ public class ProjectModel extends Entity{
     /**
     * 中文名
     */
+    public ProjectModel cname(String value){
+        this.cname=value;
+        return this;
+    }
+    /**
+    * 中文名
+    */
     public ProjectModel cname(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.cname)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -982,10 +1045,17 @@ public class ProjectModel extends Entity{
     /**
     * 英文名
     */
+    public ProjectModel ename(String value){
+        this.ename=value;
+        return this;
+    }
+    /**
+    * 英文名
+    */
     public ProjectModel ename(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.ename)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -1053,10 +1123,17 @@ public class ProjectModel extends Entity{
     /**
     * 继承信息
     */
+    public ProjectModel extendsInfo(String value){
+        this.extendsInfo=value;
+        return this;
+    }
+    /**
+    * 继承信息
+    */
     public ProjectModel extendsInfo(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.extendsInfo)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -1124,10 +1201,17 @@ public class ProjectModel extends Entity{
     /**
     * 序号
     */
+    public ProjectModel dspOrder(Integer value){
+        this.dspOrder=value;
+        return this;
+    }
+    /**
+    * 序号
+    */
     public ProjectModel dspOrder(Integer value, IValidatorSuccess<Integer> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(this.dspOrder)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -1189,10 +1273,17 @@ public class ProjectModel extends Entity{
     /**
     * 备注
     */
+    public ProjectModel comment(String value){
+        this.comment=value;
+        return this;
+    }
+    /**
+    * 备注
+    */
     public ProjectModel comment(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.comment)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -1260,10 +1351,17 @@ public class ProjectModel extends Entity{
     /**
     * 删除状态
     */
+    public ProjectModel deleteStatus(Integer value){
+        this.deleteStatus=value;
+        return this;
+    }
+    /**
+    * 删除状态
+    */
     public ProjectModel deleteStatus(Integer value, IValidatorSuccess<Integer> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(this.deleteStatus)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -1363,10 +1461,17 @@ public class ProjectModel extends Entity{
     /**
     * 创建时间
     */
+    public ProjectModel createTime(Timestamp value){
+        this.createTime=value;
+        return this;
+    }
+    /**
+    * 创建时间
+    */
     public ProjectModel createTime(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(this.createTime)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -1428,10 +1533,17 @@ public class ProjectModel extends Entity{
     /**
     * 更新时间
     */
+    public ProjectModel updateTime(Timestamp value){
+        this.updateTime=value;
+        return this;
+    }
+    /**
+    * 更新时间
+    */
     public ProjectModel updateTime(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(this.updateTime)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }

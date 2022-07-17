@@ -137,10 +137,17 @@ public class Ds2demotable extends Entity{
     /**
     * id
     */
+    public Ds2demotable id(Integer value){
+        this.id=value;
+        return this;
+    }
+    /**
+    * id
+    */
     public Ds2demotable id(Integer value, IValidatorSuccess<Integer> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(this.id)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -202,10 +209,17 @@ public class Ds2demotable extends Entity{
     /**
     * 标题
     */
+    public Ds2demotable title(String value){
+        this.title=value;
+        return this;
+    }
+    /**
+    * 标题
+    */
     public Ds2demotable title(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.title)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -273,10 +287,17 @@ public class Ds2demotable extends Entity{
     /**
     * 类型
     */
+    public Ds2demotable type(String value){
+        this.type=value;
+        return this;
+    }
+    /**
+    * 类型
+    */
     public Ds2demotable type(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.type)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -344,10 +365,17 @@ public class Ds2demotable extends Entity{
     /**
     * 数量
     */
+    public Ds2demotable num(Integer value){
+        this.num=value;
+        return this;
+    }
+    /**
+    * 数量
+    */
     public Ds2demotable num(Integer value, IValidatorSuccess<Integer> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(this.num)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -409,10 +437,17 @@ public class Ds2demotable extends Entity{
     /**
     * 数量2
     */
+    public Ds2demotable num2(BigDecimal value){
+        this.num2=value;
+        return this;
+    }
+    /**
+    * 数量2
+    */
     public Ds2demotable num2(BigDecimal value, IValidatorSuccess<BigDecimal> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<BigDecimal> itm : ivs){
-                if(!itm.isValidSuccess(this.num2)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -474,10 +509,17 @@ public class Ds2demotable extends Entity{
     /**
     * 数量3
     */
+    public Ds2demotable num3(Double value){
+        this.num3=value;
+        return this;
+    }
+    /**
+    * 数量3
+    */
     public Ds2demotable num3(Double value, IValidatorSuccess<Double> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Double> itm : ivs){
-                if(!itm.isValidSuccess(this.num3)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -539,10 +581,17 @@ public class Ds2demotable extends Entity{
     /**
     * delete status
     */
+    public Ds2demotable deleteStatus(Integer value){
+        this.deleteStatus=value;
+        return this;
+    }
+    /**
+    * delete status
+    */
     public Ds2demotable deleteStatus(Integer value, IValidatorSuccess<Integer> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(this.deleteStatus)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -642,10 +691,17 @@ public class Ds2demotable extends Entity{
     /**
     * enable status
     */
+    public Ds2demotable enableStatus(String value){
+        this.enableStatus=value;
+        return this;
+    }
+    /**
+    * enable status
+    */
     public Ds2demotable enableStatus(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.enableStatus)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -751,10 +807,17 @@ public class Ds2demotable extends Entity{
     /**
     * status
     */
+    public Ds2demotable status(Integer value){
+        this.status=value;
+        return this;
+    }
+    /**
+    * status
+    */
     public Ds2demotable status(Integer value, IValidatorSuccess<Integer> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(this.status)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -873,10 +936,17 @@ public class Ds2demotable extends Entity{
     /**
     * status
     */
+    public Ds2demotable status2(String value){
+        this.status2=value;
+        return this;
+    }
+    /**
+    * status
+    */
     public Ds2demotable status2(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.status2)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -1001,10 +1071,17 @@ public class Ds2demotable extends Entity{
     /**
     * 创建时间
     */
+    public Ds2demotable creationDate(Timestamp value){
+        this.creationDate=value;
+        return this;
+    }
+    /**
+    * 创建时间
+    */
     public Ds2demotable creationDate(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(this.creationDate)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }

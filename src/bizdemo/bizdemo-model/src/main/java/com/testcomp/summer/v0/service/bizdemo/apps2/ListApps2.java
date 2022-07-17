@@ -2,6 +2,7 @@ package com.testcomp.summer.v0.service.bizdemo.apps2;
 import com.fmk.framework.annotations.*;
 import com.fmk.framework.summer.BasicSummer;
 import com.fmk.framework.valid.IValidator;
+import com.fmk.framework.valid.IValidatorSuccess;
 import com.fmk.framework.restful.PageResultList;
 import com.testcomp.model0.bizdemo.apps2.ListApps2M;
 
@@ -101,6 +102,21 @@ public class ListApps2 extends BasicSummer<PageResultList<ListApps2M>>{
     /**
     * 
     */
+    public ListApps2 deleteStatus(java.lang.Integer value, IValidatorSuccess<java.lang.Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<java.lang.Integer> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
+        this.deleteStatus=value;
+        return this;
+    }
+    /**
+    * 
+    */
     public ListApps2 deleteStatus_valid(IValidator<java.lang.Integer> validator, String msg){
         validator.valid(this.deleteStatus, msg);
         return this;
@@ -121,6 +137,21 @@ public class ListApps2 extends BasicSummer<PageResultList<ListApps2M>>{
     * 
     */
     public ListApps2 deleteStatus2(java.util.Set<Object> value){
+        this.deleteStatus2=value;
+        return this;
+    }
+    /**
+    * 
+    */
+    public ListApps2 deleteStatus2(java.util.Set<Object> value, IValidatorSuccess<java.util.Set<Object>> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<java.util.Set<Object>> itm : ivs){
+                if(!itm.isValidSuccess(value)){
+                    return this;
+                }
+            }
+        }
+
         this.deleteStatus2=value;
         return this;
     }

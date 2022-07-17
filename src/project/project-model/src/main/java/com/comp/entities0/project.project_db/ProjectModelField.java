@@ -203,10 +203,17 @@ public class ProjectModelField extends Entity{
     /**
     * id
     */
+    public ProjectModelField id(String value){
+        this.id=value;
+        return this;
+    }
+    /**
+    * id
+    */
     public ProjectModelField id(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.id)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -274,10 +281,17 @@ public class ProjectModelField extends Entity{
     /**
     * 项目id
     */
+    public ProjectModelField projectId(String value){
+        this.projectId=value;
+        return this;
+    }
+    /**
+    * 项目id
+    */
     public ProjectModelField projectId(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.projectId)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -345,10 +359,17 @@ public class ProjectModelField extends Entity{
     /**
     * 数据库id
     */
+    public ProjectModelField projectDbId(String value){
+        this.projectDbId=value;
+        return this;
+    }
+    /**
+    * 数据库id
+    */
     public ProjectModelField projectDbId(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.projectDbId)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -416,10 +437,17 @@ public class ProjectModelField extends Entity{
     /**
     * 数据模型id
     */
+    public ProjectModelField projectModelId(String value){
+        this.projectModelId=value;
+        return this;
+    }
+    /**
+    * 数据模型id
+    */
     public ProjectModelField projectModelId(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.projectModelId)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -487,10 +515,17 @@ public class ProjectModelField extends Entity{
     /**
     * 中文名
     */
+    public ProjectModelField cname(String value){
+        this.cname=value;
+        return this;
+    }
+    /**
+    * 中文名
+    */
     public ProjectModelField cname(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.cname)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -558,10 +593,17 @@ public class ProjectModelField extends Entity{
     /**
     * 英文名
     */
+    public ProjectModelField ename(String value){
+        this.ename=value;
+        return this;
+    }
+    /**
+    * 英文名
+    */
     public ProjectModelField ename(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.ename)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -629,10 +671,17 @@ public class ProjectModelField extends Entity{
     /**
     * 字段数据类型
     */
+    public ProjectModelField dataType(String value){
+        this.dataType=value;
+        return this;
+    }
+    /**
+    * 字段数据类型
+    */
     public ProjectModelField dataType(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.dataType)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -871,10 +920,17 @@ public class ProjectModelField extends Entity{
     /**
     * map字段key
     */
+    public ProjectModelField dataTypeMapKey(String value){
+        this.dataTypeMapKey=value;
+        return this;
+    }
+    /**
+    * map字段key
+    */
     public ProjectModelField dataTypeMapKey(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.dataTypeMapKey)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -980,10 +1036,17 @@ public class ProjectModelField extends Entity{
     /**
     * list, set, map 字段value
     */
+    public ProjectModelField dataTypeValue(String value){
+        this.dataTypeValue=value;
+        return this;
+    }
+    /**
+    * list, set, map 字段value
+    */
     public ProjectModelField dataTypeValue(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.dataTypeValue)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -1051,10 +1114,17 @@ public class ProjectModelField extends Entity{
     /**
     * 数据库类型
     */
+    public ProjectModelField dbType(String value){
+        this.dbType=value;
+        return this;
+    }
+    /**
+    * 数据库类型
+    */
     public ProjectModelField dbType(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.dbType)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -1274,10 +1344,17 @@ public class ProjectModelField extends Entity{
     /**
     * 数据库类型扩展信息
     */
+    public ProjectModelField dbTypeExt(String value){
+        this.dbTypeExt=value;
+        return this;
+    }
+    /**
+    * 数据库类型扩展信息
+    */
     public ProjectModelField dbTypeExt(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.dbTypeExt)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -1345,10 +1422,17 @@ public class ProjectModelField extends Entity{
     /**
     * DDL语句中的扩展信息
     */
+    public ProjectModelField createExt(String value){
+        this.createExt=value;
+        return this;
+    }
+    /**
+    * DDL语句中的扩展信息
+    */
     public ProjectModelField createExt(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.createExt)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -1416,10 +1500,17 @@ public class ProjectModelField extends Entity{
     /**
     * 关联column
     */
+    public ProjectModelField refColumn(String value){
+        this.refColumn=value;
+        return this;
+    }
+    /**
+    * 关联column
+    */
     public ProjectModelField refColumn(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.refColumn)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -1487,10 +1578,17 @@ public class ProjectModelField extends Entity{
     /**
     * 默认值
     */
+    public ProjectModelField defValue(String value){
+        this.defValue=value;
+        return this;
+    }
+    /**
+    * 默认值
+    */
     public ProjectModelField defValue(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.defValue)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -1558,10 +1656,17 @@ public class ProjectModelField extends Entity{
     /**
     * imports
     */
+    public ProjectModelField imports(String value){
+        this.imports=value;
+        return this;
+    }
+    /**
+    * imports
+    */
     public ProjectModelField imports(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.imports)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -1629,10 +1734,17 @@ public class ProjectModelField extends Entity{
     /**
     * 序号
     */
+    public ProjectModelField dspOrder(Integer value){
+        this.dspOrder=value;
+        return this;
+    }
+    /**
+    * 序号
+    */
     public ProjectModelField dspOrder(Integer value, IValidatorSuccess<Integer> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(this.dspOrder)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -1694,10 +1806,17 @@ public class ProjectModelField extends Entity{
     /**
     * 备注
     */
+    public ProjectModelField comment(String value){
+        this.comment=value;
+        return this;
+    }
+    /**
+    * 备注
+    */
     public ProjectModelField comment(String value, IValidatorSuccess<String> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(this.comment)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -1765,10 +1884,17 @@ public class ProjectModelField extends Entity{
     /**
     * 删除状态
     */
+    public ProjectModelField deleteStatus(Integer value){
+        this.deleteStatus=value;
+        return this;
+    }
+    /**
+    * 删除状态
+    */
     public ProjectModelField deleteStatus(Integer value, IValidatorSuccess<Integer> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(this.deleteStatus)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -1868,10 +1994,17 @@ public class ProjectModelField extends Entity{
     /**
     * 创建时间
     */
+    public ProjectModelField createTime(Timestamp value){
+        this.createTime=value;
+        return this;
+    }
+    /**
+    * 创建时间
+    */
     public ProjectModelField createTime(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(this.createTime)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
@@ -1933,10 +2066,17 @@ public class ProjectModelField extends Entity{
     /**
     * 更新时间
     */
+    public ProjectModelField updateTime(Timestamp value){
+        this.updateTime=value;
+        return this;
+    }
+    /**
+    * 更新时间
+    */
     public ProjectModelField updateTime(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
         if(null != ivs){
             for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(this.updateTime)){
+                if(!itm.isValidSuccess(value)){
                     return this;
                 }
             }
