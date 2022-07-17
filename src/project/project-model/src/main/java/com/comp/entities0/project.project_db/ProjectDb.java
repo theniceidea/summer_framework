@@ -139,8 +139,23 @@ public class ProjectDb extends Entity{
     /**
     * id
     */
-    public ProjectDb id(String value){
+    public ProjectDb id(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(this.id)){
+                    return this;
+                }
+            }
+        }
+
         this.id=value;
+        return this;
+    }
+    /**
+    * id
+    */
+    public ProjectDb id_valid(IValidator<String> validator, String msg){
+        validator.valid(this.id, msg);
         return this;
     }
     /**
@@ -195,8 +210,23 @@ public class ProjectDb extends Entity{
     /**
     * 中文名
     */
-    public ProjectDb cname(String value){
+    public ProjectDb cname(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(this.cname)){
+                    return this;
+                }
+            }
+        }
+
         this.cname=value;
+        return this;
+    }
+    /**
+    * 中文名
+    */
+    public ProjectDb cname_valid(IValidator<String> validator, String msg){
+        validator.valid(this.cname, msg);
         return this;
     }
     /**
@@ -251,8 +281,23 @@ public class ProjectDb extends Entity{
     /**
     * 英文名不一定是数据库名字
     */
-    public ProjectDb ename(String value){
+    public ProjectDb ename(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(this.ename)){
+                    return this;
+                }
+            }
+        }
+
         this.ename=value;
+        return this;
+    }
+    /**
+    * 英文名不一定是数据库名字
+    */
+    public ProjectDb ename_valid(IValidator<String> validator, String msg){
+        validator.valid(this.ename, msg);
         return this;
     }
     /**
@@ -307,8 +352,23 @@ public class ProjectDb extends Entity{
     /**
     * 数据库名字
     */
-    public ProjectDb dbname(String value){
+    public ProjectDb dbname(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(this.dbname)){
+                    return this;
+                }
+            }
+        }
+
         this.dbname=value;
+        return this;
+    }
+    /**
+    * 数据库名字
+    */
+    public ProjectDb dbname_valid(IValidator<String> validator, String msg){
+        validator.valid(this.dbname, msg);
         return this;
     }
     /**
@@ -363,8 +423,23 @@ public class ProjectDb extends Entity{
     /**
     * 连接字符串
     */
-    public ProjectDb connnectString(String value){
+    public ProjectDb connnectString(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(this.connnectString)){
+                    return this;
+                }
+            }
+        }
+
         this.connnectString=value;
+        return this;
+    }
+    /**
+    * 连接字符串
+    */
+    public ProjectDb connnectString_valid(IValidator<String> validator, String msg){
+        validator.valid(this.connnectString, msg);
         return this;
     }
     /**
@@ -419,8 +494,23 @@ public class ProjectDb extends Entity{
     /**
     * 用户名
     */
-    public ProjectDb dbUser(String value){
+    public ProjectDb dbUser(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(this.dbUser)){
+                    return this;
+                }
+            }
+        }
+
         this.dbUser=value;
+        return this;
+    }
+    /**
+    * 用户名
+    */
+    public ProjectDb dbUser_valid(IValidator<String> validator, String msg){
+        validator.valid(this.dbUser, msg);
         return this;
     }
     /**
@@ -475,8 +565,23 @@ public class ProjectDb extends Entity{
     /**
     * 密码
     */
-    public ProjectDb dbPwd(String value){
+    public ProjectDb dbPwd(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(this.dbPwd)){
+                    return this;
+                }
+            }
+        }
+
         this.dbPwd=value;
+        return this;
+    }
+    /**
+    * 密码
+    */
+    public ProjectDb dbPwd_valid(IValidator<String> validator, String msg){
+        validator.valid(this.dbPwd, msg);
         return this;
     }
     /**
@@ -531,8 +636,23 @@ public class ProjectDb extends Entity{
     /**
     * 序号
     */
-    public ProjectDb dspOrder(Integer value){
+    public ProjectDb dspOrder(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(this.dspOrder)){
+                    return this;
+                }
+            }
+        }
+
         this.dspOrder=value;
+        return this;
+    }
+    /**
+    * 序号
+    */
+    public ProjectDb dspOrder_valid(IValidator<Integer> validator, String msg){
+        validator.valid(this.dspOrder, msg);
         return this;
     }
     /**
@@ -581,8 +701,23 @@ public class ProjectDb extends Entity{
     /**
     * 备注
     */
-    public ProjectDb comment(String value){
+    public ProjectDb comment(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(this.comment)){
+                    return this;
+                }
+            }
+        }
+
         this.comment=value;
+        return this;
+    }
+    /**
+    * 备注
+    */
+    public ProjectDb comment_valid(IValidator<String> validator, String msg){
+        validator.valid(this.comment, msg);
         return this;
     }
     /**
@@ -637,8 +772,23 @@ public class ProjectDb extends Entity{
     /**
     * 删除状态
     */
-    public ProjectDb deleteStatus(Integer value){
+    public ProjectDb deleteStatus(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(this.deleteStatus)){
+                    return this;
+                }
+            }
+        }
+
         this.deleteStatus=value;
+        return this;
+    }
+    /**
+    * 删除状态
+    */
+    public ProjectDb deleteStatus_valid(IValidator<Integer> validator, String msg){
+        validator.valid(this.deleteStatus, msg);
         return this;
     }
     /**
@@ -725,8 +875,23 @@ public class ProjectDb extends Entity{
     /**
     * 创建时间
     */
-    public ProjectDb createTime(Timestamp value){
+    public ProjectDb createTime(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(this.createTime)){
+                    return this;
+                }
+            }
+        }
+
         this.createTime=value;
+        return this;
+    }
+    /**
+    * 创建时间
+    */
+    public ProjectDb createTime_valid(IValidator<Timestamp> validator, String msg){
+        validator.valid(this.createTime, msg);
         return this;
     }
     /**
@@ -775,8 +940,23 @@ public class ProjectDb extends Entity{
     /**
     * 更新时间
     */
-    public ProjectDb updateTime(Timestamp value){
+    public ProjectDb updateTime(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(this.updateTime)){
+                    return this;
+                }
+            }
+        }
+
         this.updateTime=value;
+        return this;
+    }
+    /**
+    * 更新时间
+    */
+    public ProjectDb updateTime_valid(IValidator<Timestamp> validator, String msg){
+        validator.valid(this.updateTime, msg);
         return this;
     }
     /**

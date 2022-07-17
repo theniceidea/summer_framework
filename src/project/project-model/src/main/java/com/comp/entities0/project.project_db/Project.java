@@ -107,8 +107,23 @@ public class Project extends Entity{
     /**
     * id
     */
-    public Project id(String value){
+    public Project id(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(this.id)){
+                    return this;
+                }
+            }
+        }
+
         this.id=value;
+        return this;
+    }
+    /**
+    * id
+    */
+    public Project id_valid(IValidator<String> validator, String msg){
+        validator.valid(this.id, msg);
         return this;
     }
     /**
@@ -163,8 +178,23 @@ public class Project extends Entity{
     /**
     * 中文名
     */
-    public Project cname(String value){
+    public Project cname(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(this.cname)){
+                    return this;
+                }
+            }
+        }
+
         this.cname=value;
+        return this;
+    }
+    /**
+    * 中文名
+    */
+    public Project cname_valid(IValidator<String> validator, String msg){
+        validator.valid(this.cname, msg);
         return this;
     }
     /**
@@ -219,8 +249,23 @@ public class Project extends Entity{
     /**
     * 英文名
     */
-    public Project ename(String value){
+    public Project ename(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(this.ename)){
+                    return this;
+                }
+            }
+        }
+
         this.ename=value;
+        return this;
+    }
+    /**
+    * 英文名
+    */
+    public Project ename_valid(IValidator<String> validator, String msg){
+        validator.valid(this.ename, msg);
         return this;
     }
     /**
@@ -275,8 +320,23 @@ public class Project extends Entity{
     /**
     * 序号
     */
-    public Project dspOrder(Integer value){
+    public Project dspOrder(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(this.dspOrder)){
+                    return this;
+                }
+            }
+        }
+
         this.dspOrder=value;
+        return this;
+    }
+    /**
+    * 序号
+    */
+    public Project dspOrder_valid(IValidator<Integer> validator, String msg){
+        validator.valid(this.dspOrder, msg);
         return this;
     }
     /**
@@ -325,8 +385,23 @@ public class Project extends Entity{
     /**
     * 备注
     */
-    public Project comment(String value){
+    public Project comment(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(this.comment)){
+                    return this;
+                }
+            }
+        }
+
         this.comment=value;
+        return this;
+    }
+    /**
+    * 备注
+    */
+    public Project comment_valid(IValidator<String> validator, String msg){
+        validator.valid(this.comment, msg);
         return this;
     }
     /**
@@ -381,8 +456,23 @@ public class Project extends Entity{
     /**
     * 删除状态
     */
-    public Project deleteStatus(Integer value){
+    public Project deleteStatus(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(this.deleteStatus)){
+                    return this;
+                }
+            }
+        }
+
         this.deleteStatus=value;
+        return this;
+    }
+    /**
+    * 删除状态
+    */
+    public Project deleteStatus_valid(IValidator<Integer> validator, String msg){
+        validator.valid(this.deleteStatus, msg);
         return this;
     }
     /**
@@ -469,8 +559,23 @@ public class Project extends Entity{
     /**
     * 创建时间
     */
-    public Project createTime(Timestamp value){
+    public Project createTime(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(this.createTime)){
+                    return this;
+                }
+            }
+        }
+
         this.createTime=value;
+        return this;
+    }
+    /**
+    * 创建时间
+    */
+    public Project createTime_valid(IValidator<Timestamp> validator, String msg){
+        validator.valid(this.createTime, msg);
         return this;
     }
     /**
@@ -519,8 +624,23 @@ public class Project extends Entity{
     /**
     * 更新时间
     */
-    public Project updateTime(Timestamp value){
+    public Project updateTime(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(this.updateTime)){
+                    return this;
+                }
+            }
+        }
+
         this.updateTime=value;
+        return this;
+    }
+    /**
+    * 更新时间
+    */
+    public Project updateTime_valid(IValidator<Timestamp> validator, String msg){
+        validator.valid(this.updateTime, msg);
         return this;
     }
     /**

@@ -50,6 +50,7 @@ public class GetAppService implements SummerServiceBean<GetApp> {
         values.add(summer.getDeleteStatus());
 
         bol=true;
+        bol=bol && SqlValidator.notNull(summer.getDeleteStatus());
         if(bol){
             builder.append(" and a.delete_status=?");
             values.add(summer.getDeleteStatus());

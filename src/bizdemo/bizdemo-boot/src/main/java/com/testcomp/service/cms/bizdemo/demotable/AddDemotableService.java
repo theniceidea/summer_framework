@@ -2,22 +2,17 @@ package com.testcomp.service.cms.bizdemo.demotable;
 
 import com.alibaba.fastjson.JSON;
 import com.fmk.framework.basic.DateTimeUtil;
-import com.fmk.framework.basic.validat.SqlValidator;
-import com.fmk.framework.exception.Excep;
 import com.fmk.framework.restful.PageResultList;
-import com.fmk.framework.validation.Precondition;
+import com.fmk.framework.validation.Valid;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import com.testcomp.entities0.bizdemo.summer_dev.Demotable;
-import com.testcomp.entities0.bizdemo.summer_dev2.Ds2demotable;
 import com.testcomp.enums0.bizdemo.Enum_deleteStatus;
 import com.testcomp.model0.bizdemo.app.GetAppM;
 import com.testcomp.model0.bizdemo.apps2.ListApps2M;
 import com.testcomp.model0.bizdemo.count1.GetCount1M;
 import com.testcomp.query0.bizdemo.summer_dev.SqlDemotable;
-import com.testcomp.query0.bizdemo.summer_dev2.SqlDs2demotable;
 import com.testcomp.summer.v0.service.bizdemo.app.GetApp;
-import com.testcomp.summer.v0.service.bizdemo.apps.ListApps;
 import com.testcomp.summer.v0.service.bizdemo.apps2.ListApps2;
 import com.testcomp.summer.v0.service.bizdemo.count1.GetCount1;
 import com.testcomp.summer.v1.cms.bizdemo.demotable.AddDemotable;
@@ -26,15 +21,24 @@ import org.summerframework.model.SummerService;
 import org.summerframework.model.SummerServiceBean;
 
 import java.math.BigDecimal;
-import java.util.Collection;
-import java.util.List;
 
 @Service
 @SummerService
 public class AddDemotableService implements SummerServiceBean<AddDemotable> {
     @Override
     public void sum(AddDemotable summer) {
+
         final GetCount1M count1M = GetCount1.s(Enum_deleteStatus.unDeleted.value());
+        final PageResultList<ListApps2M> sum = ListApps2
+                .inst()
+                .deleteStatus(1)
+                .deleteStatus_valid(Valid::notNull, "")
+                .deleteStatus2(Sets.newHashSet(1))
+                .deleteStatus2_valid(Valid::notEmpty, "")
+                .start(0)
+                .limit(10)
+                .sum();
+
         System.out.println(count1M.getCount1());
         Demotable entity = new Demotable();
         entity.setTitle("title");

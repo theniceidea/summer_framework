@@ -5,6 +5,8 @@
     "import com.fmk.framework.daoannotations.*;",
     "import com.fmk.framework.entitiesbasic.Entity;",
     "import com.fmk.framework.annotations.validation.*;",
+    "import com.fmk.framework.valid.IValidator;",
+    "import com.fmk.framework.valid.IValidatorSuccess;",
     "import java.sql.Timestamp;",
     "import java.math.BigDecimal;",
     "import java.util.Objects;",

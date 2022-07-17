@@ -4,6 +4,8 @@ import cn.hutool.core.util.StrUtil;
 import com.fmk.framework.daoannotations.*;
 import com.fmk.framework.entitiesbasic.Entity;
 import com.fmk.framework.annotations.validation.*;
+import com.fmk.framework.valid.IValidator;
+import com.fmk.framework.valid.IValidatorSuccess;
 import java.sql.Timestamp;
 import java.math.BigDecimal;
 import java.util.Objects;
@@ -154,8 +156,23 @@ public class Demotable3 extends Entity{
     /**
     * id
     */
-    public Demotable3 id(Integer value){
+    public Demotable3 id(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(this.id)){
+                    return this;
+                }
+            }
+        }
+
         this.id=value;
+        return this;
+    }
+    /**
+    * id
+    */
+    public Demotable3 id_valid(IValidator<Integer> validator, String msg){
+        validator.valid(this.id, msg);
         return this;
     }
     /**
@@ -204,8 +221,23 @@ public class Demotable3 extends Entity{
     /**
     * 标题
     */
-    public Demotable3 title(String value){
+    public Demotable3 title(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(this.title)){
+                    return this;
+                }
+            }
+        }
+
         this.title=value;
+        return this;
+    }
+    /**
+    * 标题
+    */
+    public Demotable3 title_valid(IValidator<String> validator, String msg){
+        validator.valid(this.title, msg);
         return this;
     }
     /**
@@ -260,8 +292,23 @@ public class Demotable3 extends Entity{
     /**
     * 类型
     */
-    public Demotable3 type(String value){
+    public Demotable3 type(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(this.type)){
+                    return this;
+                }
+            }
+        }
+
         this.type=value;
+        return this;
+    }
+    /**
+    * 类型
+    */
+    public Demotable3 type_valid(IValidator<String> validator, String msg){
+        validator.valid(this.type, msg);
         return this;
     }
     /**
@@ -316,8 +363,23 @@ public class Demotable3 extends Entity{
     /**
     * 数量
     */
-    public Demotable3 num(Integer value){
+    public Demotable3 num(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(this.num)){
+                    return this;
+                }
+            }
+        }
+
         this.num=value;
+        return this;
+    }
+    /**
+    * 数量
+    */
+    public Demotable3 num_valid(IValidator<Integer> validator, String msg){
+        validator.valid(this.num, msg);
         return this;
     }
     /**
@@ -366,8 +428,23 @@ public class Demotable3 extends Entity{
     /**
     * 数量2
     */
-    public Demotable3 num2(BigDecimal value){
+    public Demotable3 num2(BigDecimal value, IValidatorSuccess<BigDecimal> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<BigDecimal> itm : ivs){
+                if(!itm.isValidSuccess(this.num2)){
+                    return this;
+                }
+            }
+        }
+
         this.num2=value;
+        return this;
+    }
+    /**
+    * 数量2
+    */
+    public Demotable3 num2_valid(IValidator<BigDecimal> validator, String msg){
+        validator.valid(this.num2, msg);
         return this;
     }
     /**
@@ -416,8 +493,23 @@ public class Demotable3 extends Entity{
     /**
     * 数量3
     */
-    public Demotable3 num3(Double value){
+    public Demotable3 num3(Double value, IValidatorSuccess<Double> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Double> itm : ivs){
+                if(!itm.isValidSuccess(this.num3)){
+                    return this;
+                }
+            }
+        }
+
         this.num3=value;
+        return this;
+    }
+    /**
+    * 数量3
+    */
+    public Demotable3 num3_valid(IValidator<Double> validator, String msg){
+        validator.valid(this.num3, msg);
         return this;
     }
     /**
@@ -466,8 +558,23 @@ public class Demotable3 extends Entity{
     /**
     * demotable2
     */
-    public Demotable3 demotable2Id(Integer value){
+    public Demotable3 demotable2Id(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(this.demotable2Id)){
+                    return this;
+                }
+            }
+        }
+
         this.demotable2Id=value;
+        return this;
+    }
+    /**
+    * demotable2
+    */
+    public Demotable3 demotable2Id_valid(IValidator<Integer> validator, String msg){
+        validator.valid(this.demotable2Id, msg);
         return this;
     }
     /**
@@ -516,8 +623,23 @@ public class Demotable3 extends Entity{
     /**
     * delete status
     */
-    public Demotable3 deleteStatus(Integer value){
+    public Demotable3 deleteStatus(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(this.deleteStatus)){
+                    return this;
+                }
+            }
+        }
+
         this.deleteStatus=value;
+        return this;
+    }
+    /**
+    * delete status
+    */
+    public Demotable3 deleteStatus_valid(IValidator<Integer> validator, String msg){
+        validator.valid(this.deleteStatus, msg);
         return this;
     }
     /**
@@ -604,8 +726,23 @@ public class Demotable3 extends Entity{
     /**
     * enable status
     */
-    public Demotable3 enableStatus(String value){
+    public Demotable3 enableStatus(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(this.enableStatus)){
+                    return this;
+                }
+            }
+        }
+
         this.enableStatus=value;
+        return this;
+    }
+    /**
+    * enable status
+    */
+    public Demotable3 enableStatus_valid(IValidator<String> validator, String msg){
+        validator.valid(this.enableStatus, msg);
         return this;
     }
     /**
@@ -698,8 +835,23 @@ public class Demotable3 extends Entity{
     /**
     * status
     */
-    public Demotable3 status(Integer value){
+    public Demotable3 status(Integer value, IValidatorSuccess<Integer> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Integer> itm : ivs){
+                if(!itm.isValidSuccess(this.status)){
+                    return this;
+                }
+            }
+        }
+
         this.status=value;
+        return this;
+    }
+    /**
+    * status
+    */
+    public Demotable3 status_valid(IValidator<Integer> validator, String msg){
+        validator.valid(this.status, msg);
         return this;
     }
     /**
@@ -805,8 +957,23 @@ public class Demotable3 extends Entity{
     /**
     * status
     */
-    public Demotable3 status2(String value){
+    public Demotable3 status2(String value, IValidatorSuccess<String> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<String> itm : ivs){
+                if(!itm.isValidSuccess(this.status2)){
+                    return this;
+                }
+            }
+        }
+
         this.status2=value;
+        return this;
+    }
+    /**
+    * status
+    */
+    public Demotable3 status2_valid(IValidator<String> validator, String msg){
+        validator.valid(this.status2, msg);
         return this;
     }
     /**
@@ -918,8 +1085,23 @@ public class Demotable3 extends Entity{
     /**
     * 创建时间
     */
-    public Demotable3 creationDate(Timestamp value){
+    public Demotable3 creationDate(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(this.creationDate)){
+                    return this;
+                }
+            }
+        }
+
         this.creationDate=value;
+        return this;
+    }
+    /**
+    * 创建时间
+    */
+    public Demotable3 creationDate_valid(IValidator<Timestamp> validator, String msg){
+        validator.valid(this.creationDate, msg);
         return this;
     }
     /**
@@ -968,8 +1150,23 @@ public class Demotable3 extends Entity{
     /**
     * 创建时间2
     */
-    public Demotable3 creationDate2(Timestamp value){
+    public Demotable3 creationDate2(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
+        if(null != ivs){
+            for(IValidatorSuccess<Timestamp> itm : ivs){
+                if(!itm.isValidSuccess(this.creationDate2)){
+                    return this;
+                }
+            }
+        }
+
         this.creationDate2=value;
+        return this;
+    }
+    /**
+    * 创建时间2
+    */
+    public Demotable3 creationDate2_valid(IValidator<Timestamp> validator, String msg){
+        validator.valid(this.creationDate2, msg);
         return this;
     }
     /**
