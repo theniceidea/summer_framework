@@ -175,16 +175,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * id
     */
-    public SqlProjectModelFieldAnno id_eq(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return id_eq(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> id_eq_fv(String value){
+        return new FieldValid<>(this, value, () -> id_eq(value));
     }
     /**
     * id
@@ -259,16 +251,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * id
     */
-    public SqlProjectModelFieldAnno id_gt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return id_gt(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> id_gt_fv(String value){
+        return new FieldValid<>(this, value, () -> id_gt(value));
     }
     /**
     * id
@@ -301,16 +285,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * id
     */
-    public SqlProjectModelFieldAnno id_lt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return id_lt(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> id_lt_fv(String value){
+        return new FieldValid<>(this, value, () -> id_lt(value));
     }
     /**
     * id
@@ -343,16 +319,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * id
     */
-    public SqlProjectModelFieldAnno id_ge(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return id_ge(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> id_ge_fv(String value){
+        return new FieldValid<>(this, value, () -> id_ge(value));
     }
     /**
     * id
@@ -385,16 +353,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * id
     */
-    public SqlProjectModelFieldAnno id_le(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return id_le(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> id_le_fv(String value){
+        return new FieldValid<>(this, value, () -> id_le(value));
     }
     /**
     * id
@@ -427,16 +387,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * id
     */
-    public SqlProjectModelFieldAnno id_ne(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return id_ne(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> id_ne_fv(String value){
+        return new FieldValid<>(this, value, () -> id_ne(value));
     }
     /**
     * id
@@ -475,16 +427,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * id
     */
-    public SqlProjectModelFieldAnno id_leftLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return id_leftLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> id_leftLike_fv(String value){
+        return new FieldValid<>(this, value, () -> id_leftLike(value));
     }
     /**
     * id
@@ -517,16 +461,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * id
     */
-    public SqlProjectModelFieldAnno id_rightLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return id_rightLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> id_rightLike_fv(String value){
+        return new FieldValid<>(this, value, () -> id_rightLike(value));
     }
     /**
     * id
@@ -559,16 +495,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * id
     */
-    public SqlProjectModelFieldAnno id_middleLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return id_middleLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> id_middleLike_fv(String value){
+        return new FieldValid<>(this, value, () -> id_middleLike(value));
     }
     /**
     * id
@@ -605,16 +533,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * id
     */
-    public SqlProjectModelFieldAnno id_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return id_in(value);
+    public FieldValid<SqlProjectModelFieldAnno, Set<Object>> id_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> id_in(value));
     }
     /**
     * id
@@ -677,16 +597,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 项目id
     */
-    public SqlProjectModelFieldAnno projectId_eq(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectId_eq(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectId_eq_fv(String value){
+        return new FieldValid<>(this, value, () -> projectId_eq(value));
     }
     /**
     * 项目id
@@ -761,16 +673,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 项目id
     */
-    public SqlProjectModelFieldAnno projectId_gt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectId_gt(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectId_gt_fv(String value){
+        return new FieldValid<>(this, value, () -> projectId_gt(value));
     }
     /**
     * 项目id
@@ -803,16 +707,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 项目id
     */
-    public SqlProjectModelFieldAnno projectId_lt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectId_lt(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectId_lt_fv(String value){
+        return new FieldValid<>(this, value, () -> projectId_lt(value));
     }
     /**
     * 项目id
@@ -845,16 +741,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 项目id
     */
-    public SqlProjectModelFieldAnno projectId_ge(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectId_ge(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectId_ge_fv(String value){
+        return new FieldValid<>(this, value, () -> projectId_ge(value));
     }
     /**
     * 项目id
@@ -887,16 +775,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 项目id
     */
-    public SqlProjectModelFieldAnno projectId_le(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectId_le(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectId_le_fv(String value){
+        return new FieldValid<>(this, value, () -> projectId_le(value));
     }
     /**
     * 项目id
@@ -929,16 +809,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 项目id
     */
-    public SqlProjectModelFieldAnno projectId_ne(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectId_ne(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectId_ne_fv(String value){
+        return new FieldValid<>(this, value, () -> projectId_ne(value));
     }
     /**
     * 项目id
@@ -977,16 +849,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 项目id
     */
-    public SqlProjectModelFieldAnno projectId_leftLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectId_leftLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectId_leftLike_fv(String value){
+        return new FieldValid<>(this, value, () -> projectId_leftLike(value));
     }
     /**
     * 项目id
@@ -1019,16 +883,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 项目id
     */
-    public SqlProjectModelFieldAnno projectId_rightLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectId_rightLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectId_rightLike_fv(String value){
+        return new FieldValid<>(this, value, () -> projectId_rightLike(value));
     }
     /**
     * 项目id
@@ -1061,16 +917,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 项目id
     */
-    public SqlProjectModelFieldAnno projectId_middleLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectId_middleLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectId_middleLike_fv(String value){
+        return new FieldValid<>(this, value, () -> projectId_middleLike(value));
     }
     /**
     * 项目id
@@ -1107,16 +955,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 项目id
     */
-    public SqlProjectModelFieldAnno projectId_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectId_in(value);
+    public FieldValid<SqlProjectModelFieldAnno, Set<Object>> projectId_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> projectId_in(value));
     }
     /**
     * 项目id
@@ -1179,16 +1019,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 数据库id
     */
-    public SqlProjectModelFieldAnno projectDbId_eq(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectDbId_eq(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectDbId_eq_fv(String value){
+        return new FieldValid<>(this, value, () -> projectDbId_eq(value));
     }
     /**
     * 数据库id
@@ -1263,16 +1095,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 数据库id
     */
-    public SqlProjectModelFieldAnno projectDbId_gt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectDbId_gt(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectDbId_gt_fv(String value){
+        return new FieldValid<>(this, value, () -> projectDbId_gt(value));
     }
     /**
     * 数据库id
@@ -1305,16 +1129,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 数据库id
     */
-    public SqlProjectModelFieldAnno projectDbId_lt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectDbId_lt(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectDbId_lt_fv(String value){
+        return new FieldValid<>(this, value, () -> projectDbId_lt(value));
     }
     /**
     * 数据库id
@@ -1347,16 +1163,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 数据库id
     */
-    public SqlProjectModelFieldAnno projectDbId_ge(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectDbId_ge(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectDbId_ge_fv(String value){
+        return new FieldValid<>(this, value, () -> projectDbId_ge(value));
     }
     /**
     * 数据库id
@@ -1389,16 +1197,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 数据库id
     */
-    public SqlProjectModelFieldAnno projectDbId_le(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectDbId_le(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectDbId_le_fv(String value){
+        return new FieldValid<>(this, value, () -> projectDbId_le(value));
     }
     /**
     * 数据库id
@@ -1431,16 +1231,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 数据库id
     */
-    public SqlProjectModelFieldAnno projectDbId_ne(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectDbId_ne(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectDbId_ne_fv(String value){
+        return new FieldValid<>(this, value, () -> projectDbId_ne(value));
     }
     /**
     * 数据库id
@@ -1479,16 +1271,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 数据库id
     */
-    public SqlProjectModelFieldAnno projectDbId_leftLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectDbId_leftLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectDbId_leftLike_fv(String value){
+        return new FieldValid<>(this, value, () -> projectDbId_leftLike(value));
     }
     /**
     * 数据库id
@@ -1521,16 +1305,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 数据库id
     */
-    public SqlProjectModelFieldAnno projectDbId_rightLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectDbId_rightLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectDbId_rightLike_fv(String value){
+        return new FieldValid<>(this, value, () -> projectDbId_rightLike(value));
     }
     /**
     * 数据库id
@@ -1563,16 +1339,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 数据库id
     */
-    public SqlProjectModelFieldAnno projectDbId_middleLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectDbId_middleLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectDbId_middleLike_fv(String value){
+        return new FieldValid<>(this, value, () -> projectDbId_middleLike(value));
     }
     /**
     * 数据库id
@@ -1609,16 +1377,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 数据库id
     */
-    public SqlProjectModelFieldAnno projectDbId_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectDbId_in(value);
+    public FieldValid<SqlProjectModelFieldAnno, Set<Object>> projectDbId_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> projectDbId_in(value));
     }
     /**
     * 数据库id
@@ -1681,16 +1441,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 数据模型id
     */
-    public SqlProjectModelFieldAnno projectModelId_eq(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectModelId_eq(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectModelId_eq_fv(String value){
+        return new FieldValid<>(this, value, () -> projectModelId_eq(value));
     }
     /**
     * 数据模型id
@@ -1765,16 +1517,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 数据模型id
     */
-    public SqlProjectModelFieldAnno projectModelId_gt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectModelId_gt(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectModelId_gt_fv(String value){
+        return new FieldValid<>(this, value, () -> projectModelId_gt(value));
     }
     /**
     * 数据模型id
@@ -1807,16 +1551,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 数据模型id
     */
-    public SqlProjectModelFieldAnno projectModelId_lt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectModelId_lt(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectModelId_lt_fv(String value){
+        return new FieldValid<>(this, value, () -> projectModelId_lt(value));
     }
     /**
     * 数据模型id
@@ -1849,16 +1585,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 数据模型id
     */
-    public SqlProjectModelFieldAnno projectModelId_ge(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectModelId_ge(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectModelId_ge_fv(String value){
+        return new FieldValid<>(this, value, () -> projectModelId_ge(value));
     }
     /**
     * 数据模型id
@@ -1891,16 +1619,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 数据模型id
     */
-    public SqlProjectModelFieldAnno projectModelId_le(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectModelId_le(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectModelId_le_fv(String value){
+        return new FieldValid<>(this, value, () -> projectModelId_le(value));
     }
     /**
     * 数据模型id
@@ -1933,16 +1653,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 数据模型id
     */
-    public SqlProjectModelFieldAnno projectModelId_ne(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectModelId_ne(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectModelId_ne_fv(String value){
+        return new FieldValid<>(this, value, () -> projectModelId_ne(value));
     }
     /**
     * 数据模型id
@@ -1981,16 +1693,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 数据模型id
     */
-    public SqlProjectModelFieldAnno projectModelId_leftLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectModelId_leftLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectModelId_leftLike_fv(String value){
+        return new FieldValid<>(this, value, () -> projectModelId_leftLike(value));
     }
     /**
     * 数据模型id
@@ -2023,16 +1727,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 数据模型id
     */
-    public SqlProjectModelFieldAnno projectModelId_rightLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectModelId_rightLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectModelId_rightLike_fv(String value){
+        return new FieldValid<>(this, value, () -> projectModelId_rightLike(value));
     }
     /**
     * 数据模型id
@@ -2065,16 +1761,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 数据模型id
     */
-    public SqlProjectModelFieldAnno projectModelId_middleLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectModelId_middleLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectModelId_middleLike_fv(String value){
+        return new FieldValid<>(this, value, () -> projectModelId_middleLike(value));
     }
     /**
     * 数据模型id
@@ -2111,16 +1799,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 数据模型id
     */
-    public SqlProjectModelFieldAnno projectModelId_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectModelId_in(value);
+    public FieldValid<SqlProjectModelFieldAnno, Set<Object>> projectModelId_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> projectModelId_in(value));
     }
     /**
     * 数据模型id
@@ -2183,16 +1863,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 字段id
     */
-    public SqlProjectModelFieldAnno projectModelFieldId_eq(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectModelFieldId_eq(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectModelFieldId_eq_fv(String value){
+        return new FieldValid<>(this, value, () -> projectModelFieldId_eq(value));
     }
     /**
     * 字段id
@@ -2267,16 +1939,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 字段id
     */
-    public SqlProjectModelFieldAnno projectModelFieldId_gt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectModelFieldId_gt(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectModelFieldId_gt_fv(String value){
+        return new FieldValid<>(this, value, () -> projectModelFieldId_gt(value));
     }
     /**
     * 字段id
@@ -2309,16 +1973,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 字段id
     */
-    public SqlProjectModelFieldAnno projectModelFieldId_lt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectModelFieldId_lt(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectModelFieldId_lt_fv(String value){
+        return new FieldValid<>(this, value, () -> projectModelFieldId_lt(value));
     }
     /**
     * 字段id
@@ -2351,16 +2007,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 字段id
     */
-    public SqlProjectModelFieldAnno projectModelFieldId_ge(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectModelFieldId_ge(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectModelFieldId_ge_fv(String value){
+        return new FieldValid<>(this, value, () -> projectModelFieldId_ge(value));
     }
     /**
     * 字段id
@@ -2393,16 +2041,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 字段id
     */
-    public SqlProjectModelFieldAnno projectModelFieldId_le(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectModelFieldId_le(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectModelFieldId_le_fv(String value){
+        return new FieldValid<>(this, value, () -> projectModelFieldId_le(value));
     }
     /**
     * 字段id
@@ -2435,16 +2075,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 字段id
     */
-    public SqlProjectModelFieldAnno projectModelFieldId_ne(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectModelFieldId_ne(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectModelFieldId_ne_fv(String value){
+        return new FieldValid<>(this, value, () -> projectModelFieldId_ne(value));
     }
     /**
     * 字段id
@@ -2483,16 +2115,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 字段id
     */
-    public SqlProjectModelFieldAnno projectModelFieldId_leftLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectModelFieldId_leftLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectModelFieldId_leftLike_fv(String value){
+        return new FieldValid<>(this, value, () -> projectModelFieldId_leftLike(value));
     }
     /**
     * 字段id
@@ -2525,16 +2149,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 字段id
     */
-    public SqlProjectModelFieldAnno projectModelFieldId_rightLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectModelFieldId_rightLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectModelFieldId_rightLike_fv(String value){
+        return new FieldValid<>(this, value, () -> projectModelFieldId_rightLike(value));
     }
     /**
     * 字段id
@@ -2567,16 +2183,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 字段id
     */
-    public SqlProjectModelFieldAnno projectModelFieldId_middleLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectModelFieldId_middleLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> projectModelFieldId_middleLike_fv(String value){
+        return new FieldValid<>(this, value, () -> projectModelFieldId_middleLike(value));
     }
     /**
     * 字段id
@@ -2613,16 +2221,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 字段id
     */
-    public SqlProjectModelFieldAnno projectModelFieldId_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return projectModelFieldId_in(value);
+    public FieldValid<SqlProjectModelFieldAnno, Set<Object>> projectModelFieldId_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> projectModelFieldId_in(value));
     }
     /**
     * 字段id
@@ -2685,16 +2285,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * imports
     */
-    public SqlProjectModelFieldAnno imports_eq(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return imports_eq(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> imports_eq_fv(String value){
+        return new FieldValid<>(this, value, () -> imports_eq(value));
     }
     /**
     * imports
@@ -2769,16 +2361,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * imports
     */
-    public SqlProjectModelFieldAnno imports_gt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return imports_gt(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> imports_gt_fv(String value){
+        return new FieldValid<>(this, value, () -> imports_gt(value));
     }
     /**
     * imports
@@ -2811,16 +2395,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * imports
     */
-    public SqlProjectModelFieldAnno imports_lt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return imports_lt(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> imports_lt_fv(String value){
+        return new FieldValid<>(this, value, () -> imports_lt(value));
     }
     /**
     * imports
@@ -2853,16 +2429,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * imports
     */
-    public SqlProjectModelFieldAnno imports_ge(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return imports_ge(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> imports_ge_fv(String value){
+        return new FieldValid<>(this, value, () -> imports_ge(value));
     }
     /**
     * imports
@@ -2895,16 +2463,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * imports
     */
-    public SqlProjectModelFieldAnno imports_le(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return imports_le(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> imports_le_fv(String value){
+        return new FieldValid<>(this, value, () -> imports_le(value));
     }
     /**
     * imports
@@ -2937,16 +2497,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * imports
     */
-    public SqlProjectModelFieldAnno imports_ne(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return imports_ne(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> imports_ne_fv(String value){
+        return new FieldValid<>(this, value, () -> imports_ne(value));
     }
     /**
     * imports
@@ -2985,16 +2537,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * imports
     */
-    public SqlProjectModelFieldAnno imports_leftLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return imports_leftLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> imports_leftLike_fv(String value){
+        return new FieldValid<>(this, value, () -> imports_leftLike(value));
     }
     /**
     * imports
@@ -3027,16 +2571,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * imports
     */
-    public SqlProjectModelFieldAnno imports_rightLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return imports_rightLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> imports_rightLike_fv(String value){
+        return new FieldValid<>(this, value, () -> imports_rightLike(value));
     }
     /**
     * imports
@@ -3069,16 +2605,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * imports
     */
-    public SqlProjectModelFieldAnno imports_middleLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return imports_middleLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> imports_middleLike_fv(String value){
+        return new FieldValid<>(this, value, () -> imports_middleLike(value));
     }
     /**
     * imports
@@ -3115,16 +2643,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * imports
     */
-    public SqlProjectModelFieldAnno imports_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return imports_in(value);
+    public FieldValid<SqlProjectModelFieldAnno, Set<Object>> imports_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> imports_in(value));
     }
     /**
     * imports
@@ -3187,16 +2707,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 注解
     */
-    public SqlProjectModelFieldAnno anno_eq(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return anno_eq(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> anno_eq_fv(String value){
+        return new FieldValid<>(this, value, () -> anno_eq(value));
     }
     /**
     * 注解
@@ -3271,16 +2783,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 注解
     */
-    public SqlProjectModelFieldAnno anno_gt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return anno_gt(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> anno_gt_fv(String value){
+        return new FieldValid<>(this, value, () -> anno_gt(value));
     }
     /**
     * 注解
@@ -3313,16 +2817,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 注解
     */
-    public SqlProjectModelFieldAnno anno_lt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return anno_lt(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> anno_lt_fv(String value){
+        return new FieldValid<>(this, value, () -> anno_lt(value));
     }
     /**
     * 注解
@@ -3355,16 +2851,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 注解
     */
-    public SqlProjectModelFieldAnno anno_ge(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return anno_ge(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> anno_ge_fv(String value){
+        return new FieldValid<>(this, value, () -> anno_ge(value));
     }
     /**
     * 注解
@@ -3397,16 +2885,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 注解
     */
-    public SqlProjectModelFieldAnno anno_le(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return anno_le(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> anno_le_fv(String value){
+        return new FieldValid<>(this, value, () -> anno_le(value));
     }
     /**
     * 注解
@@ -3439,16 +2919,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 注解
     */
-    public SqlProjectModelFieldAnno anno_ne(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return anno_ne(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> anno_ne_fv(String value){
+        return new FieldValid<>(this, value, () -> anno_ne(value));
     }
     /**
     * 注解
@@ -3487,16 +2959,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 注解
     */
-    public SqlProjectModelFieldAnno anno_leftLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return anno_leftLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> anno_leftLike_fv(String value){
+        return new FieldValid<>(this, value, () -> anno_leftLike(value));
     }
     /**
     * 注解
@@ -3529,16 +2993,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 注解
     */
-    public SqlProjectModelFieldAnno anno_rightLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return anno_rightLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> anno_rightLike_fv(String value){
+        return new FieldValid<>(this, value, () -> anno_rightLike(value));
     }
     /**
     * 注解
@@ -3571,16 +3027,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 注解
     */
-    public SqlProjectModelFieldAnno anno_middleLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return anno_middleLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> anno_middleLike_fv(String value){
+        return new FieldValid<>(this, value, () -> anno_middleLike(value));
     }
     /**
     * 注解
@@ -3617,16 +3065,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 注解
     */
-    public SqlProjectModelFieldAnno anno_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return anno_in(value);
+    public FieldValid<SqlProjectModelFieldAnno, Set<Object>> anno_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> anno_in(value));
     }
     /**
     * 注解
@@ -3689,16 +3129,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 序号
     */
-    public SqlProjectModelFieldAnno dspOrder_eq(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return dspOrder_eq(value);
+    public FieldValid<SqlProjectModelFieldAnno, Integer> dspOrder_eq_fv(Integer value){
+        return new FieldValid<>(this, value, () -> dspOrder_eq(value));
     }
     /**
     * 序号
@@ -3773,16 +3205,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 序号
     */
-    public SqlProjectModelFieldAnno dspOrder_gt(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return dspOrder_gt(value);
+    public FieldValid<SqlProjectModelFieldAnno, Integer> dspOrder_gt_fv(Integer value){
+        return new FieldValid<>(this, value, () -> dspOrder_gt(value));
     }
     /**
     * 序号
@@ -3815,16 +3239,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 序号
     */
-    public SqlProjectModelFieldAnno dspOrder_lt(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return dspOrder_lt(value);
+    public FieldValid<SqlProjectModelFieldAnno, Integer> dspOrder_lt_fv(Integer value){
+        return new FieldValid<>(this, value, () -> dspOrder_lt(value));
     }
     /**
     * 序号
@@ -3857,16 +3273,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 序号
     */
-    public SqlProjectModelFieldAnno dspOrder_ge(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return dspOrder_ge(value);
+    public FieldValid<SqlProjectModelFieldAnno, Integer> dspOrder_ge_fv(Integer value){
+        return new FieldValid<>(this, value, () -> dspOrder_ge(value));
     }
     /**
     * 序号
@@ -3899,16 +3307,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 序号
     */
-    public SqlProjectModelFieldAnno dspOrder_le(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return dspOrder_le(value);
+    public FieldValid<SqlProjectModelFieldAnno, Integer> dspOrder_le_fv(Integer value){
+        return new FieldValid<>(this, value, () -> dspOrder_le(value));
     }
     /**
     * 序号
@@ -3941,16 +3341,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 序号
     */
-    public SqlProjectModelFieldAnno dspOrder_ne(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return dspOrder_ne(value);
+    public FieldValid<SqlProjectModelFieldAnno, Integer> dspOrder_ne_fv(Integer value){
+        return new FieldValid<>(this, value, () -> dspOrder_ne(value));
     }
     /**
     * 序号
@@ -3987,16 +3379,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 序号
     */
-    public SqlProjectModelFieldAnno dspOrder_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return dspOrder_in(value);
+    public FieldValid<SqlProjectModelFieldAnno, Set<Object>> dspOrder_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> dspOrder_in(value));
     }
     /**
     * 序号
@@ -4059,16 +3443,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 备注
     */
-    public SqlProjectModelFieldAnno comment_eq(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return comment_eq(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> comment_eq_fv(String value){
+        return new FieldValid<>(this, value, () -> comment_eq(value));
     }
     /**
     * 备注
@@ -4143,16 +3519,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 备注
     */
-    public SqlProjectModelFieldAnno comment_gt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return comment_gt(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> comment_gt_fv(String value){
+        return new FieldValid<>(this, value, () -> comment_gt(value));
     }
     /**
     * 备注
@@ -4185,16 +3553,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 备注
     */
-    public SqlProjectModelFieldAnno comment_lt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return comment_lt(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> comment_lt_fv(String value){
+        return new FieldValid<>(this, value, () -> comment_lt(value));
     }
     /**
     * 备注
@@ -4227,16 +3587,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 备注
     */
-    public SqlProjectModelFieldAnno comment_ge(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return comment_ge(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> comment_ge_fv(String value){
+        return new FieldValid<>(this, value, () -> comment_ge(value));
     }
     /**
     * 备注
@@ -4269,16 +3621,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 备注
     */
-    public SqlProjectModelFieldAnno comment_le(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return comment_le(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> comment_le_fv(String value){
+        return new FieldValid<>(this, value, () -> comment_le(value));
     }
     /**
     * 备注
@@ -4311,16 +3655,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 备注
     */
-    public SqlProjectModelFieldAnno comment_ne(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return comment_ne(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> comment_ne_fv(String value){
+        return new FieldValid<>(this, value, () -> comment_ne(value));
     }
     /**
     * 备注
@@ -4359,16 +3695,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 备注
     */
-    public SqlProjectModelFieldAnno comment_leftLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return comment_leftLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> comment_leftLike_fv(String value){
+        return new FieldValid<>(this, value, () -> comment_leftLike(value));
     }
     /**
     * 备注
@@ -4401,16 +3729,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 备注
     */
-    public SqlProjectModelFieldAnno comment_rightLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return comment_rightLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> comment_rightLike_fv(String value){
+        return new FieldValid<>(this, value, () -> comment_rightLike(value));
     }
     /**
     * 备注
@@ -4443,16 +3763,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 备注
     */
-    public SqlProjectModelFieldAnno comment_middleLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return comment_middleLike(value);
+    public FieldValid<SqlProjectModelFieldAnno, String> comment_middleLike_fv(String value){
+        return new FieldValid<>(this, value, () -> comment_middleLike(value));
     }
     /**
     * 备注
@@ -4489,16 +3801,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 备注
     */
-    public SqlProjectModelFieldAnno comment_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return comment_in(value);
+    public FieldValid<SqlProjectModelFieldAnno, Set<Object>> comment_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> comment_in(value));
     }
     /**
     * 备注
@@ -4561,16 +3865,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 删除状态
     */
-    public SqlProjectModelFieldAnno deleteStatus_eq(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return deleteStatus_eq(value);
+    public FieldValid<SqlProjectModelFieldAnno, Integer> deleteStatus_eq_fv(Integer value){
+        return new FieldValid<>(this, value, () -> deleteStatus_eq(value));
     }
     /**
     * 删除状态
@@ -4645,16 +3941,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 删除状态
     */
-    public SqlProjectModelFieldAnno deleteStatus_gt(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return deleteStatus_gt(value);
+    public FieldValid<SqlProjectModelFieldAnno, Integer> deleteStatus_gt_fv(Integer value){
+        return new FieldValid<>(this, value, () -> deleteStatus_gt(value));
     }
     /**
     * 删除状态
@@ -4687,16 +3975,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 删除状态
     */
-    public SqlProjectModelFieldAnno deleteStatus_lt(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return deleteStatus_lt(value);
+    public FieldValid<SqlProjectModelFieldAnno, Integer> deleteStatus_lt_fv(Integer value){
+        return new FieldValid<>(this, value, () -> deleteStatus_lt(value));
     }
     /**
     * 删除状态
@@ -4729,16 +4009,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 删除状态
     */
-    public SqlProjectModelFieldAnno deleteStatus_ge(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return deleteStatus_ge(value);
+    public FieldValid<SqlProjectModelFieldAnno, Integer> deleteStatus_ge_fv(Integer value){
+        return new FieldValid<>(this, value, () -> deleteStatus_ge(value));
     }
     /**
     * 删除状态
@@ -4771,16 +4043,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 删除状态
     */
-    public SqlProjectModelFieldAnno deleteStatus_le(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return deleteStatus_le(value);
+    public FieldValid<SqlProjectModelFieldAnno, Integer> deleteStatus_le_fv(Integer value){
+        return new FieldValid<>(this, value, () -> deleteStatus_le(value));
     }
     /**
     * 删除状态
@@ -4813,16 +4077,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 删除状态
     */
-    public SqlProjectModelFieldAnno deleteStatus_ne(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return deleteStatus_ne(value);
+    public FieldValid<SqlProjectModelFieldAnno, Integer> deleteStatus_ne_fv(Integer value){
+        return new FieldValid<>(this, value, () -> deleteStatus_ne(value));
     }
     /**
     * 删除状态
@@ -4859,16 +4115,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 删除状态
     */
-    public SqlProjectModelFieldAnno deleteStatus_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return deleteStatus_in(value);
+    public FieldValid<SqlProjectModelFieldAnno, Set<Object>> deleteStatus_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> deleteStatus_in(value));
     }
     /**
     * 删除状态
@@ -4931,16 +4179,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlProjectModelFieldAnno createTime_eq(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return createTime_eq(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> createTime_eq_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> createTime_eq(value));
     }
     /**
     * 创建时间
@@ -4965,16 +4205,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlProjectModelFieldAnno createTime_eq_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return createTime_eq_yyyyMMdd(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> createTime_eq_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> createTime_eq_yyyyMMdd(value));
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -5049,16 +4281,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlProjectModelFieldAnno createTime_gt(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return createTime_gt(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> createTime_gt_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> createTime_gt(value));
     }
     /**
     * 创建时间
@@ -5083,16 +4307,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlProjectModelFieldAnno createTime_gt_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return createTime_gt_yyyyMMdd(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> createTime_gt_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> createTime_gt_yyyyMMdd(value));
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -5125,16 +4341,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlProjectModelFieldAnno createTime_lt(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return createTime_lt(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> createTime_lt_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> createTime_lt(value));
     }
     /**
     * 创建时间
@@ -5159,16 +4367,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlProjectModelFieldAnno createTime_lt_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return createTime_lt_yyyyMMdd(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> createTime_lt_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> createTime_lt_yyyyMMdd(value));
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -5193,16 +4393,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlProjectModelFieldAnno createTime_lt_nextDay_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return createTime_lt_nextDay_yyyyMMdd(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> createTime_lt_nextDay_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> createTime_lt_nextDay_yyyyMMdd(value));
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日之后加一天,再查询
@@ -5235,16 +4427,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlProjectModelFieldAnno createTime_ge(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return createTime_ge(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> createTime_ge_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> createTime_ge(value));
     }
     /**
     * 创建时间
@@ -5269,16 +4453,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlProjectModelFieldAnno createTime_ge_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return createTime_ge_yyyyMMdd(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> createTime_ge_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> createTime_ge_yyyyMMdd(value));
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -5311,16 +4487,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlProjectModelFieldAnno createTime_le(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return createTime_le(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> createTime_le_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> createTime_le(value));
     }
     /**
     * 创建时间
@@ -5345,16 +4513,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlProjectModelFieldAnno createTime_le_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return createTime_le_yyyyMMdd(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> createTime_le_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> createTime_le_yyyyMMdd(value));
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -5387,16 +4547,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlProjectModelFieldAnno createTime_ne(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return createTime_ne(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> createTime_ne_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> createTime_ne(value));
     }
     /**
     * 创建时间
@@ -5421,16 +4573,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlProjectModelFieldAnno createTime_ne_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return createTime_ne_yyyyMMdd(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> createTime_ne_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> createTime_ne_yyyyMMdd(value));
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -5467,16 +4611,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlProjectModelFieldAnno createTime_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return createTime_in(value);
+    public FieldValid<SqlProjectModelFieldAnno, Set<Object>> createTime_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> createTime_in(value));
     }
     /**
     * 创建时间
@@ -5539,16 +4675,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 更新时间
     */
-    public SqlProjectModelFieldAnno updateTime_eq(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return updateTime_eq(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> updateTime_eq_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> updateTime_eq(value));
     }
     /**
     * 更新时间
@@ -5573,16 +4701,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 更新时间
     */
-    public SqlProjectModelFieldAnno updateTime_eq_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return updateTime_eq_yyyyMMdd(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> updateTime_eq_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> updateTime_eq_yyyyMMdd(value));
     }
     /**
     * 更新时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -5657,16 +4777,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 更新时间
     */
-    public SqlProjectModelFieldAnno updateTime_gt(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return updateTime_gt(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> updateTime_gt_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> updateTime_gt(value));
     }
     /**
     * 更新时间
@@ -5691,16 +4803,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 更新时间
     */
-    public SqlProjectModelFieldAnno updateTime_gt_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return updateTime_gt_yyyyMMdd(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> updateTime_gt_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> updateTime_gt_yyyyMMdd(value));
     }
     /**
     * 更新时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -5733,16 +4837,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 更新时间
     */
-    public SqlProjectModelFieldAnno updateTime_lt(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return updateTime_lt(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> updateTime_lt_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> updateTime_lt(value));
     }
     /**
     * 更新时间
@@ -5767,16 +4863,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 更新时间
     */
-    public SqlProjectModelFieldAnno updateTime_lt_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return updateTime_lt_yyyyMMdd(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> updateTime_lt_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> updateTime_lt_yyyyMMdd(value));
     }
     /**
     * 更新时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -5801,16 +4889,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 更新时间
     */
-    public SqlProjectModelFieldAnno updateTime_lt_nextDay_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return updateTime_lt_nextDay_yyyyMMdd(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> updateTime_lt_nextDay_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> updateTime_lt_nextDay_yyyyMMdd(value));
     }
     /**
     * 更新时间 把value时间小时及之后的部分舍弃只留年月日之后加一天,再查询
@@ -5843,16 +4923,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 更新时间
     */
-    public SqlProjectModelFieldAnno updateTime_ge(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return updateTime_ge(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> updateTime_ge_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> updateTime_ge(value));
     }
     /**
     * 更新时间
@@ -5877,16 +4949,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 更新时间
     */
-    public SqlProjectModelFieldAnno updateTime_ge_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return updateTime_ge_yyyyMMdd(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> updateTime_ge_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> updateTime_ge_yyyyMMdd(value));
     }
     /**
     * 更新时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -5919,16 +4983,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 更新时间
     */
-    public SqlProjectModelFieldAnno updateTime_le(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return updateTime_le(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> updateTime_le_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> updateTime_le(value));
     }
     /**
     * 更新时间
@@ -5953,16 +5009,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 更新时间
     */
-    public SqlProjectModelFieldAnno updateTime_le_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return updateTime_le_yyyyMMdd(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> updateTime_le_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> updateTime_le_yyyyMMdd(value));
     }
     /**
     * 更新时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -5995,16 +5043,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 更新时间
     */
-    public SqlProjectModelFieldAnno updateTime_ne(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return updateTime_ne(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> updateTime_ne_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> updateTime_ne(value));
     }
     /**
     * 更新时间
@@ -6029,16 +5069,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 更新时间
     */
-    public SqlProjectModelFieldAnno updateTime_ne_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return updateTime_ne_yyyyMMdd(value);
+    public FieldValid<SqlProjectModelFieldAnno, Timestamp> updateTime_ne_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> updateTime_ne_yyyyMMdd(value));
     }
     /**
     * 更新时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -6075,16 +5107,8 @@ public class SqlProjectModelFieldAnno implements QuerySelect {
     /**
     * 更新时间
     */
-    public SqlProjectModelFieldAnno updateTime_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return updateTime_in(value);
+    public FieldValid<SqlProjectModelFieldAnno, Set<Object>> updateTime_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> updateTime_in(value));
     }
     /**
     * 更新时间

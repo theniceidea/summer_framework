@@ -7,6 +7,7 @@ import com.testcomp.entities0.bizdemo.summer_dev.*;
 import com.fmk.framework.daomodel.*;
 import com.fmk.framework.restful.PageResultList;
 import com.fmk.framework.valid.IValidatorSuccess;
+import com.fmk.framework.valid.FieldValid;
 import java.util.ArrayList;
 import java.util.List;
 import java.math.BigInteger;
@@ -178,16 +179,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * id
     */
-    public SqlDemotable3 id_eq(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return id_eq(value);
+    public FieldValid<SqlDemotable3, Integer> id_eq_fv(Integer value){
+        return new FieldValid<>(this, value, () -> id_eq(value));
     }
     /**
     * id
@@ -262,16 +255,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * id
     */
-    public SqlDemotable3 id_gt(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return id_gt(value);
+    public FieldValid<SqlDemotable3, Integer> id_gt_fv(Integer value){
+        return new FieldValid<>(this, value, () -> id_gt(value));
     }
     /**
     * id
@@ -304,16 +289,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * id
     */
-    public SqlDemotable3 id_lt(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return id_lt(value);
+    public FieldValid<SqlDemotable3, Integer> id_lt_fv(Integer value){
+        return new FieldValid<>(this, value, () -> id_lt(value));
     }
     /**
     * id
@@ -346,16 +323,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * id
     */
-    public SqlDemotable3 id_ge(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return id_ge(value);
+    public FieldValid<SqlDemotable3, Integer> id_ge_fv(Integer value){
+        return new FieldValid<>(this, value, () -> id_ge(value));
     }
     /**
     * id
@@ -388,16 +357,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * id
     */
-    public SqlDemotable3 id_le(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return id_le(value);
+    public FieldValid<SqlDemotable3, Integer> id_le_fv(Integer value){
+        return new FieldValid<>(this, value, () -> id_le(value));
     }
     /**
     * id
@@ -430,16 +391,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * id
     */
-    public SqlDemotable3 id_ne(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return id_ne(value);
+    public FieldValid<SqlDemotable3, Integer> id_ne_fv(Integer value){
+        return new FieldValid<>(this, value, () -> id_ne(value));
     }
     /**
     * id
@@ -476,16 +429,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * id
     */
-    public SqlDemotable3 id_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return id_in(value);
+    public FieldValid<SqlDemotable3, Set<Object>> id_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> id_in(value));
     }
     /**
     * id
@@ -548,16 +493,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 标题
     */
-    public SqlDemotable3 title_eq(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return title_eq(value);
+    public FieldValid<SqlDemotable3, String> title_eq_fv(String value){
+        return new FieldValid<>(this, value, () -> title_eq(value));
     }
     /**
     * 标题
@@ -632,16 +569,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 标题
     */
-    public SqlDemotable3 title_gt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return title_gt(value);
+    public FieldValid<SqlDemotable3, String> title_gt_fv(String value){
+        return new FieldValid<>(this, value, () -> title_gt(value));
     }
     /**
     * 标题
@@ -674,16 +603,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 标题
     */
-    public SqlDemotable3 title_lt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return title_lt(value);
+    public FieldValid<SqlDemotable3, String> title_lt_fv(String value){
+        return new FieldValid<>(this, value, () -> title_lt(value));
     }
     /**
     * 标题
@@ -716,16 +637,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 标题
     */
-    public SqlDemotable3 title_ge(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return title_ge(value);
+    public FieldValid<SqlDemotable3, String> title_ge_fv(String value){
+        return new FieldValid<>(this, value, () -> title_ge(value));
     }
     /**
     * 标题
@@ -758,16 +671,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 标题
     */
-    public SqlDemotable3 title_le(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return title_le(value);
+    public FieldValid<SqlDemotable3, String> title_le_fv(String value){
+        return new FieldValid<>(this, value, () -> title_le(value));
     }
     /**
     * 标题
@@ -800,16 +705,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 标题
     */
-    public SqlDemotable3 title_ne(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return title_ne(value);
+    public FieldValid<SqlDemotable3, String> title_ne_fv(String value){
+        return new FieldValid<>(this, value, () -> title_ne(value));
     }
     /**
     * 标题
@@ -848,16 +745,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 标题
     */
-    public SqlDemotable3 title_leftLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return title_leftLike(value);
+    public FieldValid<SqlDemotable3, String> title_leftLike_fv(String value){
+        return new FieldValid<>(this, value, () -> title_leftLike(value));
     }
     /**
     * 标题
@@ -890,16 +779,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 标题
     */
-    public SqlDemotable3 title_rightLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return title_rightLike(value);
+    public FieldValid<SqlDemotable3, String> title_rightLike_fv(String value){
+        return new FieldValid<>(this, value, () -> title_rightLike(value));
     }
     /**
     * 标题
@@ -932,16 +813,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 标题
     */
-    public SqlDemotable3 title_middleLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return title_middleLike(value);
+    public FieldValid<SqlDemotable3, String> title_middleLike_fv(String value){
+        return new FieldValid<>(this, value, () -> title_middleLike(value));
     }
     /**
     * 标题
@@ -978,16 +851,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 标题
     */
-    public SqlDemotable3 title_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return title_in(value);
+    public FieldValid<SqlDemotable3, Set<Object>> title_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> title_in(value));
     }
     /**
     * 标题
@@ -1050,16 +915,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 类型
     */
-    public SqlDemotable3 type_eq(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return type_eq(value);
+    public FieldValid<SqlDemotable3, String> type_eq_fv(String value){
+        return new FieldValid<>(this, value, () -> type_eq(value));
     }
     /**
     * 类型
@@ -1134,16 +991,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 类型
     */
-    public SqlDemotable3 type_gt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return type_gt(value);
+    public FieldValid<SqlDemotable3, String> type_gt_fv(String value){
+        return new FieldValid<>(this, value, () -> type_gt(value));
     }
     /**
     * 类型
@@ -1176,16 +1025,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 类型
     */
-    public SqlDemotable3 type_lt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return type_lt(value);
+    public FieldValid<SqlDemotable3, String> type_lt_fv(String value){
+        return new FieldValid<>(this, value, () -> type_lt(value));
     }
     /**
     * 类型
@@ -1218,16 +1059,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 类型
     */
-    public SqlDemotable3 type_ge(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return type_ge(value);
+    public FieldValid<SqlDemotable3, String> type_ge_fv(String value){
+        return new FieldValid<>(this, value, () -> type_ge(value));
     }
     /**
     * 类型
@@ -1260,16 +1093,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 类型
     */
-    public SqlDemotable3 type_le(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return type_le(value);
+    public FieldValid<SqlDemotable3, String> type_le_fv(String value){
+        return new FieldValid<>(this, value, () -> type_le(value));
     }
     /**
     * 类型
@@ -1302,16 +1127,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 类型
     */
-    public SqlDemotable3 type_ne(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return type_ne(value);
+    public FieldValid<SqlDemotable3, String> type_ne_fv(String value){
+        return new FieldValid<>(this, value, () -> type_ne(value));
     }
     /**
     * 类型
@@ -1350,16 +1167,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 类型
     */
-    public SqlDemotable3 type_leftLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return type_leftLike(value);
+    public FieldValid<SqlDemotable3, String> type_leftLike_fv(String value){
+        return new FieldValid<>(this, value, () -> type_leftLike(value));
     }
     /**
     * 类型
@@ -1392,16 +1201,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 类型
     */
-    public SqlDemotable3 type_rightLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return type_rightLike(value);
+    public FieldValid<SqlDemotable3, String> type_rightLike_fv(String value){
+        return new FieldValid<>(this, value, () -> type_rightLike(value));
     }
     /**
     * 类型
@@ -1434,16 +1235,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 类型
     */
-    public SqlDemotable3 type_middleLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return type_middleLike(value);
+    public FieldValid<SqlDemotable3, String> type_middleLike_fv(String value){
+        return new FieldValid<>(this, value, () -> type_middleLike(value));
     }
     /**
     * 类型
@@ -1480,16 +1273,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 类型
     */
-    public SqlDemotable3 type_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return type_in(value);
+    public FieldValid<SqlDemotable3, Set<Object>> type_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> type_in(value));
     }
     /**
     * 类型
@@ -1552,16 +1337,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量
     */
-    public SqlDemotable3 num_eq(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return num_eq(value);
+    public FieldValid<SqlDemotable3, Integer> num_eq_fv(Integer value){
+        return new FieldValid<>(this, value, () -> num_eq(value));
     }
     /**
     * 数量
@@ -1636,16 +1413,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量
     */
-    public SqlDemotable3 num_gt(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return num_gt(value);
+    public FieldValid<SqlDemotable3, Integer> num_gt_fv(Integer value){
+        return new FieldValid<>(this, value, () -> num_gt(value));
     }
     /**
     * 数量
@@ -1678,16 +1447,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量
     */
-    public SqlDemotable3 num_lt(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return num_lt(value);
+    public FieldValid<SqlDemotable3, Integer> num_lt_fv(Integer value){
+        return new FieldValid<>(this, value, () -> num_lt(value));
     }
     /**
     * 数量
@@ -1720,16 +1481,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量
     */
-    public SqlDemotable3 num_ge(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return num_ge(value);
+    public FieldValid<SqlDemotable3, Integer> num_ge_fv(Integer value){
+        return new FieldValid<>(this, value, () -> num_ge(value));
     }
     /**
     * 数量
@@ -1762,16 +1515,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量
     */
-    public SqlDemotable3 num_le(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return num_le(value);
+    public FieldValid<SqlDemotable3, Integer> num_le_fv(Integer value){
+        return new FieldValid<>(this, value, () -> num_le(value));
     }
     /**
     * 数量
@@ -1804,16 +1549,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量
     */
-    public SqlDemotable3 num_ne(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return num_ne(value);
+    public FieldValid<SqlDemotable3, Integer> num_ne_fv(Integer value){
+        return new FieldValid<>(this, value, () -> num_ne(value));
     }
     /**
     * 数量
@@ -1850,16 +1587,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量
     */
-    public SqlDemotable3 num_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return num_in(value);
+    public FieldValid<SqlDemotable3, Set<Object>> num_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> num_in(value));
     }
     /**
     * 数量
@@ -1926,16 +1655,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量2
     */
-    public SqlDemotable3 num2_eq(BigDecimal value, IValidatorSuccess<BigDecimal> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<BigDecimal> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return num2_eq(value);
+    public FieldValid<SqlDemotable3, BigDecimal> num2_eq_fv(BigDecimal value){
+        return new FieldValid<>(this, value, () -> num2_eq(value));
     }
     /**
     * 数量2
@@ -2010,16 +1731,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量2
     */
-    public SqlDemotable3 num2_gt(BigDecimal value, IValidatorSuccess<BigDecimal> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<BigDecimal> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return num2_gt(value);
+    public FieldValid<SqlDemotable3, BigDecimal> num2_gt_fv(BigDecimal value){
+        return new FieldValid<>(this, value, () -> num2_gt(value));
     }
     /**
     * 数量2
@@ -2052,16 +1765,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量2
     */
-    public SqlDemotable3 num2_lt(BigDecimal value, IValidatorSuccess<BigDecimal> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<BigDecimal> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return num2_lt(value);
+    public FieldValid<SqlDemotable3, BigDecimal> num2_lt_fv(BigDecimal value){
+        return new FieldValid<>(this, value, () -> num2_lt(value));
     }
     /**
     * 数量2
@@ -2094,16 +1799,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量2
     */
-    public SqlDemotable3 num2_ge(BigDecimal value, IValidatorSuccess<BigDecimal> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<BigDecimal> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return num2_ge(value);
+    public FieldValid<SqlDemotable3, BigDecimal> num2_ge_fv(BigDecimal value){
+        return new FieldValid<>(this, value, () -> num2_ge(value));
     }
     /**
     * 数量2
@@ -2136,16 +1833,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量2
     */
-    public SqlDemotable3 num2_le(BigDecimal value, IValidatorSuccess<BigDecimal> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<BigDecimal> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return num2_le(value);
+    public FieldValid<SqlDemotable3, BigDecimal> num2_le_fv(BigDecimal value){
+        return new FieldValid<>(this, value, () -> num2_le(value));
     }
     /**
     * 数量2
@@ -2178,16 +1867,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量2
     */
-    public SqlDemotable3 num2_ne(BigDecimal value, IValidatorSuccess<BigDecimal> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<BigDecimal> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return num2_ne(value);
+    public FieldValid<SqlDemotable3, BigDecimal> num2_ne_fv(BigDecimal value){
+        return new FieldValid<>(this, value, () -> num2_ne(value));
     }
     /**
     * 数量2
@@ -2224,16 +1905,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量2
     */
-    public SqlDemotable3 num2_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return num2_in(value);
+    public FieldValid<SqlDemotable3, Set<Object>> num2_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> num2_in(value));
     }
     /**
     * 数量2
@@ -2300,16 +1973,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量3
     */
-    public SqlDemotable3 num3_eq(Double value, IValidatorSuccess<Double> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Double> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return num3_eq(value);
+    public FieldValid<SqlDemotable3, Double> num3_eq_fv(Double value){
+        return new FieldValid<>(this, value, () -> num3_eq(value));
     }
     /**
     * 数量3
@@ -2384,16 +2049,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量3
     */
-    public SqlDemotable3 num3_gt(Double value, IValidatorSuccess<Double> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Double> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return num3_gt(value);
+    public FieldValid<SqlDemotable3, Double> num3_gt_fv(Double value){
+        return new FieldValid<>(this, value, () -> num3_gt(value));
     }
     /**
     * 数量3
@@ -2426,16 +2083,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量3
     */
-    public SqlDemotable3 num3_lt(Double value, IValidatorSuccess<Double> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Double> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return num3_lt(value);
+    public FieldValid<SqlDemotable3, Double> num3_lt_fv(Double value){
+        return new FieldValid<>(this, value, () -> num3_lt(value));
     }
     /**
     * 数量3
@@ -2468,16 +2117,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量3
     */
-    public SqlDemotable3 num3_ge(Double value, IValidatorSuccess<Double> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Double> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return num3_ge(value);
+    public FieldValid<SqlDemotable3, Double> num3_ge_fv(Double value){
+        return new FieldValid<>(this, value, () -> num3_ge(value));
     }
     /**
     * 数量3
@@ -2510,16 +2151,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量3
     */
-    public SqlDemotable3 num3_le(Double value, IValidatorSuccess<Double> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Double> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return num3_le(value);
+    public FieldValid<SqlDemotable3, Double> num3_le_fv(Double value){
+        return new FieldValid<>(this, value, () -> num3_le(value));
     }
     /**
     * 数量3
@@ -2552,16 +2185,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量3
     */
-    public SqlDemotable3 num3_ne(Double value, IValidatorSuccess<Double> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Double> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return num3_ne(value);
+    public FieldValid<SqlDemotable3, Double> num3_ne_fv(Double value){
+        return new FieldValid<>(this, value, () -> num3_ne(value));
     }
     /**
     * 数量3
@@ -2598,16 +2223,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 数量3
     */
-    public SqlDemotable3 num3_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return num3_in(value);
+    public FieldValid<SqlDemotable3, Set<Object>> num3_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> num3_in(value));
     }
     /**
     * 数量3
@@ -2674,16 +2291,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * demotable2
     */
-    public SqlDemotable3 demotable2Id_eq(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return demotable2Id_eq(value);
+    public FieldValid<SqlDemotable3, Integer> demotable2Id_eq_fv(Integer value){
+        return new FieldValid<>(this, value, () -> demotable2Id_eq(value));
     }
     /**
     * demotable2
@@ -2758,16 +2367,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * demotable2
     */
-    public SqlDemotable3 demotable2Id_gt(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return demotable2Id_gt(value);
+    public FieldValid<SqlDemotable3, Integer> demotable2Id_gt_fv(Integer value){
+        return new FieldValid<>(this, value, () -> demotable2Id_gt(value));
     }
     /**
     * demotable2
@@ -2800,16 +2401,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * demotable2
     */
-    public SqlDemotable3 demotable2Id_lt(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return demotable2Id_lt(value);
+    public FieldValid<SqlDemotable3, Integer> demotable2Id_lt_fv(Integer value){
+        return new FieldValid<>(this, value, () -> demotable2Id_lt(value));
     }
     /**
     * demotable2
@@ -2842,16 +2435,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * demotable2
     */
-    public SqlDemotable3 demotable2Id_ge(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return demotable2Id_ge(value);
+    public FieldValid<SqlDemotable3, Integer> demotable2Id_ge_fv(Integer value){
+        return new FieldValid<>(this, value, () -> demotable2Id_ge(value));
     }
     /**
     * demotable2
@@ -2884,16 +2469,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * demotable2
     */
-    public SqlDemotable3 demotable2Id_le(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return demotable2Id_le(value);
+    public FieldValid<SqlDemotable3, Integer> demotable2Id_le_fv(Integer value){
+        return new FieldValid<>(this, value, () -> demotable2Id_le(value));
     }
     /**
     * demotable2
@@ -2926,16 +2503,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * demotable2
     */
-    public SqlDemotable3 demotable2Id_ne(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return demotable2Id_ne(value);
+    public FieldValid<SqlDemotable3, Integer> demotable2Id_ne_fv(Integer value){
+        return new FieldValid<>(this, value, () -> demotable2Id_ne(value));
     }
     /**
     * demotable2
@@ -2972,16 +2541,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * demotable2
     */
-    public SqlDemotable3 demotable2Id_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return demotable2Id_in(value);
+    public FieldValid<SqlDemotable3, Set<Object>> demotable2Id_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> demotable2Id_in(value));
     }
     /**
     * demotable2
@@ -3012,16 +2573,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * demotable2
     */
-    public SqlDemotable3 demotable2Id_in(List<Demotable2> value, IValidatorSuccess<List<Demotable2>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<List<Demotable2>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return demotable2Id_in(value);
+    public FieldValid<SqlDemotable3, List<Demotable2>> demotable2Id_in_fv(List<Demotable2> value){
+        return new FieldValid<>(this, value, () -> demotable2Id_in(value));
     }
     /**
     * demotable2
@@ -3084,16 +2637,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * delete status
     */
-    public SqlDemotable3 deleteStatus_eq(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return deleteStatus_eq(value);
+    public FieldValid<SqlDemotable3, Integer> deleteStatus_eq_fv(Integer value){
+        return new FieldValid<>(this, value, () -> deleteStatus_eq(value));
     }
     /**
     * delete status
@@ -3168,16 +2713,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * delete status
     */
-    public SqlDemotable3 deleteStatus_gt(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return deleteStatus_gt(value);
+    public FieldValid<SqlDemotable3, Integer> deleteStatus_gt_fv(Integer value){
+        return new FieldValid<>(this, value, () -> deleteStatus_gt(value));
     }
     /**
     * delete status
@@ -3210,16 +2747,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * delete status
     */
-    public SqlDemotable3 deleteStatus_lt(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return deleteStatus_lt(value);
+    public FieldValid<SqlDemotable3, Integer> deleteStatus_lt_fv(Integer value){
+        return new FieldValid<>(this, value, () -> deleteStatus_lt(value));
     }
     /**
     * delete status
@@ -3252,16 +2781,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * delete status
     */
-    public SqlDemotable3 deleteStatus_ge(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return deleteStatus_ge(value);
+    public FieldValid<SqlDemotable3, Integer> deleteStatus_ge_fv(Integer value){
+        return new FieldValid<>(this, value, () -> deleteStatus_ge(value));
     }
     /**
     * delete status
@@ -3294,16 +2815,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * delete status
     */
-    public SqlDemotable3 deleteStatus_le(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return deleteStatus_le(value);
+    public FieldValid<SqlDemotable3, Integer> deleteStatus_le_fv(Integer value){
+        return new FieldValid<>(this, value, () -> deleteStatus_le(value));
     }
     /**
     * delete status
@@ -3336,16 +2849,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * delete status
     */
-    public SqlDemotable3 deleteStatus_ne(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return deleteStatus_ne(value);
+    public FieldValid<SqlDemotable3, Integer> deleteStatus_ne_fv(Integer value){
+        return new FieldValid<>(this, value, () -> deleteStatus_ne(value));
     }
     /**
     * delete status
@@ -3382,16 +2887,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * delete status
     */
-    public SqlDemotable3 deleteStatus_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return deleteStatus_in(value);
+    public FieldValid<SqlDemotable3, Set<Object>> deleteStatus_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> deleteStatus_in(value));
     }
     /**
     * delete status
@@ -3454,16 +2951,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * enable status
     */
-    public SqlDemotable3 enableStatus_eq(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return enableStatus_eq(value);
+    public FieldValid<SqlDemotable3, String> enableStatus_eq_fv(String value){
+        return new FieldValid<>(this, value, () -> enableStatus_eq(value));
     }
     /**
     * enable status
@@ -3538,16 +3027,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * enable status
     */
-    public SqlDemotable3 enableStatus_gt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return enableStatus_gt(value);
+    public FieldValid<SqlDemotable3, String> enableStatus_gt_fv(String value){
+        return new FieldValid<>(this, value, () -> enableStatus_gt(value));
     }
     /**
     * enable status
@@ -3580,16 +3061,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * enable status
     */
-    public SqlDemotable3 enableStatus_lt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return enableStatus_lt(value);
+    public FieldValid<SqlDemotable3, String> enableStatus_lt_fv(String value){
+        return new FieldValid<>(this, value, () -> enableStatus_lt(value));
     }
     /**
     * enable status
@@ -3622,16 +3095,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * enable status
     */
-    public SqlDemotable3 enableStatus_ge(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return enableStatus_ge(value);
+    public FieldValid<SqlDemotable3, String> enableStatus_ge_fv(String value){
+        return new FieldValid<>(this, value, () -> enableStatus_ge(value));
     }
     /**
     * enable status
@@ -3664,16 +3129,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * enable status
     */
-    public SqlDemotable3 enableStatus_le(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return enableStatus_le(value);
+    public FieldValid<SqlDemotable3, String> enableStatus_le_fv(String value){
+        return new FieldValid<>(this, value, () -> enableStatus_le(value));
     }
     /**
     * enable status
@@ -3706,16 +3163,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * enable status
     */
-    public SqlDemotable3 enableStatus_ne(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return enableStatus_ne(value);
+    public FieldValid<SqlDemotable3, String> enableStatus_ne_fv(String value){
+        return new FieldValid<>(this, value, () -> enableStatus_ne(value));
     }
     /**
     * enable status
@@ -3754,16 +3203,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * enable status
     */
-    public SqlDemotable3 enableStatus_leftLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return enableStatus_leftLike(value);
+    public FieldValid<SqlDemotable3, String> enableStatus_leftLike_fv(String value){
+        return new FieldValid<>(this, value, () -> enableStatus_leftLike(value));
     }
     /**
     * enable status
@@ -3796,16 +3237,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * enable status
     */
-    public SqlDemotable3 enableStatus_rightLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return enableStatus_rightLike(value);
+    public FieldValid<SqlDemotable3, String> enableStatus_rightLike_fv(String value){
+        return new FieldValid<>(this, value, () -> enableStatus_rightLike(value));
     }
     /**
     * enable status
@@ -3838,16 +3271,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * enable status
     */
-    public SqlDemotable3 enableStatus_middleLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return enableStatus_middleLike(value);
+    public FieldValid<SqlDemotable3, String> enableStatus_middleLike_fv(String value){
+        return new FieldValid<>(this, value, () -> enableStatus_middleLike(value));
     }
     /**
     * enable status
@@ -3884,16 +3309,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * enable status
     */
-    public SqlDemotable3 enableStatus_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return enableStatus_in(value);
+    public FieldValid<SqlDemotable3, Set<Object>> enableStatus_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> enableStatus_in(value));
     }
     /**
     * enable status
@@ -3956,16 +3373,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
-    public SqlDemotable3 status_eq(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return status_eq(value);
+    public FieldValid<SqlDemotable3, Integer> status_eq_fv(Integer value){
+        return new FieldValid<>(this, value, () -> status_eq(value));
     }
     /**
     * status
@@ -4040,16 +3449,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
-    public SqlDemotable3 status_gt(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return status_gt(value);
+    public FieldValid<SqlDemotable3, Integer> status_gt_fv(Integer value){
+        return new FieldValid<>(this, value, () -> status_gt(value));
     }
     /**
     * status
@@ -4082,16 +3483,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
-    public SqlDemotable3 status_lt(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return status_lt(value);
+    public FieldValid<SqlDemotable3, Integer> status_lt_fv(Integer value){
+        return new FieldValid<>(this, value, () -> status_lt(value));
     }
     /**
     * status
@@ -4124,16 +3517,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
-    public SqlDemotable3 status_ge(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return status_ge(value);
+    public FieldValid<SqlDemotable3, Integer> status_ge_fv(Integer value){
+        return new FieldValid<>(this, value, () -> status_ge(value));
     }
     /**
     * status
@@ -4166,16 +3551,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
-    public SqlDemotable3 status_le(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return status_le(value);
+    public FieldValid<SqlDemotable3, Integer> status_le_fv(Integer value){
+        return new FieldValid<>(this, value, () -> status_le(value));
     }
     /**
     * status
@@ -4208,16 +3585,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
-    public SqlDemotable3 status_ne(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return status_ne(value);
+    public FieldValid<SqlDemotable3, Integer> status_ne_fv(Integer value){
+        return new FieldValid<>(this, value, () -> status_ne(value));
     }
     /**
     * status
@@ -4254,16 +3623,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
-    public SqlDemotable3 status_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return status_in(value);
+    public FieldValid<SqlDemotable3, Set<Object>> status_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> status_in(value));
     }
     /**
     * status
@@ -4326,16 +3687,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
-    public SqlDemotable3 status2_eq(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return status2_eq(value);
+    public FieldValid<SqlDemotable3, String> status2_eq_fv(String value){
+        return new FieldValid<>(this, value, () -> status2_eq(value));
     }
     /**
     * status
@@ -4410,16 +3763,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
-    public SqlDemotable3 status2_gt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return status2_gt(value);
+    public FieldValid<SqlDemotable3, String> status2_gt_fv(String value){
+        return new FieldValid<>(this, value, () -> status2_gt(value));
     }
     /**
     * status
@@ -4452,16 +3797,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
-    public SqlDemotable3 status2_lt(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return status2_lt(value);
+    public FieldValid<SqlDemotable3, String> status2_lt_fv(String value){
+        return new FieldValid<>(this, value, () -> status2_lt(value));
     }
     /**
     * status
@@ -4494,16 +3831,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
-    public SqlDemotable3 status2_ge(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return status2_ge(value);
+    public FieldValid<SqlDemotable3, String> status2_ge_fv(String value){
+        return new FieldValid<>(this, value, () -> status2_ge(value));
     }
     /**
     * status
@@ -4536,16 +3865,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
-    public SqlDemotable3 status2_le(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return status2_le(value);
+    public FieldValid<SqlDemotable3, String> status2_le_fv(String value){
+        return new FieldValid<>(this, value, () -> status2_le(value));
     }
     /**
     * status
@@ -4578,16 +3899,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
-    public SqlDemotable3 status2_ne(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return status2_ne(value);
+    public FieldValid<SqlDemotable3, String> status2_ne_fv(String value){
+        return new FieldValid<>(this, value, () -> status2_ne(value));
     }
     /**
     * status
@@ -4626,16 +3939,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
-    public SqlDemotable3 status2_leftLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return status2_leftLike(value);
+    public FieldValid<SqlDemotable3, String> status2_leftLike_fv(String value){
+        return new FieldValid<>(this, value, () -> status2_leftLike(value));
     }
     /**
     * status
@@ -4668,16 +3973,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
-    public SqlDemotable3 status2_rightLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return status2_rightLike(value);
+    public FieldValid<SqlDemotable3, String> status2_rightLike_fv(String value){
+        return new FieldValid<>(this, value, () -> status2_rightLike(value));
     }
     /**
     * status
@@ -4710,16 +4007,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
-    public SqlDemotable3 status2_middleLike(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return status2_middleLike(value);
+    public FieldValid<SqlDemotable3, String> status2_middleLike_fv(String value){
+        return new FieldValid<>(this, value, () -> status2_middleLike(value));
     }
     /**
     * status
@@ -4756,16 +4045,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * status
     */
-    public SqlDemotable3 status2_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return status2_in(value);
+    public FieldValid<SqlDemotable3, Set<Object>> status2_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> status2_in(value));
     }
     /**
     * status
@@ -4828,16 +4109,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlDemotable3 creationDate_eq(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate_eq(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate_eq_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate_eq(value));
     }
     /**
     * 创建时间
@@ -4862,16 +4135,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlDemotable3 creationDate_eq_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate_eq_yyyyMMdd(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate_eq_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate_eq_yyyyMMdd(value));
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -4946,16 +4211,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlDemotable3 creationDate_gt(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate_gt(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate_gt_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate_gt(value));
     }
     /**
     * 创建时间
@@ -4980,16 +4237,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlDemotable3 creationDate_gt_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate_gt_yyyyMMdd(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate_gt_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate_gt_yyyyMMdd(value));
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -5022,16 +4271,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlDemotable3 creationDate_lt(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate_lt(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate_lt_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate_lt(value));
     }
     /**
     * 创建时间
@@ -5056,16 +4297,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlDemotable3 creationDate_lt_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate_lt_yyyyMMdd(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate_lt_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate_lt_yyyyMMdd(value));
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -5090,16 +4323,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlDemotable3 creationDate_lt_nextDay_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate_lt_nextDay_yyyyMMdd(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate_lt_nextDay_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate_lt_nextDay_yyyyMMdd(value));
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日之后加一天,再查询
@@ -5132,16 +4357,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlDemotable3 creationDate_ge(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate_ge(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate_ge_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate_ge(value));
     }
     /**
     * 创建时间
@@ -5166,16 +4383,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlDemotable3 creationDate_ge_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate_ge_yyyyMMdd(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate_ge_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate_ge_yyyyMMdd(value));
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -5208,16 +4417,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlDemotable3 creationDate_le(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate_le(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate_le_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate_le(value));
     }
     /**
     * 创建时间
@@ -5242,16 +4443,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlDemotable3 creationDate_le_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate_le_yyyyMMdd(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate_le_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate_le_yyyyMMdd(value));
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -5284,16 +4477,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlDemotable3 creationDate_ne(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate_ne(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate_ne_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate_ne(value));
     }
     /**
     * 创建时间
@@ -5318,16 +4503,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlDemotable3 creationDate_ne_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate_ne_yyyyMMdd(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate_ne_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate_ne_yyyyMMdd(value));
     }
     /**
     * 创建时间 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -5364,16 +4541,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间
     */
-    public SqlDemotable3 creationDate_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate_in(value);
+    public FieldValid<SqlDemotable3, Set<Object>> creationDate_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> creationDate_in(value));
     }
     /**
     * 创建时间
@@ -5436,16 +4605,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间2
     */
-    public SqlDemotable3 creationDate2_eq(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate2_eq(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate2_eq_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate2_eq(value));
     }
     /**
     * 创建时间2
@@ -5470,16 +4631,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间2
     */
-    public SqlDemotable3 creationDate2_eq_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate2_eq_yyyyMMdd(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate2_eq_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate2_eq_yyyyMMdd(value));
     }
     /**
     * 创建时间2 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -5554,16 +4707,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间2
     */
-    public SqlDemotable3 creationDate2_gt(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate2_gt(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate2_gt_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate2_gt(value));
     }
     /**
     * 创建时间2
@@ -5588,16 +4733,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间2
     */
-    public SqlDemotable3 creationDate2_gt_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate2_gt_yyyyMMdd(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate2_gt_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate2_gt_yyyyMMdd(value));
     }
     /**
     * 创建时间2 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -5630,16 +4767,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间2
     */
-    public SqlDemotable3 creationDate2_lt(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate2_lt(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate2_lt_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate2_lt(value));
     }
     /**
     * 创建时间2
@@ -5664,16 +4793,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间2
     */
-    public SqlDemotable3 creationDate2_lt_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate2_lt_yyyyMMdd(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate2_lt_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate2_lt_yyyyMMdd(value));
     }
     /**
     * 创建时间2 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -5698,16 +4819,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间2
     */
-    public SqlDemotable3 creationDate2_lt_nextDay_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate2_lt_nextDay_yyyyMMdd(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate2_lt_nextDay_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate2_lt_nextDay_yyyyMMdd(value));
     }
     /**
     * 创建时间2 把value时间小时及之后的部分舍弃只留年月日之后加一天,再查询
@@ -5740,16 +4853,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间2
     */
-    public SqlDemotable3 creationDate2_ge(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate2_ge(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate2_ge_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate2_ge(value));
     }
     /**
     * 创建时间2
@@ -5774,16 +4879,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间2
     */
-    public SqlDemotable3 creationDate2_ge_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate2_ge_yyyyMMdd(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate2_ge_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate2_ge_yyyyMMdd(value));
     }
     /**
     * 创建时间2 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -5816,16 +4913,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间2
     */
-    public SqlDemotable3 creationDate2_le(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate2_le(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate2_le_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate2_le(value));
     }
     /**
     * 创建时间2
@@ -5850,16 +4939,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间2
     */
-    public SqlDemotable3 creationDate2_le_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate2_le_yyyyMMdd(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate2_le_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate2_le_yyyyMMdd(value));
     }
     /**
     * 创建时间2 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -5892,16 +4973,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间2
     */
-    public SqlDemotable3 creationDate2_ne(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate2_ne(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate2_ne_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate2_ne(value));
     }
     /**
     * 创建时间2
@@ -5926,16 +4999,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间2
     */
-    public SqlDemotable3 creationDate2_ne_yyyyMMdd(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate2_ne_yyyyMMdd(value);
+    public FieldValid<SqlDemotable3, Timestamp> creationDate2_ne_yyyyMMdd_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate2_ne_yyyyMMdd(value));
     }
     /**
     * 创建时间2 把value时间小时及之后的部分舍弃只留年月日,再查询
@@ -5972,16 +5037,8 @@ public class SqlDemotable3 implements QuerySelect {
     /**
     * 创建时间2
     */
-    public SqlDemotable3 creationDate2_in(Set<Object> value, IValidatorSuccess<Set<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Set<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        return creationDate2_in(value);
+    public FieldValid<SqlDemotable3, Set<Object>> creationDate2_in_fv(Set<Object> value){
+        return new FieldValid<>(this, value, () -> creationDate2_in(value));
     }
     /**
     * 创建时间2

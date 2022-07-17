@@ -178,17 +178,8 @@ public class ProjectModel extends Entity{
     /**
     * id
     */
-    public ProjectModel id(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.id=value;
-        return this;
+    public FieldValid<ProjectModel, String> id_fv(String value){
+        return new FieldValid<>(this, value, () -> id(value));
     }
     /**
     * id
@@ -256,17 +247,8 @@ public class ProjectModel extends Entity{
     /**
     * 项目id
     */
-    public ProjectModel projectId(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.projectId=value;
-        return this;
+    public FieldValid<ProjectModel, String> projectId_fv(String value){
+        return new FieldValid<>(this, value, () -> projectId(value));
     }
     /**
     * 项目id
@@ -334,17 +316,8 @@ public class ProjectModel extends Entity{
     /**
     * 数据库id
     */
-    public ProjectModel projectDbId(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.projectDbId=value;
-        return this;
+    public FieldValid<ProjectModel, String> projectDbId_fv(String value){
+        return new FieldValid<>(this, value, () -> projectDbId(value));
     }
     /**
     * 数据库id
@@ -412,17 +385,8 @@ public class ProjectModel extends Entity{
     /**
     * 类别
     */
-    public ProjectModel modelType(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.modelType=value;
-        return this;
+    public FieldValid<ProjectModel, Integer> modelType_fv(Integer value){
+        return new FieldValid<>(this, value, () -> modelType(value));
     }
     /**
     * 类别
@@ -522,17 +486,8 @@ public class ProjectModel extends Entity{
     /**
     * 是否数据库表mapping
     */
-    public ProjectModel tableModel(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.tableModel=value;
-        return this;
+    public FieldValid<ProjectModel, Integer> tableModel_fv(Integer value){
+        return new FieldValid<>(this, value, () -> tableModel(value));
     }
     /**
     * 是否数据库表mapping
@@ -632,17 +587,8 @@ public class ProjectModel extends Entity{
     /**
     * 是否summer对象
     */
-    public ProjectModel summerModel(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.summerModel=value;
-        return this;
+    public FieldValid<ProjectModel, Integer> summerModel_fv(Integer value){
+        return new FieldValid<>(this, value, () -> summerModel(value));
     }
     /**
     * 是否summer对象
@@ -742,17 +688,8 @@ public class ProjectModel extends Entity{
     /**
     * summer对象名称空间
     */
-    public ProjectModel summerNs(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.summerNs=value;
-        return this;
+    public FieldValid<ProjectModel, String> summerNs_fv(String value){
+        return new FieldValid<>(this, value, () -> summerNs(value));
     }
     /**
     * summer对象名称空间
@@ -896,17 +833,8 @@ public class ProjectModel extends Entity{
     /**
     * imports
     */
-    public ProjectModel imports(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.imports=value;
-        return this;
+    public FieldValid<ProjectModel, String> imports_fv(String value){
+        return new FieldValid<>(this, value, () -> imports(value));
     }
     /**
     * imports
@@ -974,17 +902,8 @@ public class ProjectModel extends Entity{
     /**
     * 中文名
     */
-    public ProjectModel cname(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.cname=value;
-        return this;
+    public FieldValid<ProjectModel, String> cname_fv(String value){
+        return new FieldValid<>(this, value, () -> cname(value));
     }
     /**
     * 中文名
@@ -1052,17 +971,8 @@ public class ProjectModel extends Entity{
     /**
     * 英文名
     */
-    public ProjectModel ename(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.ename=value;
-        return this;
+    public FieldValid<ProjectModel, String> ename_fv(String value){
+        return new FieldValid<>(this, value, () -> ename(value));
     }
     /**
     * 英文名
@@ -1130,17 +1040,8 @@ public class ProjectModel extends Entity{
     /**
     * 继承信息
     */
-    public ProjectModel extendsInfo(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.extendsInfo=value;
-        return this;
+    public FieldValid<ProjectModel, String> extendsInfo_fv(String value){
+        return new FieldValid<>(this, value, () -> extendsInfo(value));
     }
     /**
     * 继承信息
@@ -1208,17 +1109,8 @@ public class ProjectModel extends Entity{
     /**
     * 序号
     */
-    public ProjectModel dspOrder(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.dspOrder=value;
-        return this;
+    public FieldValid<ProjectModel, Integer> dspOrder_fv(Integer value){
+        return new FieldValid<>(this, value, () -> dspOrder(value));
     }
     /**
     * 序号
@@ -1280,17 +1172,8 @@ public class ProjectModel extends Entity{
     /**
     * 备注
     */
-    public ProjectModel comment(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.comment=value;
-        return this;
+    public FieldValid<ProjectModel, String> comment_fv(String value){
+        return new FieldValid<>(this, value, () -> comment(value));
     }
     /**
     * 备注
@@ -1358,17 +1241,8 @@ public class ProjectModel extends Entity{
     /**
     * 删除状态
     */
-    public ProjectModel deleteStatus(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.deleteStatus=value;
-        return this;
+    public FieldValid<ProjectModel, Integer> deleteStatus_fv(Integer value){
+        return new FieldValid<>(this, value, () -> deleteStatus(value));
     }
     /**
     * 删除状态
@@ -1468,17 +1342,8 @@ public class ProjectModel extends Entity{
     /**
     * 创建时间
     */
-    public ProjectModel createTime(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.createTime=value;
-        return this;
+    public FieldValid<ProjectModel, Timestamp> createTime_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> createTime(value));
     }
     /**
     * 创建时间
@@ -1540,17 +1405,8 @@ public class ProjectModel extends Entity{
     /**
     * 更新时间
     */
-    public ProjectModel updateTime(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.updateTime=value;
-        return this;
+    public FieldValid<ProjectModel, Timestamp> updateTime_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> updateTime(value));
     }
     /**
     * 更新时间

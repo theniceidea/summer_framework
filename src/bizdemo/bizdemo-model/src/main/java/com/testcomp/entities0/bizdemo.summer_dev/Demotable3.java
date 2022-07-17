@@ -6,6 +6,7 @@ import com.fmk.framework.entitiesbasic.Entity;
 import com.fmk.framework.annotations.validation.*;
 import com.fmk.framework.valid.IValidator;
 import com.fmk.framework.valid.IValidatorSuccess;
+import com.fmk.framework.valid.FieldValid;
 import java.sql.Timestamp;
 import java.math.BigDecimal;
 import java.util.Objects;
@@ -163,17 +164,8 @@ public class Demotable3 extends Entity{
     /**
     * id
     */
-    public Demotable3 id(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.id=value;
-        return this;
+    public FieldValid<Demotable3, Integer> id_fv(Integer value){
+        return new FieldValid<>(this, value, () -> id(value));
     }
     /**
     * id
@@ -235,17 +227,8 @@ public class Demotable3 extends Entity{
     /**
     * 标题
     */
-    public Demotable3 title(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.title=value;
-        return this;
+    public FieldValid<Demotable3, String> title_fv(String value){
+        return new FieldValid<>(this, value, () -> title(value));
     }
     /**
     * 标题
@@ -313,17 +296,8 @@ public class Demotable3 extends Entity{
     /**
     * 类型
     */
-    public Demotable3 type(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.type=value;
-        return this;
+    public FieldValid<Demotable3, String> type_fv(String value){
+        return new FieldValid<>(this, value, () -> type(value));
     }
     /**
     * 类型
@@ -391,17 +365,8 @@ public class Demotable3 extends Entity{
     /**
     * 数量
     */
-    public Demotable3 num(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.num=value;
-        return this;
+    public FieldValid<Demotable3, Integer> num_fv(Integer value){
+        return new FieldValid<>(this, value, () -> num(value));
     }
     /**
     * 数量
@@ -463,17 +428,8 @@ public class Demotable3 extends Entity{
     /**
     * 数量2
     */
-    public Demotable3 num2(BigDecimal value, IValidatorSuccess<BigDecimal> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<BigDecimal> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.num2=value;
-        return this;
+    public FieldValid<Demotable3, BigDecimal> num2_fv(BigDecimal value){
+        return new FieldValid<>(this, value, () -> num2(value));
     }
     /**
     * 数量2
@@ -535,17 +491,8 @@ public class Demotable3 extends Entity{
     /**
     * 数量3
     */
-    public Demotable3 num3(Double value, IValidatorSuccess<Double> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Double> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.num3=value;
-        return this;
+    public FieldValid<Demotable3, Double> num3_fv(Double value){
+        return new FieldValid<>(this, value, () -> num3(value));
     }
     /**
     * 数量3
@@ -607,17 +554,8 @@ public class Demotable3 extends Entity{
     /**
     * demotable2
     */
-    public Demotable3 demotable2Id(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.demotable2Id=value;
-        return this;
+    public FieldValid<Demotable3, Integer> demotable2Id_fv(Integer value){
+        return new FieldValid<>(this, value, () -> demotable2Id(value));
     }
     /**
     * demotable2
@@ -679,17 +617,8 @@ public class Demotable3 extends Entity{
     /**
     * delete status
     */
-    public Demotable3 deleteStatus(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.deleteStatus=value;
-        return this;
+    public FieldValid<Demotable3, Integer> deleteStatus_fv(Integer value){
+        return new FieldValid<>(this, value, () -> deleteStatus(value));
     }
     /**
     * delete status
@@ -789,17 +718,8 @@ public class Demotable3 extends Entity{
     /**
     * enable status
     */
-    public Demotable3 enableStatus(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.enableStatus=value;
-        return this;
+    public FieldValid<Demotable3, String> enableStatus_fv(String value){
+        return new FieldValid<>(this, value, () -> enableStatus(value));
     }
     /**
     * enable status
@@ -905,17 +825,8 @@ public class Demotable3 extends Entity{
     /**
     * status
     */
-    public Demotable3 status(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.status=value;
-        return this;
+    public FieldValid<Demotable3, Integer> status_fv(Integer value){
+        return new FieldValid<>(this, value, () -> status(value));
     }
     /**
     * status
@@ -1034,17 +945,8 @@ public class Demotable3 extends Entity{
     /**
     * status
     */
-    public Demotable3 status2(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.status2=value;
-        return this;
+    public FieldValid<Demotable3, String> status2_fv(String value){
+        return new FieldValid<>(this, value, () -> status2(value));
     }
     /**
     * status
@@ -1169,17 +1071,8 @@ public class Demotable3 extends Entity{
     /**
     * 创建时间
     */
-    public Demotable3 creationDate(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.creationDate=value;
-        return this;
+    public FieldValid<Demotable3, Timestamp> creationDate_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate(value));
     }
     /**
     * 创建时间
@@ -1241,17 +1134,8 @@ public class Demotable3 extends Entity{
     /**
     * 创建时间2
     */
-    public Demotable3 creationDate2(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.creationDate2=value;
-        return this;
+    public FieldValid<Demotable3, Timestamp> creationDate2_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate2(value));
     }
     /**
     * 创建时间2

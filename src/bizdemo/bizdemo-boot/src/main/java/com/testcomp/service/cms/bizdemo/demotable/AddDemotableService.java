@@ -32,6 +32,7 @@ public class AddDemotableService implements SummerServiceBean<AddDemotable> {
         final List<Demotable> demotables = SqlDemotable
                 .inst()
                 .num_eq(1)
+//                .num_eq_fv(null).valid(Valid::notNull, "xxnum is null").back()
                 .orderBy_id_asc()
                 .orderBy_num2_desc()
                 .queryList();
@@ -49,7 +50,7 @@ public class AddDemotableService implements SummerServiceBean<AddDemotable> {
 
         System.out.println(count1M.getCount1());
         Demotable entity = new Demotable();
-        entity.title("", Valid::notNull);
+        entity.title_fv("").valid(Valid::notNull).back();
         entity.setTitle("title");
         entity.setType("type");
         entity.setNum(1);

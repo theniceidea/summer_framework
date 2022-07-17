@@ -3,6 +3,7 @@ import com.fmk.framework.annotations.*;
 import com.fmk.framework.summer.BasicSummer;
 import com.fmk.framework.valid.IValidator;
 import com.fmk.framework.valid.IValidatorSuccess;
+import com.fmk.framework.valid.FieldValid;
 import com.testcomp.model0.bizdemo.ds2app.GetDs2AppM;
 
 /**
@@ -53,17 +54,8 @@ public class GetDs2App extends BasicSummer<GetDs2AppM>{
     /**
     * 删除状态
     */
-    public GetDs2App deleteStatus(java.lang.Integer value, IValidatorSuccess<java.lang.Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<java.lang.Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.deleteStatus=value;
-        return this;
+    public FieldValid<GetDs2App, java.lang.Integer> deleteStatus_fv(java.lang.Integer value){
+        return new FieldValid<>(this, value, () -> deleteStatus(value));
     }
     /**
     * 删除状态
@@ -94,17 +86,8 @@ public class GetDs2App extends BasicSummer<GetDs2AppM>{
     /**
     * 删除状态
     */
-    public GetDs2App ds(java.util.List<Object> value, IValidatorSuccess<java.util.List<Object>> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<java.util.List<Object>> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.ds=value;
-        return this;
+    public FieldValid<GetDs2App, java.util.List<Object>> ds_fv(java.util.List<Object> value){
+        return new FieldValid<>(this, value, () -> ds(value));
     }
     /**
     * 删除状态

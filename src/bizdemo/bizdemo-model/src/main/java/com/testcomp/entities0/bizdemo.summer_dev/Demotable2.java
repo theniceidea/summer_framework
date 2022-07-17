@@ -6,6 +6,7 @@ import com.fmk.framework.entitiesbasic.Entity;
 import com.fmk.framework.annotations.validation.*;
 import com.fmk.framework.valid.IValidator;
 import com.fmk.framework.valid.IValidatorSuccess;
+import com.fmk.framework.valid.FieldValid;
 import java.sql.Timestamp;
 import java.sql.Date;
 import java.math.BigDecimal;
@@ -142,17 +143,8 @@ public class Demotable2 extends Entity{
     /**
     * id
     */
-    public Demotable2 id(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.id=value;
-        return this;
+    public FieldValid<Demotable2, String> id_fv(String value){
+        return new FieldValid<>(this, value, () -> id(value));
     }
     /**
     * id
@@ -220,17 +212,8 @@ public class Demotable2 extends Entity{
     /**
     * 标题
     */
-    public Demotable2 title(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.title=value;
-        return this;
+    public FieldValid<Demotable2, String> title_fv(String value){
+        return new FieldValid<>(this, value, () -> title(value));
     }
     /**
     * 标题
@@ -298,17 +281,8 @@ public class Demotable2 extends Entity{
     /**
     * 类型
     */
-    public Demotable2 type(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.type=value;
-        return this;
+    public FieldValid<Demotable2, String> type_fv(String value){
+        return new FieldValid<>(this, value, () -> type(value));
     }
     /**
     * 类型
@@ -376,17 +350,8 @@ public class Demotable2 extends Entity{
     /**
     * 数量
     */
-    public Demotable2 num(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.num=value;
-        return this;
+    public FieldValid<Demotable2, Integer> num_fv(Integer value){
+        return new FieldValid<>(this, value, () -> num(value));
     }
     /**
     * 数量
@@ -448,17 +413,8 @@ public class Demotable2 extends Entity{
     /**
     * 数量2
     */
-    public Demotable2 num2(BigDecimal value, IValidatorSuccess<BigDecimal> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<BigDecimal> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.num2=value;
-        return this;
+    public FieldValid<Demotable2, BigDecimal> num2_fv(BigDecimal value){
+        return new FieldValid<>(this, value, () -> num2(value));
     }
     /**
     * 数量2
@@ -520,17 +476,8 @@ public class Demotable2 extends Entity{
     /**
     * 数量3
     */
-    public Demotable2 num3(Double value, IValidatorSuccess<Double> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Double> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.num3=value;
-        return this;
+    public FieldValid<Demotable2, Double> num3_fv(Double value){
+        return new FieldValid<>(this, value, () -> num3(value));
     }
     /**
     * 数量3
@@ -592,17 +539,8 @@ public class Demotable2 extends Entity{
     /**
     * delete status
     */
-    public Demotable2 deleteStatus(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.deleteStatus=value;
-        return this;
+    public FieldValid<Demotable2, Integer> deleteStatus_fv(Integer value){
+        return new FieldValid<>(this, value, () -> deleteStatus(value));
     }
     /**
     * delete status
@@ -702,17 +640,8 @@ public class Demotable2 extends Entity{
     /**
     * enable status
     */
-    public Demotable2 enableStatus(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.enableStatus=value;
-        return this;
+    public FieldValid<Demotable2, String> enableStatus_fv(String value){
+        return new FieldValid<>(this, value, () -> enableStatus(value));
     }
     /**
     * enable status
@@ -818,17 +747,8 @@ public class Demotable2 extends Entity{
     /**
     * status
     */
-    public Demotable2 status(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.status=value;
-        return this;
+    public FieldValid<Demotable2, Integer> status_fv(Integer value){
+        return new FieldValid<>(this, value, () -> status(value));
     }
     /**
     * status
@@ -947,17 +867,8 @@ public class Demotable2 extends Entity{
     /**
     * status
     */
-    public Demotable2 status2(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.status2=value;
-        return this;
+    public FieldValid<Demotable2, String> status2_fv(String value){
+        return new FieldValid<>(this, value, () -> status2(value));
     }
     /**
     * status
@@ -1082,17 +993,8 @@ public class Demotable2 extends Entity{
     /**
     * 创建时间
     */
-    public Demotable2 creationDate(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.creationDate=value;
-        return this;
+    public FieldValid<Demotable2, Timestamp> creationDate_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> creationDate(value));
     }
     /**
     * 创建时间

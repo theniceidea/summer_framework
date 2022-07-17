@@ -3,6 +3,7 @@ import com.fmk.framework.annotations.*;
 import com.fmk.framework.summer.BasicSummer;
 import com.fmk.framework.valid.IValidator;
 import com.fmk.framework.valid.IValidatorSuccess;
+import com.fmk.framework.valid.FieldValid;
 import java.util.List;
 import com.testcomp.model0.bizdemo.apps.ListAppsM;
 
@@ -49,17 +50,8 @@ public class ListApps extends BasicSummer<List<ListAppsM>>{
     /**
     * 删除标志
     */
-    public ListApps deleteStatus(java.lang.Integer value, IValidatorSuccess<java.lang.Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<java.lang.Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.deleteStatus=value;
-        return this;
+    public FieldValid<ListApps, java.lang.Integer> deleteStatus_fv(java.lang.Integer value){
+        return new FieldValid<>(this, value, () -> deleteStatus(value));
     }
     /**
     * 删除标志

@@ -114,17 +114,8 @@ public class Project extends Entity{
     /**
     * id
     */
-    public Project id(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.id=value;
-        return this;
+    public FieldValid<Project, String> id_fv(String value){
+        return new FieldValid<>(this, value, () -> id(value));
     }
     /**
     * id
@@ -192,17 +183,8 @@ public class Project extends Entity{
     /**
     * 中文名
     */
-    public Project cname(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.cname=value;
-        return this;
+    public FieldValid<Project, String> cname_fv(String value){
+        return new FieldValid<>(this, value, () -> cname(value));
     }
     /**
     * 中文名
@@ -270,17 +252,8 @@ public class Project extends Entity{
     /**
     * 英文名
     */
-    public Project ename(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.ename=value;
-        return this;
+    public FieldValid<Project, String> ename_fv(String value){
+        return new FieldValid<>(this, value, () -> ename(value));
     }
     /**
     * 英文名
@@ -348,17 +321,8 @@ public class Project extends Entity{
     /**
     * 序号
     */
-    public Project dspOrder(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.dspOrder=value;
-        return this;
+    public FieldValid<Project, Integer> dspOrder_fv(Integer value){
+        return new FieldValid<>(this, value, () -> dspOrder(value));
     }
     /**
     * 序号
@@ -420,17 +384,8 @@ public class Project extends Entity{
     /**
     * 备注
     */
-    public Project comment(String value, IValidatorSuccess<String> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<String> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.comment=value;
-        return this;
+    public FieldValid<Project, String> comment_fv(String value){
+        return new FieldValid<>(this, value, () -> comment(value));
     }
     /**
     * 备注
@@ -498,17 +453,8 @@ public class Project extends Entity{
     /**
     * 删除状态
     */
-    public Project deleteStatus(Integer value, IValidatorSuccess<Integer> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Integer> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.deleteStatus=value;
-        return this;
+    public FieldValid<Project, Integer> deleteStatus_fv(Integer value){
+        return new FieldValid<>(this, value, () -> deleteStatus(value));
     }
     /**
     * 删除状态
@@ -608,17 +554,8 @@ public class Project extends Entity{
     /**
     * 创建时间
     */
-    public Project createTime(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.createTime=value;
-        return this;
+    public FieldValid<Project, Timestamp> createTime_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> createTime(value));
     }
     /**
     * 创建时间
@@ -680,17 +617,8 @@ public class Project extends Entity{
     /**
     * 更新时间
     */
-    public Project updateTime(Timestamp value, IValidatorSuccess<Timestamp> ... ivs){
-        if(null != ivs){
-            for(IValidatorSuccess<Timestamp> itm : ivs){
-                if(!itm.isValidSuccess(value)){
-                    return this;
-                }
-            }
-        }
-
-        this.updateTime=value;
-        return this;
+    public FieldValid<Project, Timestamp> updateTime_fv(Timestamp value){
+        return new FieldValid<>(this, value, () -> updateTime(value));
     }
     /**
     * 更新时间
