@@ -1,5 +1,7 @@
 package com.testcomp.msql0.bizdemo.count1;
+import java.util.List;
 import com.testcomp.summer.v0.service.bizdemo.count1.GetCount1;
+import com.testcomp.model0.bizdemo.count1.*;
 import org.springframework.stereotype.Service;
 import org.summerframework.model.SummerService;
 import com.fmk.framework.validation.Precondition;
@@ -9,7 +11,6 @@ import com.fmk.framework.daomodel.*;
 import com.fmk.framework.daosimple.BQuerySelect;
 import org.summerframework.model.SummerServiceBean;
 import org.apache.commons.lang3.StringUtils;
-import com.testcomp.model0.bizdemo.count1.*;
 import java.util.List;
 
 
@@ -48,6 +49,17 @@ public class GetCount1Service implements SummerServiceBean<GetCount1> {
         Precondition.checkState(bol, "100010001000_xxxxxxx");
         builder.append(" and a.delete_status=?");
         values.add(summer.getDeleteStatus());
+        if(0 == summer.getDeleteStatus() && summer.getDeleteStatus()>0 && null != summer.getParam2()){
+
+        bol=true;
+        bol=bol && SqlValidator.notNull(summer.getDeleteStatus());
+        Precondition.checkState(bol, "100010001000_xxxxxxx");
+        builder.append(" and a.delete_status=?");
+        values.add(summer.getDeleteStatus());
+        }
+        if(1==1){
+        builder.append(" and a.delete_status=1");
+        }
 
         final List<GetCount1M> list = DaoList.s(ds(), GetCount1M.class, bqs, 0, 1);
         if(list.size()>0){

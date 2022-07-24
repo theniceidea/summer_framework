@@ -14,9 +14,10 @@ public class GetCount1 extends BasicSummer<GetCount1M>{
     /**
     * 备注1
     */
-    public static GetCount1M s(java.lang.Integer deleteStatus) {
+    public static GetCount1M s(java.lang.Integer deleteStatus, java.lang.String param2) {
         GetCount1 summer=new GetCount1();
         summer.deleteStatus=deleteStatus;
+        summer.param2=param2;
         return summer.sum();
     }
     public static GetCount1 inst(){
@@ -26,6 +27,10 @@ public class GetCount1 extends BasicSummer<GetCount1M>{
     * 删除状态
     */
     private java.lang.Integer deleteStatus;
+    /**
+    * 
+    */
+    private java.lang.String param2;
     /**
     * 删除状态
     */
@@ -56,6 +61,38 @@ public class GetCount1 extends BasicSummer<GetCount1M>{
     */
     public GetCount1 deleteStatus_valid(IValidator<java.lang.Integer> validator, String msg){
         validator.valid(this.deleteStatus, msg);
+        return this;
+    }
+    /**
+    * 
+    */
+    public java.lang.String getParam2(){
+        return this.param2;
+    }
+    /**
+    * 
+    */
+    public void setParam2(java.lang.String value){
+        this.param2=value;
+    }
+    /**
+    * 
+    */
+    public GetCount1 param2(java.lang.String value){
+        this.param2=value;
+        return this;
+    }
+    /**
+    * 
+    */
+    public FieldValid<GetCount1, java.lang.String> param2_fv(java.lang.String value){
+        return new FieldValid<>(this, value, () -> param2(value));
+    }
+    /**
+    * 
+    */
+    public GetCount1 param2_valid(IValidator<java.lang.String> validator, String msg){
+        validator.valid(this.param2, msg);
         return this;
     }
 }

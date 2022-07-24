@@ -1,5 +1,6 @@
 package com.testcomp.msql0.bizdemo.app;
 import com.testcomp.summer.v0.service.bizdemo.app.GetApp;
+import com.testcomp.model0.bizdemo.app.*;
 import org.springframework.stereotype.Service;
 import org.summerframework.model.SummerService;
 import com.fmk.framework.validation.Precondition;
@@ -9,7 +10,6 @@ import com.fmk.framework.daomodel.*;
 import com.fmk.framework.daosimple.BQuerySelect;
 import org.summerframework.model.SummerServiceBean;
 import org.apache.commons.lang3.StringUtils;
-import com.testcomp.model0.bizdemo.app.*;
 import java.util.List;
 
 
