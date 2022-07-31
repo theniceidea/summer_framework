@@ -56,9 +56,14 @@ public class GetCount1Service implements SummerServiceBean<GetCount1> {
         Precondition.checkState(bol, "100010001000_xxxxxxx");
         builder.append(" and a.delete_status=?");
         values.add(summer.getDeleteStatus());
+        }//}
+        if(0 == summer.getDeleteStatus() && summer.getDeleteStatus()>0 && null != summer.getParam2()){
+
+        bol=true;
+        if(bol){
+            builder.append(" and a.delete_status=?; #");
+            values.add(summer.getDeleteStatus());
         }
-        if(1==1){
-        builder.append(" and a.delete_status=1");
         }
 
         final List<GetCount1M> list = DaoList.s(ds(), GetCount1M.class, bqs, 0, 1);

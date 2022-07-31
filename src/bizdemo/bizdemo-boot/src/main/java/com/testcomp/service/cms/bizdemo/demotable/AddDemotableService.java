@@ -7,6 +7,7 @@ import com.fmk.framework.validation.Valid;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import com.testcomp.entities0.bizdemo.summer_dev.Demotable;
+import com.testcomp.entities0.bizdemo.summer_dev.IDemotableList;
 import com.testcomp.enums0.bizdemo.Enum_deleteStatus;
 import com.testcomp.model0.bizdemo.app.GetAppM;
 import com.testcomp.model0.bizdemo.apps2.ListApps2M;
@@ -37,7 +38,7 @@ public class AddDemotableService implements SummerServiceBean<AddDemotable> {
                 .orderBy_num2_desc()
                 .queryList();
 
-        final GetCount1M count1M = GetCount1.s(Enum_deleteStatus.unDeleted.value());
+        final GetCount1M count1M = GetCount1.s(Enum_deleteStatus.unDeleted.value(), "");
         final PageResultList<ListApps2M> sum = ListApps2
                 .inst()
                 .deleteStatus(1)

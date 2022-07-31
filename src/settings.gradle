@@ -25,8 +25,8 @@ rootProject.name = 'src'
 ////include ':framework:framework-sftp'
 ////include ':framework:framework-sql'
 ////include ':framework:framework-sqlannotations'
-
-////include ':framework:framework-dao4mybatis'
+//
+//////include ':framework:framework-dao4mybatis'
 
 //include ':project:project-boot'
 //include ':project:project-model'
