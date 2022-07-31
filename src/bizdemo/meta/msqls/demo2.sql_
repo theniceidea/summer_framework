@@ -1,0 +1,72 @@
+# create database demo_db default character set utf8mb4 collate utf8mb4_unicode_ci;
+#
+# SHOW VARIABLES LIKE 'character%';
+
+
+create table demotable
+(
+	creation_date timestamp(6) null,
+	status2 varchar(100) null,
+	status int null,
+	enable_status varchar(100) null,
+	delete_status int null,
+	demotable2_id int null,
+	num3 double null,
+	num2 decimal(10,2) null,
+	num int null,
+	type varchar(100) null,
+	title varchar(100) null,
+	id int auto_increment
+		primary key
+);
+
+create table demotable2
+(
+	creation_date timestamp(3) default current_timestamp(3) not null on update current_timestamp(3),
+	status2 varchar(100) null,
+	status int null,
+	enable_status varchar(100) null,
+	delete_status int null,
+	num3 double null,
+	num2 decimal(10,2) null,
+	num int null,
+	type varchar(100) null,
+	title varchar(100) null,
+	id varchar(50) not null
+		primary key
+);
+
+create table n_demotable3
+(
+	creation_date2 datetime null,
+	creation_date timestamp(6) null,
+	status2 varchar(100) null,
+	status int null,
+	enable_status varchar(100) null,
+	delete_status int null,
+	num3 double null,
+	num2 decimal(10,2) null,
+	num int null,
+	type varchar(100) null,
+	title varchar(100) null,
+	id int auto_increment
+		primary key
+);
+#
+create table ds2demotable
+(
+	creation_date timestamp(6) null,
+	status2 varchar(100) null,
+	status int null,
+	enable_status varchar(100) null,
+	delete_status int null,
+	demotable2_id int null,
+	num3 double null,
+	num2 decimal(10,2) null,
+	num int null,
+	type varchar(100) null,
+	title varchar(100) null,
+	id int auto_increment
+		primary key
+);
+
